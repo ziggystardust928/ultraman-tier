@@ -4,6 +4,23 @@ import { AppBar, TierChip } from '../components/ui';
 
 const ERA_LABEL: Record<string, string> = { heisei: '旧平成', newgen: '新生代' };
 
+/** 1996-09-07 → 1996 年 9 月 7 日 */
+function formatDate(iso: string): string {
+  const m = iso.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return m ? `${m[1]} 年 ${Number(m[2])} 月 ${Number(m[3])} 日` : iso;
+}
+
+/**
+ * 备选译名是否值得显示。
+ * 百度百科和 B 站官方译名常常只差个「们」「！」这类语气字
+ *（「致以辉煌的人」vs「致以辉煌的人们」），这种显示出来纯属噪音。
+ */
+function isMeaningfulAlt(alt: string | null, primary: string | null): boolean {
+  if (!alt || !primary) return false;
+  const strip = (s: string) => s.replace(/[们！!？?。.、，,\s]/g, '');
+  return strip(alt) !== strip(primary);
+}
+
 function PersonLinks({ list, label }: { list: { id: string; name: string; nameEn: string; confidence: string }[]; label: string }) {
   return (
     <div className="kv">
@@ -103,6 +120,51 @@ export default function EpisodeDetail() {
             </span>
           </div>
         </div>
+
+        <div className="kv">
+          <div className="kv-key">首播</div>
+          <div className="kv-val">
+            {ep.airDate ? formatDate(ep.airDate) : <span className="dim">—</span>}
+            {isMeaningfulAlt(ep.titleAlt, ep.titleZh) && (
+              <span className="dim" style={{ fontSize: 11 }}>
+                {' '}
+                · 又译《{ep.titleAlt}》
+              </span>
+            )}
+          </div>
+        </div>
+
+        <div className="kv">
+          <div className="kv-key">登场怪兽</div>
+          <div className="kv-val">
+            {ep.monsters?.length ? (
+              ep.monsters.map((m, i) => (
+                <span key={m + i}>
+                  {i > 0 && <span className="dim">、</span>}
+                  <Link to={`/search?q=${encodeURIComponent(m)}`} style={{ borderBottom: '1px solid var(--line)' }}>
+                    {m}
+                  </Link>
+                </span>
+              ))
+            ) : (
+              <span className="dim">暂无收录</span>
+            )}
+          </div>
+        </div>
+
+        {ep.viewershipPct !== null && (
+          <div className="kv">
+            <div className="kv-key">收视率</div>
+            <div className="kv-val">
+              {ep.viewershipPct}%
+              <span className="dim" style={{ fontSize: 11 }}>
+                {' '}
+                （首播）
+              </span>
+            </div>
+          </div>
+        )}
+
         <PersonLinks list={ep.directors} label="导演" />
         <PersonLinks list={ep.writers} label="编剧" />
 

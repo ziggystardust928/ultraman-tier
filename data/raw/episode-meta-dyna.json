@@ -1,0 +1,645 @@
+{
+ "1": {
+  "no": 1,
+  "airDate": "1997-09-06",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "全新的光（前篇）",
+  "titleJa": "新たなる光（前編）",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚合成兽 达兰比尔"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "2": {
+  "no": 2,
+  "airDate": "1997-09-13",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "全新的光（后篇）",
+  "titleJa": "新たなる光（後編）",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚合成兽 达兰比尔",
+   "斯菲亚超合成兽 奈奥达兰比尔",
+   "斯菲亚熔岩合成兽 格兰雷恩"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "3": {
+  "no": 3,
+  "airDate": "1997-09-20",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "觉醒吧！飞鸟",
+  "titleJa": "目覚めよアスカ",
+  "monsters": [
+   "宇宙寄生兽 塞克洛美特拉",
+   "再生怪兽 古罗西那"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "4": {
+  "no": 4,
+  "airDate": "1997-09-27",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "决战！地下都市",
+  "titleJa": "決戦! 地中都市",
+  "monsters": [
+   "肉食地底怪兽 达伊盖伦"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "5": {
+  "no": 5,
+  "airDate": "1997-10-04",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "胜利一击",
+  "titleJa": "ウイニングショット",
+  "monsters": [
+   "变异昆虫 希尔顿隆"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "6": {
+  "no": 6,
+  "airDate": "1997-10-11",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "地上最大的怪兽",
+  "titleJa": "地上最大の怪獣",
+  "monsters": [
+   "本体不明  出现在东京近郊古泉市"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "7": {
+  "no": 7,
+  "airDate": "1997-10-18",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "盒子中的朋友",
+  "titleJa": "箱の中のともだち",
+  "monsters": [
+   "演员：森圣二",
+   "凶恶怪兽 加比休"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "8": {
+  "no": 8,
+  "airDate": "1997-10-25",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "遥远的巴欧恩",
+  "titleJa": "遥かなるバオーン",
+  "monsters": [
+   "催眠怪兽 巴欧恩"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "9": {
+  "no": 9,
+  "airDate": "1997-11-01",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "二千只怪兽的袭击",
+  "titleJa": "二千匹の襲撃",
+  "monsters": [
+   "吸电怪兽 基阿库达"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "10": {
+  "no": 10,
+  "airDate": "1997-11-08",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "禁断的地上画",
+  "titleJa": "禁断の地上絵",
+  "monsters": [
+   "念力种族 吉奈金达鲁人",
+   "高速怪兽 丹克沙德尔"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "11": {
+  "no": 11,
+  "airDate": "1997-11-15",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "幻之游星",
+  "titleJa": "幻の遊星",
+  "monsters": [
+   "破坏兽 莫斯阿甲"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "12": {
+  "no": 12,
+  "airDate": "1997-11-22",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "怪盗希玛拉",
+  "titleJa": "怪盗ヒマラ",
+  "monsters": [
+   "怪宇宙人 希玛拉"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "13": {
+  "no": 13,
+  "airDate": "1997-11-29",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "怪兽工厂",
+  "titleJa": "怪獣工場",
+  "monsters": [
+   "来自米基星",
+   "三面机器头兽 加拉翁"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "14": {
+  "no": 14,
+  "airDate": "1997-12-06",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "沉睡于月球的霸王",
+  "titleJa": "月に眠る覇王",
+  "monsters": [
+   "宇宙帝王 努阿扎星人伊希里斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "15": {
+  "no": 15,
+  "airDate": "1997-12-13",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "温柔的目标",
+  "titleJa": "優しい標的",
+  "monsters": [
+   "演员：宍户胜",
+   "尖兵怪兽 冈萨"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "16": {
+  "no": 16,
+  "airDate": "1997-12-20",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "激斗！怪兽岛",
+  "titleJa": "激闘! 怪獣島",
+  "monsters": [
+   "变异昆虫 克隆希尔顿隆",
+   "刚力怪兽 克隆希尔巴贡",
+   "超级克隆怪兽 奈奥扎尔斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "17": {
+  "no": 17,
+  "airDate": "1997-12-27",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "幽灵宇宙船",
+  "titleJa": "幽霊宇宙船",
+  "monsters": [
+   "僵尸怪人 希尔巴克星人",
+   "幽灵船怪兽 钟拜由"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "18": {
+  "no": 18,
+  "airDate": "1998-01-10",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "召唤恶魔的少女",
+  "titleJa": "闇を呼ぶ少女たち",
+  "monsters": [
+   "上图人间体：圣南女子学院院长"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "19": {
+  "no": 19,
+  "airDate": "1998-01-17",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "梦幻之鸟",
+  "titleJa": "夢幻の鳥",
+  "monsters": [
+   "凶兽 姑获鸟"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "20": {
+  "no": 20,
+  "airDate": "1998-01-24",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "外星人少年",
+  "titleJa": "少年宇宙人",
+  "monsters": [
+   "琉璃色宇宙人 拉赛思塔星人"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "21": {
+  "no": 21,
+  "airDate": "1998-01-31",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "发烧怪兽3000度",
+  "titleJa": "発熱怪獣3000度",
+  "monsters": [
+   "超高热怪兽 索德姆"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "22": {
+  "no": 22,
+  "airDate": "1998-02-07",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "月夜的士兵",
+  "titleJa": "ツクヨの兵士",
+  "monsters": [
+   "妖兽 摩志"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "23": {
+  "no": 23,
+  "airDate": "1998-02-14",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "梦想的城堡",
+  "titleJa": "夢のとりで",
+  "monsters": [
+   "身长155米 体重52000吨 栖息于深海"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "24": {
+  "no": 24,
+  "airDate": "1998-02-21",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "湖中的吸血鬼",
+  "titleJa": "湖の吸血鬼",
+  "monsters": [
+   "吸血生命体 玛丽休拉"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "25": {
+  "no": 25,
+  "airDate": "1998-02-28",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "移动要塞不能上浮!（前篇）",
+  "titleJa": "移動要塞 （クラーコフ）浮上せず!（前編）",
+  "monsters": [
+   "身长193米 体重79000吨 出现在南极",
+   "半鱼人士兵 迪贡",
+   "宇宙海兽 雷丘巴斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "26": {
+  "no": 26,
+  "airDate": "1998-03-07",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "移动要塞不能上浮!（后篇）",
+  "titleJa": "移動要塞 （クラーコフ）浮上せず!（後編）",
+  "monsters": null,
+  "monstersSource": null,
+  "viewershipPct": null
+ },
+ "27": {
+  "no": 27,
+  "airDate": "1998-03-14",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "怪兽游戏",
+  "titleJa": "怪獣ゲーム",
+  "monsters": [
+   "再生怪兽 改造古罗西那",
+   "演员：渡洋史",
+   "超级必杀怪兽 德玛卡古"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "28": {
+  "no": 28,
+  "airDate": "1998-03-21",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "人猿森林",
+  "titleJa": "猿人の森",
+  "monsters": [
+   "巨大猿人 奇更特斯（雄）（ギガンテス（オス））",
+   "巨大猿人 奇更特斯（雌） （ギガンテス（メス））"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "29": {
+  "no": 29,
+  "airDate": "1998-03-28",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "在命运的光芒中",
+  "titleJa": "運命の光の中で",
+  "monsters": [
+   "彗星怪兽 盖加雷德"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "30": {
+  "no": 30,
+  "airDate": "1998-04-04",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "侵略的剧本",
+  "titleJa": "侵略の 脚本 （シナリオ）",
+  "monsters": null,
+  "monstersSource": null,
+  "viewershipPct": null
+ },
+ "31": {
+  "no": 31,
+  "airDate": "1998-04-11",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "死斗！戴拿VS戴拿",
+  "titleJa": "死闘! ダイナVSダイナ",
+  "monsters": [
+   "破坏兽 改造莫斯阿甲",
+   "假戴拿奥特曼",
+   "宇宙格斗家 古雷格尔人"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "32": {
+  "no": 32,
+  "airDate": "1998-04-18",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "歌唱的探测机器人",
+  "titleJa": "歌う探査ロボット",
+  "monsters": [
+   "高度97厘米 重量215公斤 制造于TPC本部基地",
+   "怪物机器 撒旦拉布摩斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "33": {
+  "no": 33,
+  "airDate": "1998-04-25",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "和平之星",
+  "titleJa": "平和の星",
+  "monsters": [
+   "超恶质宇宙人 纳尔齐斯星人",
+   "大小164米 体重180000吨 出现在海湾地区的外星人仓库"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "34": {
+  "no": 34,
+  "airDate": "1998-05-02",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "决断之时",
+  "titleJa": "決断の時",
+  "monsters": [
+   "宇宙火花大怪兽 巴佐布"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "35": {
+  "no": 35,
+  "airDate": "1998-05-09",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "毁灭的微笑（前篇）",
+  "titleJa": "滅びの微笑（前編）",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚宇宙合成兽 乔莫斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "36": {
+  "no": 36,
+  "airDate": "1998-05-16",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "毁灭的微笑（后篇）",
+  "titleJa": "滅びの微笑（後編）",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚超宇宙合成兽 奈奥乔莫斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "37": {
+  "no": 37,
+  "airDate": "1998-05-23",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "梦的集合体",
+  "titleJa": "ユメノカタマリ",
+  "monsters": [
+   "大小58米 体重60000吨 出现在紫衫市垃圾处理场"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "38": {
+  "no": 38,
+  "airDate": "1998-05-30",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "怪兽戏曲",
+  "titleJa": "怪獣戯曲",
+  "monsters": [
+   "巴洛克怪兽 布恩达"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "39": {
+  "no": 39,
+  "airDate": "1998-06-06",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "青春的光与影",
+  "titleJa": "青春の光と影",
+  "monsters": [
+   "肉食地底怪兽 克隆达伊盖伦",
+   "异形进化兵 钟勃格士兵",
+   "超异形进化怪兽 钟勃格"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "40": {
+  "no": 40,
+  "airDate": "1998-06-13",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "加基拉之树",
+  "titleJa": "ジャギラの樹",
+  "monsters": [
+   "宇宙植物 加基拉树",
+   "宇宙魔树 戈德加基拉"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "41": {
+  "no": 41,
+  "airDate": "1998-06-20",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "我想见我们的地球",
+  "titleJa": "ぼくたちの地球が見たい",
+  "monsters": [
+   "身长115米 体重65000吨 来自宇宙"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "42": {
+  "no": 42,
+  "airDate": "1998-06-27",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "泡沫的空梦",
+  "titleJa": "うたかたの空夢",
+  "monsters": [
+   "恶质宇宙人 雷丘兰星人佐卡将军"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "43": {
+  "no": 43,
+  "airDate": "1998-07-04",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "长腿队长",
+  "titleJa": "あしなが隊長",
+  "monsters": [
+   "超古代怪兽 哥尔赞二代"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "44": {
+  "no": 44,
+  "airDate": "1998-07-11",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "金星之雪",
+  "titleJa": "金星の雪",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚灼热合成兽 古拉伊奇斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "45": {
+  "no": 45,
+  "airDate": "1998-07-18",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "楚拉莎的眼泪",
+  "titleJa": "チュラサの涙",
+  "monsters": [
+   "基加尔星女战士 楚妮莎",
+   "宇宙超兽 特龙加"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "46": {
+  "no": 46,
+  "airDate": "1998-07-25",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "想象的力量",
+  "titleJa": "君を想う力",
+  "monsters": [
+   "恐惧能量魔体 莫尔瓦亚"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "47": {
+  "no": 47,
+  "airDate": "1998-08-01",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "再见了哈乃次郎",
+  "titleJa": "さらばハネジロー",
+  "monsters": [
+   "左侧为A，右侧为B",
+   "魔石超人 德比尔法比拉斯"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "48": {
+  "no": 48,
+  "airDate": "1998-08-08",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "星球破坏炸弹",
+  "titleJa": "ンダモシテX",
+  "monsters": [
+   "变心宇宙人 查达比星人",
+   "地底怪兽 莫格顿"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "49": {
+  "no": 49,
+  "airDate": "1998-08-15",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "最终章I 新的夏德",
+  "titleJa": "最終章I 新たなる影",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚超合成兽 奈奥达兰比尔二代",
+   "人造奥特曼 泰拉诺伊德",
+   "斯菲亚超合成兽人 吉尔加诺德"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "50": {
+  "no": 50,
+  "airDate": "1998-08-22",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "最终章II 太阳系毁灭",
+  "titleJa": "最終章II 太陽系消滅",
+  "monsters": [
+   "宇宙球体 斯菲亚",
+   "斯菲亚超合成兽 奈奥盖加雷德",
+   "天体直径12756公里 质量无法测定 出现在宇宙"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ },
+ "51": {
+  "no": 51,
+  "airDate": "1998-08-29",
+  "airDateSource": "jawiki-brief",
+  "titleAlt": "最终章III 飞向明天",
+  "titleJa": "最終章III 明日へ…",
+  "monsters": [
+   "宇宙球体 斯菲亚"
+  ],
+  "monstersSource": "bilibili-column(dyna)",
+  "viewershipPct": null
+ }
+}

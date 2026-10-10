@@ -6,14 +6,19 @@
   "description": "奥特曼单集评级 App —— 平成三杰 / 新生代 单集分档与编剧导演索引",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && node tools/gen-sw.mjs",
+    "serve": "vite preview --host 0.0.0.0 --port 5181 --strictPort",
     "preview": "vite preview",
     "check": "node --max-old-space-size=1024 tools/visual-check.mjs",
+    "check:pwa": "node --max-old-space-size=1024 tools/check-pwa.mjs",
     "data": "node --max-old-space-size=1024 tools/build-dataset.mjs",
     "data:imdb": "node --max-old-space-size=2048 tools/imdb-extract.mjs --series tt0182647 tt0184167 tt0184168 --out data/raw/imdb-heisei3.json",
     "data:bili": "node --max-old-space-size=512 tools/bili-fetch.mjs --fetch tiga --query 迪迦奥特曼 && node --max-old-space-size=512 tools/bili-fetch.mjs --fetch dyna --query 戴拿奥特曼 && node --max-old-space-size=512 tools/bili-fetch.mjs --fetch gaia --query 盖亚奥特曼",
+    "data:monsters": "node --max-old-space-size=1024 tools/fetch-monsters.mjs",
+    "data:meta": "node --max-old-space-size=768 tools/build-episode-meta.mjs",
     "images": "node --max-old-space-size=768 tools/fetch-images.mjs",
-    "stills": "node --max-old-space-size=1024 tools/fetch-videoshot.mjs && python tools/crop-stills.py"
+    "stills": "node --max-old-space-size=1024 tools/fetch-videoshot.mjs && python tools/crop-stills.py",
+    "icons": "python tools/gen-icons.py"
   },
   "dependencies": {
     "react": "^18.3.1",

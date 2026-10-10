@@ -1,13 +1,19 @@
-import { useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useEffect, useMemo, useState } from 'react';
+import { Link, useSearchParams } from 'react-router-dom';
 import { search } from '../data/store';
 import { AppBar, IconSearch, TierBadge } from '../components/ui';
 
-const HOT = ['迪迦', '泽塔', '致以辉煌', '小中千昭', '村石宏实', '神回'];
+const HOT = ['迪迦', '哥尔赞', '小中千昭', '村石宏实', '神回', '加坦杰厄'];
 
 export default function SearchPage() {
-  const [q, setQ] = useState('');
+  const [params, setParams] = useSearchParams();
+  const [q, setQ] = useState(params.get('q') ?? '');
   const hits = useMemo(() => search(q), [q]);
+
+  // 把关键词同步进 URL，这样单集页里的「登场怪兽」可以直接深链过来
+  useEffect(() => {
+    setParams(q ? { q } : {}, { replace: true });
+  }, [q, setParams]);
 
   const grouped = useMemo(() => {
     return {

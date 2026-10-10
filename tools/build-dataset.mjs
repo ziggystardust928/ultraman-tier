@@ -72,6 +72,9 @@ const peopleIndex = new Map();
 
 for (const s of SERIES) {
   const bili = read(`data/raw/bili-${s.id}.json`);
+  // 首播日 / 登场怪兽 / 收视率（tools/build-episode-meta.mjs 产出）
+  const epMetaPath = path.join(ROOT, 'data', 'raw', `episode-meta-${s.id}.json`);
+  const epMeta = fs.existsSync(epMetaPath) ? JSON.parse(fs.readFileSync(epMetaPath, 'utf8')) : {};
   const eps = imdb.episodes
     .filter((e) => e.parentTconst === s.parent)
     .sort((a, b) => a.episode - b.episode);
@@ -85,6 +88,7 @@ for (const s of SERIES) {
 
   const episodes = eps.map((e) => {
     const b = byNo.get(e.episode) ?? {};
+    const m = epMeta[e.episode] ?? {};
     const directors = (e.directors ?? []).map(person);
     const writers = (e.writers ?? []).map(person);
     for (const p of [...directors, ...writers]) {
@@ -105,6 +109,12 @@ for (const s of SERIES) {
       imdb: { rating: e.averageRating ?? null, votes: e.numVotes ?? null, tconst: e.tconst },
       bili: { epId: b.ep_id ?? null, bvid: b.bvid ?? null, durationMs: b.duration_ms ?? null },
       still: imgOrNull(stillRel(s.id, e.episode)),
+      airDate: m.airDate ?? null,
+      airDateSource: m.airDateSource ?? null,
+      titleAlt: m.titleAlt ?? null,
+      titleJa: m.titleJa ?? null,
+      monsters: m.monsters ?? null,
+      viewershipPct: m.viewershipPct ?? null,
       tieba: null,
       directors,
       writers,
@@ -309,8 +319,12 @@ out.stats = {
   ],
   withWriter: allEpisodes.filter((e) => e.writers.length).length,
   withDirector: allEpisodes.filter((e) => e.directors.length).length,
+  withAirDate: allEpisodes.filter((e) => e.airDate).length,
+  withMonsters: allEpisodes.filter((e) => e.monsters?.length).length,
+  withViewership: allEpisodes.filter((e) => e.viewershipPct !== null).length,
   missingWriter: allEpisodes.filter((e) => !e.writers.length).map((e) => e.id),
   missingDirector: allEpisodes.filter((e) => !e.directors.length).map((e) => e.id),
+  missingMonsters: allEpisodes.filter((e) => !e.monsters?.length).map((e) => e.id),
 };
 
 fs.mkdirSync(path.join(ROOT, 'data', 'dist'), { recursive: true });

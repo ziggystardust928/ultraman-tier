@@ -24,6 +24,16 @@ export interface Episode {
   imdb: { rating: number | null; votes: number | null; tconst: string };
   bili: { epId: number | null; bvid: string | null; durationMs: number | null };
   still: string | null;
+  /** 首播日期（ISO）。盖亚暂无可靠来源，为 null */
+  airDate: string | null;
+  airDateSource: string | null;
+  /** 备选中文标题（百度百科的译名与 B 站官方译名常不同） */
+  titleAlt: string | null;
+  titleJa: string | null;
+  /** 本集登场怪兽 / 宇宙人 */
+  monsters: string[] | null;
+  /** 首播收视率（%），仅迪迦有 */
+  viewershipPct: number | null;
   tieba: { score: number | null; votes: number | null; url: string | null } | null;
   directors: PersonRef[];
   writers: PersonRef[];
@@ -124,7 +134,11 @@ export interface Dataset {
     scoreRange: [number, number];
     withWriter: number;
     withDirector: number;
+    withAirDate: number;
+    withMonsters: number;
+    withViewership: number;
     missingWriter: string[];
     missingDirector: string[];
+    missingMonsters: string[];
   };
 }

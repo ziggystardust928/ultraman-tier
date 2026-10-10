@@ -1,0 +1,645 @@
+{
+ "1": {
+  "no": 1,
+  "airDate": "1996-09-07",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "光的继承者",
+  "titleJa": null,
+  "monsters": [
+   "哥尔赞",
+   "美尔巴"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.6
+ },
+ "2": {
+  "no": 2,
+  "airDate": "1996-09-14",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "石头的神话",
+  "titleJa": null,
+  "monsters": [
+   "加库玛α",
+   "加库玛β"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.9
+ },
+ "3": {
+  "no": 3,
+  "airDate": "1996-09-21",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "恶魔的预言",
+  "titleJa": null,
+  "monsters": [
+   "炎魔战士基里艾洛德人（一代）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.5
+ },
+ "4": {
+  "no": 4,
+  "airDate": "1996-09-28",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "再见了，地球",
+  "titleJa": null,
+  "monsters": [
+   "复合怪兽立加德隆"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.5
+ },
+ "5": {
+  "no": 5,
+  "airDate": "1996-10-05",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "怪兽出没的日子",
+  "titleJa": null,
+  "monsters": [
+   "僵尸怪兽西利赞"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.5
+ },
+ "6": {
+  "no": 6,
+  "airDate": "1996-10-12",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "第二次接触",
+  "titleJa": null,
+  "monsters": [
+   "变形怪兽加佐特",
+   "闪电人"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.4
+ },
+ "7": {
+  "no": 7,
+  "airDate": "1996-10-19",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "降临到地球的外星人",
+  "titleJa": null,
+  "monsters": [
+   "恶质宇宙人雷丘兰星人"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.1
+ },
+ "8": {
+  "no": 8,
+  "airDate": "1996-10-26",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "万圣节的夜晚",
+  "titleJa": null,
+  "monsters": [
+   "异次元人基兰博"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.6
+ },
+ "9": {
+  "no": 9,
+  "airDate": "1996-11-02",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "等待怪兽的少女",
+  "titleJa": null,
+  "monsters": [
+   "守护怪兽玛奇那",
+   "宇宙少女沙纪"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.6
+ },
+ "10": {
+  "no": 10,
+  "airDate": "1996-11-09",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "被封闭的游乐园",
+  "titleJa": null,
+  "monsters": [
+   "屏障怪兽嘎地（一代）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 9.5
+ },
+ "11": {
+  "no": 11,
+  "airDate": "1996-11-16",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "安魂曲",
+  "titleJa": null,
+  "monsters": [
+   "异型进化怪兽艾勃隆"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.2
+ },
+ "12": {
+  "no": 12,
+  "airDate": "1996-11-23",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "从深海来的SOS",
+  "titleJa": null,
+  "monsters": [
+   "深海怪兽雷伊洛斯"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.1
+ },
+ "13": {
+  "no": 13,
+  "airDate": "1996-11-30",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "不做奴隶",
+  "titleJa": null,
+  "monsters": [
+   "诱拐宇宙人勒比克星人（红眼）（黄眼）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.1
+ },
+ "14": {
+  "no": 14,
+  "airDate": "1996-12-07",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "被流放的目标",
+  "titleJa": null,
+  "monsters": [
+   "极恶猎人宇宙人木珍星人",
+   "宇宙人露西亚",
+   "扎拉"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 9.9
+ },
+ "15": {
+  "no": 15,
+  "airDate": "1996-12-14",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "梦幻疾走",
+  "titleJa": null,
+  "monsters": [
+   "变形怪兽加佐特2代"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.4
+ },
+ "16": {
+  "no": 16,
+  "airDate": "1996-12-21",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "复苏的鬼神",
+  "titleJa": null,
+  "monsters": [
+   "二面鬼宿那鬼"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.5
+ },
+ "17": {
+  "no": 17,
+  "airDate": "1996-12-28",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "红与蓝的决战",
+  "titleJa": null,
+  "monsters": [
+   "斯坦德尔星人阿勃巴斯",
+   "斯坦德尔星人雷德尔"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.3
+ },
+ "18": {
+  "no": 18,
+  "airDate": "1997-01-04",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "哥尔赞的逆袭",
+  "titleJa": null,
+  "monsters": [
+   "火焰哥尔赞"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.1
+ },
+ "19": {
+  "no": 19,
+  "airDate": "1997-01-11",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "GUTS奔向宇宙（前篇）",
+  "titleJa": null,
+  "monsters": [
+   "小型体哥布纽基加",
+   "巨型机械人偶哥布纽（基加）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.5
+ },
+ "20": {
+  "no": 20,
+  "airDate": "1997-01-18",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "GUTS奔向宇宙（后篇）",
+  "titleJa": null,
+  "monsters": [
+   "巨型机械人偶（奥古玛）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.5
+ },
+ "21": {
+  "no": 21,
+  "airDate": "1997-01-25",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "出场了德班",
+  "titleJa": null,
+  "monsters": [
+   "德班",
+   "魔神艾能美那"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.9
+ },
+ "22": {
+  "no": 22,
+  "airDate": "1997-02-01",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "大雾来了",
+  "titleJa": null,
+  "monsters": [
+   "寄生怪兽玛格尼亚",
+   "小型玛格尼亚"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 9
+ },
+ "23": {
+  "no": 23,
+  "airDate": "1997-02-08",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "恐龙们的星球",
+  "titleJa": null,
+  "monsters": [
+   "恐龙兵器丸迫奈扎（1号）（二号）",
+   "恐龙人类（阿达姆）（伊舞）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 9.3
+ },
+ "24": {
+  "no": 24,
+  "airDate": "1997-02-15",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "前进！怪兽探险队",
+  "titleJa": null,
+  "monsters": [
+   "强酸怪兽立特玛鲁斯"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.5
+ },
+ "25": {
+  "no": 25,
+  "airDate": "1997-02-22",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "恶魔的审判",
+  "titleJa": null,
+  "monsters": [
+   "炎魔战士基里艾洛德二代",
+   "预言家",
+   "女巫"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.2
+ },
+ "26": {
+  "no": 26,
+  "airDate": "1997-03-01",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "彩虹般的怪兽魔境",
+  "titleJa": null,
+  "monsters": [
+   "刚力怪兽希尔巴贡",
+   "屏障怪兽嘎地二代"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.9
+ },
+ "27": {
+  "no": 27,
+  "airDate": "1997-03-08",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "看见了奥比克",
+  "titleJa": null,
+  "monsters": null,
+  "monstersSource": null,
+  "viewershipPct": 8.4
+ },
+ "28": {
+  "no": 28,
+  "airDate": "1997-03-15",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "呼唤",
+  "titleJa": null,
+  "monsters": [
+   "甲兽乔贝利艾"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8
+ },
+ "29": {
+  "no": 29,
+  "airDate": "1997-03-22",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "蓝色夜晚的记忆",
+  "titleJa": null,
+  "monsters": [
+   "侵略宇宙人那坦星人"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 9.5
+ },
+ "30": {
+  "no": 30,
+  "airDate": "1997-03-29",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "怪兽动物园",
+  "titleJa": null,
+  "monsters": [
+   "变异怪兽莫特拉王"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.1
+ },
+ "31": {
+  "no": 31,
+  "airDate": "1997-04-05",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "GUTS基地被袭击",
+  "titleJa": null,
+  "monsters": [
+   "人工生命体比佐摩"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.2
+ },
+ "32": {
+  "no": 32,
+  "airDate": "1997-04-12",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "滋尔达中心的攻防",
+  "titleJa": null,
+  "monsters": [
+   "怪鸟西拉"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.1
+ },
+ "33": {
+  "no": 33,
+  "airDate": "1997-04-19",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "黑暗都市",
+  "titleJa": null,
+  "monsters": [
+   "吸血魔兽休拉诺斯"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.4
+ },
+ "34": {
+  "no": 34,
+  "airDate": "1997-04-26",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "南方海峡",
+  "titleJa": null,
+  "monsters": [
+   "生物兵器戴西玛尼亚"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.8
+ },
+ "35": {
+  "no": 35,
+  "airDate": "1997-05-03",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "沉睡的少女",
+  "titleJa": null,
+  "monsters": [
+   "戴西斯星系人",
+   "宇宙钢铁龙古瓦木"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.3
+ },
+ "36": {
+  "no": 36,
+  "airDate": "1997-05-10",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "超越时空的微笑",
+  "titleJa": null,
+  "monsters": [
+   "超力怪兽戈尔德拉斯"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7
+ },
+ "37": {
+  "no": 37,
+  "airDate": "1997-05-17",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "花",
+  "titleJa": null,
+  "monsters": [
+   "谋略宇宙人马农星人"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 7.2
+ },
+ "38": {
+  "no": 38,
+  "airDate": "1997-05-24",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "海市蜃楼的怪兽",
+  "titleJa": null,
+  "monsters": [
+   "海市蜃楼怪兽发尔顿"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.7
+ },
+ "39": {
+  "no": 39,
+  "airDate": "1997-05-31",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "你好奥特曼",
+  "titleJa": null,
+  "monsters": [
+   "超古代怪兽加鲁拉"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.8
+ },
+ "40": {
+  "no": 40,
+  "airDate": "1997-06-07",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "梦",
+  "titleJa": null,
+  "monsters": [
+   "梦幻怪兽巴克贡"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.6
+ },
+ "41": {
+  "no": 41,
+  "airDate": "1997-06-14",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "从宇宙回来的朋友",
+  "titleJa": null,
+  "monsters": [
+   "寄生宇宙人伊路德星人"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.2
+ },
+ "42": {
+  "no": 42,
+  "airDate": "1997-06-21",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "少女消失的街道",
+  "titleJa": null,
+  "monsters": [
+   "机械生命体撒旦法伊巴斯",
+   "虚拟木贞星人",
+   "虚拟勒比克星人"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.1
+ },
+ "43": {
+  "no": 43,
+  "airDate": "1997-06-28",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "地中的鲨鱼",
+  "titleJa": null,
+  "monsters": [
+   "地中鲨盖欧扎克"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.3
+ },
+ "44": {
+  "no": 44,
+  "airDate": "1997-07-05",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "影的继承者",
+  "titleJa": null,
+  "monsters": [
+   "超古代狛犬怪兽盖迪",
+   "远古巨人邪恶迪迦"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.9
+ },
+ "45": {
+  "no": 45,
+  "airDate": "1997-07-12",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "永远的生命",
+  "titleJa": null,
+  "monsters": [
+   "超古代植物齐杰拉",
+   "生化电子人父女"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 8.2
+ },
+ "46": {
+  "no": 46,
+  "airDate": "1997-07-19",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "至急！镰仓",
+  "titleJa": null,
+  "monsters": [
+   "彩虹色怪兽达拉邦（子）彩虹色怪兽达拉邦（母）"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.5
+ },
+ "47": {
+  "no": 47,
+  "airDate": "1997-07-26",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "告别黑暗",
+  "titleJa": null,
+  "monsters": [
+   "异形进化怪兽梅塔莫尔加"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.9
+ },
+ "48": {
+  "no": 48,
+  "airDate": "1997-08-02",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "月球来的逃亡者",
+  "titleJa": null,
+  "monsters": [
+   "梅珠朗"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 6.2
+ },
+ "49": {
+  "no": 49,
+  "airDate": "1997-08-09",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "奥特之星",
+  "titleJa": null,
+  "monsters": [
+   "怪兽买家/宇宙魔人查利迦",
+   "宇宙恐龙亚那加基"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.4
+ },
+ "50": {
+  "no": 50,
+  "airDate": "1997-08-16",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "飞得更高！Take Me Higher！",
+  "titleJa": null,
+  "monsters": [
+   "超古代先兵怪兽佐加"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 4.4
+ },
+ "51": {
+  "no": 51,
+  "airDate": "1997-08-23",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "黑暗支配者",
+  "titleJa": null,
+  "monsters": [
+   "邪神加坦杰厄",
+   "超古代先兵怪兽佐加"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5.4
+ },
+ "52": {
+  "no": 52,
+  "airDate": "1997-08-30",
+  "airDateSource": "baidu-baike",
+  "titleAlt": "致以辉煌的人们",
+  "titleJa": null,
+  "monsters": [
+   "邪神加坦杰厄"
+  ],
+  "monstersSource": "bilibili-column(tiga)",
+  "viewershipPct": 5
+ }
+}

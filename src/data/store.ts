@@ -77,7 +77,11 @@ export function search(query: string): SearchHit[] {
   const hits: SearchHit[] = [];
 
   for (const e of allEpisodes) {
-    const hay = norm(`${e.titleZh}${e.titleRomaji}${e.series.titleZh}第${e.no}话`);
+    // 登场怪兽也进检索范围，这样搜「哥尔赞」能列出它出场的所有集
+    const hay = norm(
+      `${e.titleZh}${e.titleAlt}${e.titleRomaji}${e.titleJa}${e.series.titleZh}第${e.no}话` +
+        (e.monsters?.join('') ?? ''),
+    );
     if (hay.includes(q)) {
       hits.push({
         kind: 'episode',

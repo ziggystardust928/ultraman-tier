@@ -16,7 +16,9 @@
 | 搜索（单集 / 剧名 / 编剧 / 导演） | ✅ |
 | 编剧导演查询（按人查看全部单集） | ✅ |
 | 评级口径页 | ✅ |
-| 真实图片素材（154 张分集剧照 + 官方海报） | ✅ |
+| 真实图片素材（154 张分集剧照 + 官方海报 + 12 张设计稿） | ✅ |
+| 单集元数据（首播日期 / 登场怪兽 / 收视率） | ✅ |
+| PWA（离线可用、可加到主屏） | ✅ |
 | 贴吧社区分（30% 权重） | ⬜ 待接入 |
 | 新生代剧集（银河 → 奥美迦） | ⬜ 待录入 |
 
@@ -57,11 +59,15 @@
 ```bash
 npm install
 npm run dev        # 开发服务器
-npm run build      # tsc + vite 构建
-npm run preview    # 预览构建产物
+npm run build      # tsc + vite 构建 + 生成 service worker
+npm run serve      # 局域网服务（0.0.0.0:5181），手机可访问
 npm run data       # 改完评级口径后重算数据集
-npm run check      # 移动端布局体检（需先 preview）
+npm run check      # 移动端布局体检（需先 serve）
+npm run check:pwa  # PWA 体检：SW 注册、预缓存、离线渲染、离线深链接
 ```
+
+部署到手机见 [`docs/DEPLOY.md`](docs/DEPLOY.md)。**注意**：PWA 的 Service Worker
+只在 HTTPS 或 localhost 下才能注册，局域网 HTTP 只能当网页用，装不了 App。
 
 ## 目录
 

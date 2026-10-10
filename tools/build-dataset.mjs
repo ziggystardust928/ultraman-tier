@@ -21,9 +21,9 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const QUIET = process.argv.includes('--quiet');
 
 const SERIES = [
-  { id: 'tiga', parent: 'tt0182647', era: 'heisei', year: 1996 },
-  { id: 'dyna', parent: 'tt0184167', era: 'heisei', year: 1997 },
-  { id: 'gaia', parent: 'tt0184168', era: 'heisei', year: 1998 },
+  { id: 'tiga', parent: 'tt0182647', era: 'heisei', year: 1996, titleJa: 'ウルトラマンティガ', titleEn: 'Ultraman Tiga' },
+  { id: 'dyna', parent: 'tt0184167', era: 'heisei', year: 1997, titleJa: 'ウルトラマンダイナ', titleEn: 'Ultraman Dyna' },
+  { id: 'gaia', parent: 'tt0184168', era: 'heisei', year: 1998, titleJa: 'ウルトラマンガイア', titleEn: 'Ultraman Gaia' },
 ];
 
 const slug = (s) =>
@@ -117,8 +117,9 @@ for (const s of SERIES) {
   out.series.push({
     id: s.id,
     titleZh: bili.title,
-    titleJa: bili.org_title,
-    titleEn: imdb.episodes.find((e) => e.parentTconst === s.parent)?.primaryTitle ?? null,
+    // Bilibili 的 org_title 有的返回日文原名、有的返回中文，统一用配置里的日文原名
+    titleJa: s.titleJa,
+    titleEn: s.titleEn,
     year: s.year,
     era: s.era,
     episodeCount: episodes.length,

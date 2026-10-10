@@ -1,0 +1,52 @@
+/* ============================================================
+   设计令牌 —— 简约扁平 / 编辑感（Radiohead 式）
+   规则：不使用阴影与渐变装饰，只用 1px 细线、实色块、大字排版。
+   ============================================================ */
+:root {
+  /* 底色：近黑，三层表面 */
+  --bg: #0a0a0b;
+  --surface: #131316;
+  --surface-2: #1b1b20;
+  --surface-3: #24242b;
+
+  /* 细线 */
+  --line: #2b2b33;
+  --line-soft: #1e1e24;
+
+  /* 文字三级 */
+  --fg: #f4f4f5;
+  --fg-2: #a3a3ad;
+  --fg-3: #6a6a75;
+  --fg-4: #48484f;
+
+  /* 剧集主色 */
+  --tiga: #8b5cf6;
+  --dyna: #3b82f6;
+  --gaia: #ef4444;
+  --newgen: #14b8a6;
+
+  /* 分档色（与 tier-config.json 对齐） */
+  --tier-kamikai: #c026d3;
+  --tier-kakai: #2563eb;
+  --tier-ryokai: #0891b2;
+  --tier-heikai: #64748b;
+  --tier-rankai: #b91c1c;
+
+  /* 尺寸 */
+  --radius: 12px;
+  --radius-sm: 7px;
+  --radius-lg: 18px;
+
+  --pad: 18px;
+  --app-max: 480px;
+  --tabbar-h: 56px;
+  --appbar-h: 52px;
+  --safe-b: env(safe-area-inset-bottom, 0px);
+  --safe-t: env(safe-area-inset-top, 0px);
+
+  /* 字族：中文移动端优先系统字体 */
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans SC', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Mono', Menlo, Consolas, monospace;
+  --font-num: 'Helvetica Neue', Inter, system-ui, sans-serif;
+}

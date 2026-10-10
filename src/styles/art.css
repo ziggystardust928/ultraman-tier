@@ -1,0 +1,136 @@
+/* ============================================================
+   生成的封面 / 瓦片艺术
+   全部是内联 SVG，无外部图片依赖。
+   真图接入后：给 Series 加 photos 字段，替换 <PhotoTile> 即可。
+   ============================================================ */
+
+.cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--cover-bg, #16161a);
+  display: block;
+}
+
+.cover svg.cover-art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.cover-type {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px 12px 13px;
+  gap: 6px;
+  z-index: 2;
+}
+
+.cover-en {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.62);
+  margin-bottom: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cover-zh {
+  font-size: var(--cover-zh, 26px);
+  line-height: 0.98;
+  font-weight: 850;
+  letter-spacing: -0.03em;
+  color: #fff;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
+}
+
+.cover-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.cover-year {
+  font-family: var(--font-num);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.85);
+  font-variant-numeric: tabular-nums;
+}
+
+.cover-tag {
+  font-size: 8.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* 小海报变体（列表用） */
+.cover-sm .cover-zh {
+  font-size: 15px;
+}
+.cover-sm .cover-type {
+  padding: 8px 8px 9px;
+  gap: 3px;
+}
+.cover-sm .cover-en {
+  font-size: 6px;
+  letter-spacing: 0.14em;
+}
+.cover-sm .cover-year {
+  font-size: 8px;
+}
+
+/* 大封面变体（首页 hero 用） */
+.cover-lg .cover-zh {
+  font-size: 40px;
+}
+.cover-lg .cover-type {
+  padding: 18px 16px 20px;
+  gap: 10px;
+}
+.cover-lg .cover-en {
+  font-size: 9px;
+}
+.cover-lg .cover-year {
+  font-size: 12px;
+}
+
+/* ------------------------------------------------------------
+   照片墙瓦片
+   ------------------------------------------------------------ */
+.photo-tile {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.photo-tile svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.photo-tile .tile-label {
+  position: absolute;
+  left: 7px;
+  bottom: 6px;
+  z-index: 2;
+}

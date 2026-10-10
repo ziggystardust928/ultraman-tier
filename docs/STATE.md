@@ -28,13 +28,41 @@
 - [x] 中文分集标题、官方时长、中文演职员、剧集简介
 - [x] 人名映射表（罗马字 ↔ 中文）
 - [x] 评级模型 v0.2（百分位分档，每剧各 14 集神回）
-- [ ] **App 工程脚手架（Vite + React + TS）**  ← 当前进度
-- [ ] 首页（Radiohead 风）
-- [ ] 剧集库 / 剧集详情 / 单集详情
-- [ ] 分级榜（含 神回顶/佳/守，平成与新生代分开）
-- [ ] 搜索
-- [ ] 编剧导演查询
-- [ ] 评级口径页
+- [x] **App 工程脚手架（Vite + React + TS）**
+- [x] 首页（Radiohead 风：左封面 / 右照片墙 / 下方信息条入口）
+- [x] 剧集库 / 剧集详情 / 单集详情
+- [x] 分级榜（含 神回顶/佳/守 三分档，平成与新生代分开）
+- [x] 搜索（单集名 / 罗马字 / 剧名 / 编剧导演）
+- [x] 编剧导演查询（列表 + 个人全部单集，按剧分组）
+- [x] 评级口径页
+- [x] 移动端布局体检工具（puppeteer-core，11 条路由 × 两种视口全绿）
+
+- [ ] 接入贴吧社区分（30% 权重）
+- [ ] 新生代剧集数据（银河 → 奥美迦）
+- [ ] PWA（manifest + service worker + 离线）
+- [ ] 用户自己的评分/收藏（需要后端或本地存储）
+- [ ] 真实剧照替换生成的占位艺术
+
+## 怎么跑
+
+```bash
+npm install
+npm run dev        # 开发服务器
+npm run build      # 构建（tsc + vite）
+npm run preview    # 预览构建产物
+npm run data       # 改完 tier-config.json 后重算分档
+npm run check      # 移动端布局体检（需先 preview）
+```
+
+## 验证能力（重要）
+
+`tools/visual-check.mjs` 用系统 Chrome 做真实浏览器验证：
+- 逐路由检查 `documentElement.scrollWidth > clientWidth`（横向溢出）
+- 列出所有越界元素，并跳过 SVG 内部图形与可滚动祖先内的合法溢出
+- 逐路由截图到 `.cache/shots/`
+
+**不要再用 `chrome --window-size` + `--force-device-scale-factor` 截图**：那套参数会产生内容被裁切的假象，
+看起来像布局 Bug 但其实没有。用 `npm run check`。
 
 ## 数据源勘探结论（重要，别再重复试错）
 

@@ -34,6 +34,13 @@ const slug = (s) =>
     .replace(/^-|-$/g, '')
     .toLowerCase();
 
+// ---------------------------------------------------------------- 图片素材
+// 由 tools/fetch-images.mjs 从 Bilibili 图床下载到 public/img/
+const PUBLIC = path.join(ROOT, 'public');
+const stillRel = (sid, no) => `img/${sid}/ep/${String(no).padStart(2, '0')}.webp`;
+const imgExists = (rel) => fs.existsSync(path.join(PUBLIC, rel));
+const imgOrNull = (rel) => (imgExists(rel) ? rel : null);
+
 // ---------------------------------------------------------------- load
 const imdb = read('data/raw/imdb-heisei3.json');
 const nameMap = read('data/curated/name-map.json').people;
@@ -96,6 +103,7 @@ for (const s of SERIES) {
       durationSource: b.duration_min ? 'bilibili' : e.runtimeMinutes ? 'imdb' : null,
       imdb: { rating: e.averageRating ?? null, votes: e.numVotes ?? null, tconst: e.tconst },
       bili: { epId: b.ep_id ?? null, bvid: b.bvid ?? null, durationMs: b.duration_ms ?? null },
+      still: imgOrNull(stillRel(s.id, e.episode)),
       tieba: null,
       directors,
       writers,
@@ -141,7 +149,17 @@ for (const s of SERIES) {
         .filter(Boolean),
       rawText: staffText,
     },
-    cover: null,
+    images: {
+      cover: imgOrNull(`img/${s.id}/cover.webp`),
+      square: imgOrNull(`img/${s.id}/square.webp`),
+      // 均匀取 6 张分集剧照铺首页照片墙（首话 → 最终话）
+      photos:
+        episodes.length > 0
+          ? Array.from({ length: 6 }, (_, i) => episodes[Math.round((i * (episodes.length - 1)) / 5)])
+              .map((e) => ({ src: e.still, no: e.no, label: `第 ${e.no} 话`, title: e.titleZh }))
+              .filter((p) => p.src)
+          : [],
+    },
     episodes,
   });
 }

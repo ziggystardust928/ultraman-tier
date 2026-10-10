@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { dataset, seriesById } from '../data/store';
-import { PhotoTile, SeriesCover, seriesColor } from '../components/art';
+import { PhotoMosaic, SeriesCover } from '../components/art';
 import { AppBar, EpisodeRow } from '../components/ui';
 
 type Sort = 'no' | 'score';
@@ -28,7 +28,6 @@ export default function SeriesDetail() {
   const counts: Record<string, number> = {};
   for (const e of series.episodes) counts[e.tier] = (counts[e.tier] ?? 0) + 1;
   const kamikai = counts.kamikai ?? 0;
-  const color = seriesColor(series.id);
 
   const personOf = (name: string) => dataset.people.find((p) => p.name === name);
 
@@ -36,16 +35,12 @@ export default function SeriesDetail() {
     <div className="screen">
       <AppBar title={series.titleZh} back />
 
-      {/* 头部：封面 + 照片 */}
+      {/* 头部：真实海报 + 剧照 */}
       <div className="detail-hero">
-        <div style={{ borderRight: '1px solid var(--line)', overflow: 'hidden' }}>
-          <SeriesCover series={series} />
+        <div className="detail-cover">
+          <SeriesCover series={series} size="lg" />
         </div>
-        <div className="hero-mosaic">
-          {[0, 1, 2, 3, 4, 5].map((i) => (
-            <PhotoTile key={i} color={color} index={i + 2} />
-          ))}
-        </div>
+        <PhotoMosaic series={series} />
       </div>
 
       <div className="detail-body">

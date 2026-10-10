@@ -1,7 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { allEpisodes, dataset, tierOf } from '../data/store';
 import { AppBar, TierChip } from '../components/ui';
-import { SeriesCover } from '../components/art';
 
 const ERA_LABEL: Record<string, string> = { heisei: '旧平成', newgen: '新生代' };
 
@@ -60,21 +59,20 @@ export default function EpisodeDetail() {
     <div className="screen">
       <AppBar title={`${s.titleZh} 第 ${ep.no} 话`} back />
 
-      {/* 标题区 */}
-      <div className="detail-hero" style={{ height: 200 }}>
-        <div style={{ borderRight: '1px solid var(--line)', overflow: 'hidden' }}>
-          <SeriesCover series={s} />
-        </div>
-        <div style={{ padding: '16px 16px 14px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end' }}>
-          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 9 }}>
+      {/* 头图：本集剧照 + 标题 */}
+      <div className="ep-hero">
+        {ep.still && <img src={ep.still} alt={ep.titleZh ?? ''} />}
+        <div className="ep-hero-grad" />
+        <div className="ep-hero-body">
+          <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
             <TierChip tier={ep.tier} label={ep.tierLabel} large />
             {ep.kamikaiGrade && (
-              <span className="tier-chip tier-chip-lg" data-tier="kamikai" style={{ opacity: 0.8 }}>
+              <span className="tier-chip tier-chip-lg" data-tier="kamikai" style={{ opacity: 0.82 }}>
                 {ep.kamikaiGrade.label}
               </span>
             )}
           </div>
-          <div style={{ fontSize: 21, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.02em' }}>
+          <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.02em' }}>
             {ep.titleZh ?? ep.titleRomaji}
           </div>
           <div className="section-note" style={{ marginTop: 5 }}>

@@ -13,6 +13,34 @@
   display: block;
 }
 
+/* 真实海报：铺满，不叠文字（海报自带剧名） */
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.cover-badge {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  z-index: 2;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: rgba(10, 10, 11, 0.74);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-variant-numeric: tabular-nums;
+}
+.cover-badge-sep {
+  opacity: 0.45;
+  margin: 0 3px;
+}
+
 .cover svg.cover-art {
   position: absolute;
   inset: 0;
@@ -120,12 +148,14 @@
   height: 100%;
 }
 
-.photo-tile svg {
+.photo-tile svg,
+.photo-tile img {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   display: block;
+  object-fit: cover;
 }
 
 .photo-tile .tile-label {

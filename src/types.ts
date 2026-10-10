@@ -23,6 +23,7 @@ export interface Episode {
   durationSource: string | null;
   imdb: { rating: number | null; votes: number | null; tconst: string };
   bili: { epId: number | null; bvid: string | null; durationMs: number | null };
+  still: string | null;
   tieba: { score: number | null; votes: number | null; url: string | null } | null;
   directors: PersonRef[];
   writers: PersonRef[];
@@ -63,7 +64,11 @@ export interface Series {
     cast: string[];
     rawText: string | null;
   };
-  cover: null;
+  images: {
+    cover: string | null;
+    square: string | null;
+    photos: { src: string | null; no: number; label: string; title: string | null }[];
+  };
   episodes: Episode[];
   ratingRange: [number, number];
 }

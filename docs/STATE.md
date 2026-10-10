@@ -36,12 +36,38 @@
 - [x] 编剧导演查询（列表 + 个人全部单集，按剧分组）
 - [x] 评级口径页
 - [x] 移动端布局体检工具（puppeteer-core，11 条路由 × 两种视口全绿）
+- [x] **真实图片素材（154 张分集剧照 + 6 张官方海报）**
 
 - [ ] 接入贴吧社区分（30% 权重）
 - [ ] 新生代剧集数据（银河 → 奥美迦）
 - [ ] PWA（manifest + service worker + 离线）
 - [ ] 用户自己的评分/收藏（需要后端或本地存储）
-- [ ] 真实剧照替换生成的占位艺术
+
+## 图片素材管线（重要，别再踩坑）
+
+**坑 1：Bilibili PGC 的分集 cover 是整季复用的同一张宣传图。**
+实测迪迦 52 集的 `episodes[].cover` MD5 完全相同，`x/web-interface/view` 返回的 `pic` 也一样。
+拿它当分集剧照会让所有缩略图长得一模一样。
+
+**解法：走视频快照接口取真实帧。**
+```
+x/web-interface/view?bvid=<bvid>            → cid
+x/player/videoshot?bvid=&cid=&index=1       → image[] 雪碧图（10 列 × 480×270）
+```
+再用 `tools/crop-stills.py`（Pillow）从雪碧图裁一帧。
+
+**坑 2：修复版有左右黑边。** 原片是 4:3，B 站 HD 修复版是 16:9 带 pillarbox。
+`crop-stills.py` 里的 `trim_black()` 逐列看平均亮度自动裁掉黑边，再按 4:3 出 480×360。
+
+产物：`public/img/<series>/ep/<nn>.webp`（154 张，合计约 1.6 MB）
+
+| 脚本 | 作用 |
+| --- | --- |
+| `tools/fetch-images.mjs` | 下载官方海报 + 方图（B 站图床 `@440w_586h_1c.webp` 后缀压缩，原图 389KB → 8.8KB） |
+| `tools/fetch-videoshot.mjs` | 取全部 cid + 雪碧图，下载到 `.cache/videoshot/`（约 86 MB，可删，删了会重下） |
+| `tools/crop-stills.py` | 从雪碧图裁帧、去黑边、出 480×360 webp |
+| `tools/contact-sheet.py` | 把一部剧的全部剧照拼成一张总览图，**一次性检查取帧质量**（省 token） |
+
 
 ## 怎么跑
 

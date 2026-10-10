@@ -10,24 +10,31 @@
 | 首页（左封面 / 右剧照墙，下方入口条） | ✅ |
 | 剧集库（旧平成 / 新生代分栏） | ✅ |
 | 剧集详情（简介、年份、演职人员、分集表） | ✅ |
-| 单集详情（名称、时长、编剧、导演、评分明细） | ✅ |
-| 分级榜（神回 / 佳回 / 良回 / 平回 / 烂回） | ✅ |
+| 单集详情（剧照头图、名称、时长、编剧、导演、评分明细） | ✅ |
+| 分级榜（神回 / 佳回 / 良回 / 平回 / 烂回，带缩略图） | ✅ |
 | 神回三分档（神回顶 / 神回佳 / 神回守） | ✅ |
 | 搜索（单集 / 剧名 / 编剧 / 导演） | ✅ |
 | 编剧导演查询（按人查看全部单集） | ✅ |
 | 评级口径页 | ✅ |
+| 真实图片素材（154 张分集剧照 + 官方海报） | ✅ |
 | 贴吧社区分（30% 权重） | ⬜ 待接入 |
 | 新生代剧集（银河 → 奥美迦） | ⬜ 待录入 |
 
 ## 数据
 
-**154 集**（迪迦 52 / 戴拿 51 / 盖亚 51），**39 位**编剧导演，逐集都有中文标题、正片时长、编剧、导演、IMDb 评分与票数。
+**154 集**（迪迦 52 / 戴拿 51 / 盖亚 51），**39 位**编剧导演，逐集都有中文标题、正片时长、编剧、导演、IMDb 评分与票数，以及**一张真实剧照**。
 
 | 来源 | 用到什么 |
 | --- | --- |
 | [IMDb 官方数据集](https://datasets.imdbws.com/) | 逐集评分、票数、编剧、导演、时长 |
-| 哔哩哔哩番剧 PGC API | 官方中文分集标题、正片时长、中文演职员名单、剧集简介 |
+| 哔哩哔哩番剧 PGC API | 官方中文分集标题、正片时长、中文演职员名单、剧集简介、官方海报 |
+| 哔哩哔哩视频快照 API | 154 张**真实分集剧照**（从视频帧雪碧图裁出） |
 | `data/curated/name-map.json` | IMDb 罗马字 ↔ 中日文姓名映射 |
+
+图片全部本地化（`public/img/`，约 1.6 MB），App 不依赖任何外部图床。
+
+> ⚠️ Bilibili 给整季复用了同一张宣传图当分集封面（实测迪迦 52 集的 MD5 完全相同）。
+> 真实剧照是从 `x/player/videoshot` 的视频帧雪碧图里裁出来的，详见 [`docs/STATE.md`](docs/STATE.md)。
 
 贴吧社区分需要登录态，尚未接入；当前分档为 IMDb 单一来源预评，App 内已标注。
 
@@ -61,19 +68,24 @@ npm run check      # 移动端布局体检（需先 preview）
 ```
 data/
   curated/   评级口径配置、人名映射表          ← 手改这里
-  raw/       IMDb / Bilibili 抓取结果          ← 由 tools 生成
+  raw/       IMDb / Bilibili / 快照抓取结果    ← 由 tools 生成
   dist/      dataset.json，App 唯一数据源      ← 由 tools 生成
+public/img/  154 张分集剧照 + 官方海报        ← 由 tools 生成
 src/
   data/      数据访问层与搜索
-  components/ UI 组件 + 生成的封面艺术
+  components/ UI 组件 + 封面兜底艺术
   pages/     9 个页面
   styles/    设计令牌 / 布局 / 封面艺术
 tools/
-  imdb-extract.mjs   IMDb 官方数据集抽取器（重活，少跑）
-  bili-fetch.mjs     Bilibili PGC 抓取器
-  build-dataset.mjs  合并 + 评级（轻活）
-  visual-check.mjs   真实浏览器布局体检 + 截图
-docs/STATE.md        断点续做状态、数据源勘探结论、防死机规范
+  imdb-extract.mjs     IMDb 官方数据集抽取器（重活，少跑）
+  bili-fetch.mjs       Bilibili PGC 抓取器
+  fetch-images.mjs     下载官方海报
+  fetch-videoshot.mjs  取视频帧雪碧图
+  crop-stills.py       裁出真实分集剧照（自动去黑边）
+  contact-sheet.py     剧照总览图，一次性检查取帧质量
+  build-dataset.mjs    合并 + 评级（轻活）
+  visual-check.mjs     真实浏览器布局体检 + 截图
+docs/STATE.md          断点续做状态、数据源勘探结论、防死机规范
 ```
 
 ## 工程约定

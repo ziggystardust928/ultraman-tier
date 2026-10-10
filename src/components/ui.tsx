@@ -112,14 +112,22 @@ export function TierBar({ counts, total }: { counts: Record<string, number>; tot
 export function EpisodeRow({ ep, showSeries }: { ep: FlatEpisode; showSeries?: boolean }) {
   const parts: string[] = [];
   if (showSeries) parts.push(ep.series.titleZh);
-  parts.push(`第 ${ep.no} 话`);
+  // 有缩略图时集号已标在图上，副标题就不重复了
+  if (!ep.still) parts.push(`第 ${ep.no} 话`);
   if (ep.durationMin) parts.push(`${ep.durationMin} 分钟`);
   if (ep.directors[0]) parts.push(`导 ${ep.directors[0].name}`);
   if (ep.writers[0]) parts.push(`编 ${ep.writers[0].name}`);
 
   return (
     <Link className="ep-row" to={`/ep/${ep.id}`}>
-      <span className="ep-no">{ep.no}</span>
+      {ep.still ? (
+        <span className="ep-thumb">
+          <img src={ep.still} alt="" loading="lazy" decoding="async" />
+          <span className="ep-thumb-no">{ep.no}</span>
+        </span>
+      ) : (
+        <span className="ep-no">{ep.no}</span>
+      )}
       <TierBadge ep={ep} />
       <span className="ep-main">
         <span className="ep-title">{ep.titleZh ?? ep.titleRomaji ?? `第${ep.no}话`}</span>

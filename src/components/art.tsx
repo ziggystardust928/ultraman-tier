@@ -1,14 +1,14 @@
+import { Link } from 'react-router-dom';
 import type { Series } from '../types';
 
 /* ============================================================
-   剧集配色 & 封面母题
+   剧集配色 & 封面母题（仅在缺图时作为兜底使用）
    ============================================================ */
 
 type Motif = 'rings' | 'rays' | 'peak' | 'grid';
 
 const FALLBACK_COLORS = ['#8b5cf6', '#3b82f6', '#ef4444', '#14b8a6', '#f59e0b', '#ec4899'];
 
-/** Deterministic colour for any series id (newgen series get stable fallbacks). */
 export function seriesColor(id: string): string {
   const known: Record<string, string> = { tiga: '#8b5cf6', dyna: '#3b82f6', gaia: '#ef4444' };
   if (known[id]) return known[id];
@@ -18,7 +18,7 @@ export function seriesColor(id: string): string {
 }
 
 const MOTIFS: Record<string, Motif> = { tiga: 'rings', dyna: 'rays', gaia: 'peak' };
-export function seriesMotif(id: string): Motif {
+function seriesMotif(id: string): Motif {
   if (MOTIFS[id]) return MOTIFS[id];
   const order: Motif[] = ['rings', 'rays', 'peak', 'grid'];
   let h = 0;
@@ -27,7 +27,7 @@ export function seriesMotif(id: string): Motif {
 }
 
 /* ============================================================
-   封面主视觉
+   兜底封面艺术（没有真实海报时才用）
    ============================================================ */
 
 function CoverArt({ motif, color }: { motif: Motif; color: string }) {
@@ -41,10 +41,8 @@ function CoverArt({ motif, color }: { motif: Motif; color: string }) {
           <circle cx="74" cy="40" r="30" fill="#0e0e12" opacity="0.55" />
           <circle cx="74" cy="40" r="13" fill={color} />
           <rect x="0" y="96" width="100" height="2" fill={color} opacity="0.8" />
-          <rect x="0" y="104" width="58" height="1" fill="#fff" opacity="0.18" />
         </>
       )}
-
       {motif === 'rays' && (
         <>
           <rect x="-30" y="-10" width="150" height="150" fill={color} transform="rotate(-24 50 70)" />
@@ -60,30 +58,23 @@ function CoverArt({ motif, color }: { motif: Motif; color: string }) {
               transform="rotate(-24 50 70)"
             />
           ))}
-          <circle cx="30" cy="34" r="11" fill="#0e0e12" opacity="0.55" />
         </>
       )}
-
       {motif === 'peak' && (
         <>
           <polygon points="50,-6 118,150 -18,150" fill={color} />
           <polygon points="50,26 96,150 4,150" fill="#0e0e12" opacity="0.42" />
           <circle cx="50" cy="30" r="15" fill={color} />
-          <circle cx="50" cy="30" r="6" fill="#0e0e12" opacity="0.6" />
         </>
       )}
-
       {motif === 'grid' && (
         <>
           <rect width="100" height="140" fill={color} opacity="0.22" />
           {Array.from({ length: 40 }).map((_, i) => (
             <circle key={i} cx={(i % 8) * 14 + 6} cy={Math.floor(i / 8) * 26 + 10} r="3.4" fill={color} />
           ))}
-          <rect x="0" y="88" width="100" height="52" fill="#0e0e12" opacity="0.68" />
         </>
       )}
-
-      {/* 底部压暗，保证文字可读 */}
       <rect x="0" y="92" width="100" height="48" fill="#0e0e12" opacity="0.72" />
     </svg>
   );
@@ -96,12 +87,34 @@ function breakTitle(zh: string): string {
   return zh;
 }
 
+/* ============================================================
+   剧集封面
+   有真实海报时直接铺满，不叠文字（海报自带剧名）。
+   没有海报时退回生成艺术 + 文字。
+   ============================================================ */
+
 export function SeriesCover({ series, size = 'md' }: { series: Series; size?: 'sm' | 'md' | 'lg' }) {
-  const color = seriesColor(series.id);
   const cls = ['cover', size === 'sm' && 'cover-sm', size === 'lg' && 'cover-lg'].filter(Boolean).join(' ');
+  const src = size === 'sm' ? (series.images?.square ?? series.images?.cover) : (series.images?.cover ?? series.images?.square);
+
+  if (src) {
+    return (
+      <div className={cls}>
+        <img className="cover-img" src={src} alt={series.titleZh} loading="lazy" decoding="async" />
+        {size !== 'lg' && (
+          <span className="cover-badge">
+            {series.year}
+            <span className="cover-badge-sep">·</span>
+            {series.episodeCount} 话
+          </span>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div className={cls}>
-      <CoverArt motif={seriesMotif(series.id)} color={color} />
+      <CoverArt motif={seriesMotif(series.id)} color={seriesColor(series.id)} />
       <div className="cover-type">
         <span className="cover-en">{series.titleEn ?? series.titleJa}</span>
         <span className="cover-zh" style={{ whiteSpace: 'pre-line' }}>
@@ -117,72 +130,64 @@ export function SeriesCover({ series, size = 'md' }: { series: Series; size?: 's
 }
 
 /* ============================================================
-   照片墙瓦片
-   真图接入后：把 <TileArt> 换成 <img src={...}> 即可。
+   剧照瓦片
    ============================================================ */
 
-const TILE_LABELS = ['剧照', '舞台剧', '周边', '海报', '设定集', '写真', '活动现场', '特典'];
+const TILE_LABELS = ['剧照', '舞台剧', '周边', '海报', '设定集', '写真'];
 
-export function PhotoTile({ color, index, label }: { color: string; index: number; label?: string }) {
+/** 真实剧照；点进去看对应单集。没有图片时退回扁平占位图形。 */
+export function PhotoTile({
+  series,
+  photo,
+  index,
+}: {
+  series: Series;
+  photo?: { src: string | null; no: number; label: string; title: string | null };
+  index: number;
+}) {
+  if (photo?.src) {
+    return (
+      <Link className="photo-tile" to={`/ep/${series.id}-${photo.no}`} title={photo.title ?? photo.label}>
+        <img src={photo.src} alt={photo.title ?? photo.label} loading="lazy" decoding="async" />
+        <span className="tile-label">{photo.label}</span>
+      </Link>
+    );
+  }
+
+  const color = seriesColor(series.id);
   const variant = index % 6;
   return (
     <div className="photo-tile">
       <svg viewBox="0 0 60 60" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
         <rect width="60" height="60" fill="#16161b" />
-        {variant === 0 && (
-          <>
-            <circle cx="46" cy="18" r="26" fill={color} />
-            <circle cx="46" cy="18" r="12" fill="#16161b" opacity="0.5" />
-            <rect x="0" y="44" width="60" height="1" fill="#fff" opacity="0.12" />
-          </>
-        )}
-        {variant === 1 && (
-          <>
-            <polygon points="0,60 60,0 60,60" fill={color} opacity="0.9" />
-            <polygon points="0,60 34,26 60,52 60,60" fill="#16161b" opacity="0.55" />
-          </>
-        )}
-        {variant === 2 && (
-          <>
-            {[0, 1, 2, 3].map((i) => (
-              <circle key={i} cx="8" cy="52" r={10 + i * 11} fill="none" stroke={color} strokeWidth="2.2" opacity={0.85 - i * 0.16} />
-            ))}
-          </>
-        )}
-        {variant === 3 && (
-          <>
-            <rect x="0" y="0" width="60" height="60" fill={color} opacity="0.2" />
-            {Array.from({ length: 12 }).map((_, i) => (
-              <rect key={i} x={(i % 4) * 15 + 4} y={Math.floor(i / 4) * 20 + 5} width="8" height="8" fill={color} />
-            ))}
-          </>
-        )}
-        {variant === 4 && (
-          <>
-            <polygon points="30,-4 68,64 -8,64" fill={color} />
-            <polygon points="30,20 52,60 8,60" fill="#16161b" opacity="0.5" />
-          </>
-        )}
-        {variant === 5 && (
-          <>
-            {[0, 1, 2, 3, 4].map((i) => (
-              <rect key={i} x="0" y={i * 12 + 3} width={i % 2 ? 38 : 58} height={i % 2 ? 7 : 4} fill={color} opacity={0.9 - i * 0.13} />
-            ))}
-          </>
-        )}
+        {variant === 0 && <circle cx="46" cy="18" r="26" fill={color} />}
+        {variant === 1 && <polygon points="0,60 60,0 60,60" fill={color} opacity="0.9" />}
+        {variant === 2 &&
+          [0, 1, 2, 3].map((i) => (
+            <circle key={i} cx="8" cy="52" r={10 + i * 11} fill="none" stroke={color} strokeWidth="2.2" opacity={0.85 - i * 0.16} />
+          ))}
+        {variant === 3 &&
+          Array.from({ length: 12 }).map((_, i) => (
+            <rect key={i} x={(i % 4) * 15 + 4} y={Math.floor(i / 4) * 20 + 5} width="8" height="8" fill={color} />
+          ))}
+        {variant === 4 && <polygon points="30,-4 68,64 -8,64" fill={color} />}
+        {variant === 5 &&
+          [0, 1, 2, 3, 4].map((i) => (
+            <rect key={i} x="0" y={i * 12 + 3} width={i % 2 ? 38 : 58} height={i % 2 ? 7 : 4} fill={color} opacity={0.9 - i * 0.13} />
+          ))}
       </svg>
-      <span className="tile-label">{label ?? TILE_LABELS[index % TILE_LABELS.length]}</span>
+      <span className="tile-label">{TILE_LABELS[index % TILE_LABELS.length]}</span>
     </div>
   );
 }
 
-/** 首页右侧 2×3 照片墙。 */
+/** 首页右侧剧照拼贴：2×3 六格，方形裁切 */
 export function PhotoMosaic({ series, count = 6 }: { series: Series; count?: number }) {
-  const color = seriesColor(series.id);
+  const photos = (series.images?.photos ?? []).slice(0, count);
   return (
     <div className="hero-mosaic">
       {Array.from({ length: count }).map((_, i) => (
-        <PhotoTile key={i} color={color} index={i} />
+        <PhotoTile key={i} series={series} photo={photos[i]} index={i} />
       ))}
     </div>
   );

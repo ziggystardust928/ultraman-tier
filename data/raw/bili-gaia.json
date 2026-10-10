@@ -28,6 +28,9 @@
     "weekday": 0
   },
   "total": 51,
+  "cover": "http://i0.hdslb.com/bfs/bangumi/image/598dc24c8510aa8befedb60036fe3f0b492e74e7.png",
+  "square_cover": "http://i0.hdslb.com/bfs/bangumi/image/9e5e5581cac621f4a60de694ad702a85feafd80f.png",
+  "season_cover": null,
   "episodes": [
     {
       "ep_id": 403079,
@@ -38,7 +41,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Sf4y1a7TD"
+      "bvid": "BV1Sf4y1a7TD",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403080,
@@ -49,7 +53,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1YV411E7W7"
+      "bvid": "BV1YV411E7W7",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403081,
@@ -60,7 +65,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1R64y127Eu"
+      "bvid": "BV1R64y127Eu",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403082,
@@ -71,7 +77,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1rv41157fo"
+      "bvid": "BV1rv41157fo",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403083,
@@ -82,7 +89,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1nQ4y1o7hr"
+      "bvid": "BV1nQ4y1o7hr",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403084,
@@ -93,7 +101,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1JU4y1t7pU"
+      "bvid": "BV1JU4y1t7pU",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403085,
@@ -104,7 +113,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1vQ4y1o73T"
+      "bvid": "BV1vQ4y1o73T",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403086,
@@ -115,7 +125,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Ah411v7k6"
+      "bvid": "BV1Ah411v7k6",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403087,
@@ -126,7 +137,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1X541137N7"
+      "bvid": "BV1X541137N7",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403088,
@@ -137,7 +149,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Eo4y1m7wL"
+      "bvid": "BV1Eo4y1m7wL",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403089,
@@ -148,7 +161,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1H5411u7b8"
+      "bvid": "BV1H5411u7b8",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403090,
@@ -159,7 +173,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Zf4y1a77u"
+      "bvid": "BV1Zf4y1a77u",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403091,
@@ -170,7 +185,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Uf4y1a7Do"
+      "bvid": "BV1Uf4y1a7Do",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403092,
@@ -181,7 +197,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1164y1C7qG"
+      "bvid": "BV1164y1C7qG",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403093,
@@ -192,7 +209,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1NQ4y1o7pn"
+      "bvid": "BV1NQ4y1o7pn",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403094,
@@ -203,7 +221,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Q64y127RN"
+      "bvid": "BV1Q64y127RN",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403095,
@@ -214,7 +233,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1664y1C7V7"
+      "bvid": "BV1664y1C7V7",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403096,
@@ -225,7 +245,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1e64y1C7Ln"
+      "bvid": "BV1e64y1C7Ln",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403097,
@@ -236,7 +257,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1bb4y1f7VF"
+      "bvid": "BV1bb4y1f7VF",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403098,
@@ -247,7 +269,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1yq4y1771Q"
+      "bvid": "BV1yq4y1771Q",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403099,
@@ -258,7 +281,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1bQ4y1o77Y"
+      "bvid": "BV1bQ4y1o77Y",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403100,
@@ -269,7 +293,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV17Q4y1o72f"
+      "bvid": "BV17Q4y1o72f",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403101,
@@ -280,7 +305,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1hU4y1t7N2"
+      "bvid": "BV1hU4y1t7N2",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403102,
@@ -291,7 +317,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV15h411v7NZ"
+      "bvid": "BV15h411v7NZ",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403103,
@@ -302,7 +329,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1jA411G7Cs"
+      "bvid": "BV1jA411G7Cs",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403104,
@@ -313,7 +341,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1g54y1L7em"
+      "bvid": "BV1g54y1L7em",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403105,
@@ -324,7 +353,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1t541137hD"
+      "bvid": "BV1t541137hD",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403106,
@@ -335,7 +365,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1NB4y1F7q5"
+      "bvid": "BV1NB4y1F7q5",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403107,
@@ -346,7 +377,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Mh411v7o3"
+      "bvid": "BV1Mh411v7o3",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403108,
@@ -357,7 +389,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1bK4y1d7ee"
+      "bvid": "BV1bK4y1d7ee",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403109,
@@ -368,7 +401,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1G5411u79F"
+      "bvid": "BV1G5411u79F",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403110,
@@ -379,7 +413,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Th411U7bz"
+      "bvid": "BV1Th411U7bz",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403111,
@@ -390,7 +425,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1hK4y197zq"
+      "bvid": "BV1hK4y197zq",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403112,
@@ -401,7 +437,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1S541137p7"
+      "bvid": "BV1S541137p7",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403113,
@@ -412,7 +449,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1M64y1m7Ku"
+      "bvid": "BV1M64y1m7Ku",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403114,
@@ -423,7 +461,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1aQ4y1o7Pu"
+      "bvid": "BV1aQ4y1o7Pu",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403115,
@@ -434,7 +473,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1X44y167F7"
+      "bvid": "BV1X44y167F7",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403116,
@@ -445,7 +485,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1vA411G71F"
+      "bvid": "BV1vA411G71F",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403117,
@@ -456,7 +497,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV12q4y177jJ"
+      "bvid": "BV12q4y177jJ",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403118,
@@ -467,7 +509,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1ub4y1f7kQ"
+      "bvid": "BV1ub4y1f7kQ",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403119,
@@ -478,7 +521,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1dq4y1f7dH"
+      "bvid": "BV1dq4y1f7dH",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403120,
@@ -489,7 +533,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1aK4y1A7D8"
+      "bvid": "BV1aK4y1A7D8",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403121,
@@ -500,7 +545,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1xV411E713"
+      "bvid": "BV1xV411E713",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403122,
@@ -511,7 +557,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1BK4y1A7NP"
+      "bvid": "BV1BK4y1A7NP",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403123,
@@ -522,7 +569,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1yq4y1f7rU"
+      "bvid": "BV1yq4y1f7rU",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403124,
@@ -533,7 +581,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1Uf4y1a7Xo"
+      "bvid": "BV1Uf4y1a7Xo",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403125,
@@ -544,7 +593,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV12U4y1t7qb"
+      "bvid": "BV12U4y1t7qb",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403126,
@@ -555,7 +605,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1z541137QZ"
+      "bvid": "BV1z541137QZ",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403127,
@@ -566,7 +617,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV1p5411u7gH"
+      "bvid": "BV1p5411u7gH",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403128,
@@ -577,7 +629,8 @@
       "duration_min": 24,
       "pub_time": 1621612801,
       "pub_index": null,
-      "bvid": "BV13b4y1f7Kq"
+      "bvid": "BV13b4y1f7Kq",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     },
     {
       "ep_id": 403129,
@@ -588,7 +641,8 @@
       "duration_min": 24,
       "pub_time": 1621612803,
       "pub_index": null,
-      "bvid": "BV1c64y1m7g5"
+      "bvid": "BV1c64y1m7g5",
+      "cover": "http://i0.hdslb.com/bfs/archive/9d7c5581f94c883afff61e5026774ff0d0f1a28b.jpg"
     }
   ],
   "section_titles": [

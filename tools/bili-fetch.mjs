@@ -93,6 +93,7 @@ async function season(seasonId) {
     pub_time: e.pub_time ?? null,
     pub_index: e.pub_index ?? null,
     bvid: e.bvid ?? null,
+    cover: e.cover ?? null,
   }));
   return {
     season_id: r.season_id,
@@ -103,6 +104,9 @@ async function season(seasonId) {
     rating: r.rating ?? null,
     publish: r.publish ?? null,
     total: r.total ?? eps.length,
+    cover: r.cover ?? null,
+    square_cover: r.square_cover ?? null,
+    season_cover: r.season_cover ?? null,
     episodes: eps,
     section_titles: (r.section ?? []).flatMap((s) => [stripTags(s.title), ...(s.episodes ?? []).map((e) => stripTags(e.title))]),
   };

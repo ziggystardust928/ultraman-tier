@@ -141,53 +141,54 @@ git(['remote', 'remove', 'origin'], { allowFail: true });
 git(['remote', 'add', 'origin', `https://github.com/${login}/${REPO}.git`]);
 console.log(`  ✓ origin 已设为 ${htmlUrl}（不含 token）`);
 
-// ------------------------------------------------------------------ 5. 开 Pages
-console.log('[5/6] 开启 GitHub Pages（Actions 方式）…');
+// ------------------------------------------------------------------ 5. 开 Pages（尽力而为）
+// 注意：Pages API 在新仓库上经常返回 404。真正的开启动作交给工作流里的
+// actions/configure-pages（带 enablement: true），这里只是先试一下。
+console.log('[5/6] 尝试开启 GitHub Pages…');
 const pages = await api('PUT', `/repos/${login}/${REPO}/pages`, { build_type: 'workflow' });
 if (pages.ok || pages.status === 409) {
-  console.log('  ✓ Pages 已启用，源为 GitHub Actions');
+  console.log('  ✓ 已启用，源为 GitHub Actions');
 } else {
-  console.log(`  ⚠ 启用 Pages 返回 HTTP ${pages.status}: ${pages.json?.message ?? ''}`);
-  console.log(`    可以稍后到 ${htmlUrl}/settings/pages 手动把 Source 选成 GitHub Actions`);
+  console.log(`  跳过（HTTP ${pages.status}）。工作流里的 configure-pages 会自动开启，无需手动处理`);
 }
 
-// ------------------------------------------------------------------ 6. 触发并等待
-console.log('[6/6] 触发工作流…');
-const dispatch = await api('POST', `/repos/${login}/${REPO}/actions/workflows/deploy.yml/dispatches`, {
-  ref: 'main',
-});
-if (dispatch.status === 204) {
-  console.log('  ✓ 已触发');
-} else {
-  console.log(`  ⚠ 触发返回 HTTP ${dispatch.status}（push 本身也会触发，可忽略）`);
+// ------------------------------------------------------------------ 6. 等构建
+// 只等 push 触发的那次。之前这里额外调了一次 workflow_dispatch，
+// 结果两次运行在 concurrency 组里互相取消，轮询还刚好取到了被取消的那次，
+// 误报成构建失败。
+console.log('[6/6] 等待构建（push 已触发，约 1-2 分钟）…');
+
+let run = null;
+for (let i = 0; i < 20 && !run; i++) {
+  await new Promise((r) => setTimeout(r, 5000));
+  const runs = await api('GET', `/repos/${login}/${REPO}/actions/runs?per_page=10`);
+  const list = (runs.json?.workflow_runs ?? [])
+    .filter((r) => r.event === 'push' && r.conclusion !== 'cancelled')
+    .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+  run = list[0] ?? null;
+}
+
+if (run) {
+  for (let i = 0; i < 40; i++) {
+    const cur = await api('GET', `/repos/${login}/${REPO}/actions/runs/${run.id}`);
+    const status = cur.json?.status;
+    const concl = cur.json?.conclusion;
+    process.stdout.write(`\r  构建 ${status}${concl ? ` / ${concl}` : ''}   `);
+    if (status === 'completed') {
+      console.log('');
+      if (concl === 'success') console.log('✓ 构建并部署成功');
+      else console.log(`✗ 构建未通过，日志：${run.html_url}`);
+      break;
+    }
+    await new Promise((r) => setTimeout(r, 10000));
+  }
 }
 
 console.log('\n' + '─'.repeat(56));
 console.log(`仓库：${htmlUrl}`);
-console.log(`构建进度：${htmlUrl}/actions`);
-console.log(`Pages 设置：${htmlUrl}/settings/pages`);
-console.log(`\n部署完成后访问（首次构建约 1-2 分钟）：\n  ${pagesUrl}`);
+console.log(`构建日志：${htmlUrl}/actions`);
+console.log(`\n访问地址（首次部署生效需 1-2 分钟）：\n  ${pagesUrl}`);
 console.log('─'.repeat(56));
-
-// 轮询一下构建状态
-for (let i = 0; i < 20; i++) {
-  await new Promise((r) => setTimeout(r, 15000));
-  const runs = await api('GET', `/repos/${login}/${REPO}/actions/runs?per_page=1`);
-  const run = runs.json?.workflow_runs?.[0];
-  if (!run) continue;
-  const status = run.status;
-  const concl = run.conclusion;
-  process.stdout.write(`\r  构建 ${status}${concl ? ` / ${concl}` : ''}   `);
-  if (status === 'completed') {
-    console.log('');
-    if (concl === 'success') {
-      console.log(`✓ 部署成功，访问 ${pagesUrl}`);
-    } else {
-      console.log(`✗ 构建失败，日志：${run.html_url}`);
-    }
-    break;
-  }
-}
 
 fs.writeFileSync(
   path.join(ROOT, '.cache', 'deploy-result.json'),

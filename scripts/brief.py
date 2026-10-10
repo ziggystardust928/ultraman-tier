@@ -21,7 +21,7 @@ for e in d:
         if f"第{n}話" not in p and f"第{n}・" not in p and f"・第{n}話" not in p:
             continue
         seen.add(p)
-        paras.append(p[:900])
+        paras.append(p[:650])
     out.append({"no": n, "title_ja": title, "writer": e["writer"], "director": e["director"],
                 "air": e["air_raw"], "monsters": e["monsters_ja"],
                 "zh": e["zh_row"].get("中文标题"), "paras": paras[:3]})

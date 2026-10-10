@@ -182,19 +182,60 @@ for (const e of allEpisodes) {
 }
 
 // 3. tiers + kamikai grades
-const tierOf = (score) => config.tiers.find((t) => t.min !== null && score >= t.min) ?? config.tiers.at(-1);
-const gradeOf = (score, tierId) =>
-  tierId === 'kamikai' ? (config.kamikaiGrades.find((g) => score >= g.min) ?? null) : null;
+const PERCENTILE = (config.tierMode ?? 'score') === 'percentile';
 
-for (const e of allEpisodes) {
-  const t = tierOf(e.score);
-  e.tier = t.id;
-  e.tierLabel = t.label;
-  const g = gradeOf(e.score, t.id);
-  e.kamikaiGrade = g ? { id: g.id, label: g.label } : null;
+// 3a. era-wide score ranking — always computed, used by the leaderboards
+for (const era of Object.keys(eraStats)) {
+  const list = allEpisodes
+    .filter((e) => out.series.find((s) => s.id === e.seriesId).era === era)
+    .sort((a, b) => b.score - a.score);
+  list.forEach((e, i) => {
+    e.rankInEra = i + 1;
+    e.eraTotal = list.length;
+  });
 }
 
-// 4. ranks
+// 3b. tier buckets
+if (PERCENTILE) {
+  // IMDb data drives the ORDER inside each group; the configured shares decide
+  // HOW MANY land in each tier. Scope decides what the group is (剧内 / 时代板块).
+  const scope = config.tierScope ?? 'era';
+  const groups = new Map();
+  for (const e of allEpisodes) {
+    const key = scope === 'series' ? e.seriesId : out.series.find((s) => s.id === e.seriesId).era;
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(e);
+  }
+  for (const [key, list] of groups) {
+    list.sort((a, b) => b.score - a.score);
+    list.forEach((e, i) => {
+      const p = (i + 0.5) / list.length;
+      e.tierScopeKey = key;
+      e.tierScopeTotal = list.length;
+      e.tierPercentile = Math.round(p * 1000) / 1000;
+      e.rankInScope = i + 1;
+      const t = config.tiers.find((x) => p < x.cumShare) ?? config.tiers.at(-1);
+      e.tier = t.id;
+      e.tierLabel = t.label;
+      const g = t.id === 'kamikai' ? (config.kamikaiGrades.find((x) => p < x.cumShare) ?? null) : null;
+      e.kamikaiGrade = g ? { id: g.id, label: g.label } : null;
+    });
+  }
+} else {
+  const thr = config.scoreThresholds;
+  for (const e of allEpisodes) {
+    const t = thr.tiers.find((x) => x.min !== null && e.score >= x.min) ?? { id: 'rankai' };
+    const tt = config.tiers.find((c) => c.id === t.id) ?? config.tiers.at(-1);
+    e.tier = tt.id;
+    e.tierLabel = tt.label;
+    const g = tt.id === 'kamikai' ? thr.kamikaiGrades.find((x) => e.score >= x.min) : null;
+    e.kamikaiGrade = g
+      ? { id: g.id, label: config.kamikaiGrades.find((c) => c.id === g.id)?.label ?? g.id }
+      : null;
+  }
+}
+
+// 4. per-series ranks
 for (const s of out.series) {
   const sorted = [...s.episodes].sort((a, b) => b.score - a.score);
   sorted.forEach((e, i) => (e.rankInSeries = i + 1));
@@ -207,7 +248,6 @@ for (const era of Object.keys(eraStats)) {
   eraSorted[era] = [...allEpisodes.filter((e) => out.series.find((s) => s.id === e.seriesId).era === era)].sort(
     (a, b) => b.score - a.score,
   );
-  eraSorted[era].forEach((e, i) => (e.rankInEra = i + 1));
 }
 
 // 5. cleanup + people index

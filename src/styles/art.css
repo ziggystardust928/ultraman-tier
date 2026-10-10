@@ -160,7 +160,17 @@
 
 .photo-tile .tile-label {
   position: absolute;
-  left: 7px;
+  left: 6px;
   bottom: 6px;
   z-index: 2;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  color: #fff;
+  /* 深色底片：设计稿多是白纸，纯白文字在浅底上看不清 */
+  background: rgba(10, 10, 11, 0.78);
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-shadow: none;
 }

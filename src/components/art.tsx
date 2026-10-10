@@ -133,24 +133,33 @@ export function SeriesCover({ series, size = 'md' }: { series: Series; size?: 's
    剧照瓦片
    ============================================================ */
 
-const TILE_LABELS = ['剧照', '舞台剧', '周边', '海报', '设定集', '写真'];
+const TILE_LABELS = ['剧照', '舞台剧', '周边', '海报'];
 
-/** 真实剧照；点进去看对应单集。没有图片时退回扁平占位图形。 */
-export function PhotoTile({
-  series,
-  photo,
-  index,
-}: {
-  series: Series;
-  photo?: { src: string | null; no: number; label: string; title: string | null };
-  index: number;
-}) {
-  if (photo?.src) {
-    return (
-      <Link className="photo-tile" to={`/ep/${series.id}-${photo.no}`} title={photo.title ?? photo.label}>
-        <img src={photo.src} alt={photo.title ?? photo.label} loading="lazy" decoding="async" />
-        <span className="tile-label">{photo.label}</span>
+export interface TileItem {
+  src: string | null;
+  label: string;
+  title?: string | null;
+  /** 有 to 时可点进对应单集；设计稿没有对应单集，所以为 null */
+  to?: string | null;
+}
+
+/** 一格瓦片。有图用真图，没图退回扁平占位图形。 */
+export function PhotoTile({ series, item, index }: { series: Series; item?: TileItem; index: number }) {
+  if (item?.src) {
+    const body = (
+      <>
+        <img src={item.src} alt={item.title ?? item.label} loading="lazy" decoding="async" />
+        <span className="tile-label">{item.label}</span>
+      </>
+    );
+    return item.to ? (
+      <Link className="photo-tile" to={item.to} title={item.title ?? item.label}>
+        {body}
       </Link>
+    ) : (
+      <div className="photo-tile" title={item.title ?? item.label}>
+        {body}
+      </div>
     );
   }
 
@@ -181,13 +190,29 @@ export function PhotoTile({
   );
 }
 
-/** 首页右侧剧照拼贴：2×3 六格，方形裁切 */
-export function PhotoMosaic({ series, count = 6 }: { series: Series; count?: number }) {
-  const photos = (series.images?.photos ?? []).slice(0, count);
+/**
+ * 首页封面旁的 2×2 拼贴。
+ * 优先用设计稿（data/curated/designs.json 策展）；该剧没配设计稿时，
+ * 用均匀分布的分集剧照填满同样的 4 格。
+ */
+export function PhotoMosaic({ series, count = 4 }: { series: Series; count?: number }) {
+  const designs = series.images?.designs ?? [];
+  const photos = series.images?.photos ?? [];
+
+  const items: TileItem[] =
+    designs.length >= count
+      ? designs.slice(0, count).map((d) => ({ src: d.src, label: d.label, title: d.note, to: null }))
+      : photos.slice(0, count).map((p) => ({
+          src: p.src,
+          label: p.label,
+          title: p.title,
+          to: `/ep/${series.id}-${p.no}`,
+        }));
+
   return (
     <div className="hero-mosaic">
       {Array.from({ length: count }).map((_, i) => (
-        <PhotoTile key={i} series={series} photo={photos[i]} index={i} />
+        <PhotoTile key={i} series={series} item={items[i]} index={i} />
       ))}
     </div>
   );

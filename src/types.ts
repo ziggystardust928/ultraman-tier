@@ -67,6 +67,8 @@ export interface Series {
   images: {
     cover: string | null;
     square: string | null;
+    /** 设计稿（首页封面旁 2×2）。为空时回退用 photos。 */
+    designs: { src: string | null; label: string; note: string | null; bvid: string | null }[];
     photos: { src: string | null; no: number; label: string; title: string | null }[];
   };
   episodes: Episode[];

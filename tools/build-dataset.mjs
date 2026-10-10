@@ -45,6 +45,7 @@ const imgOrNull = (rel) => (imgExists(rel) ? rel : null);
 const imdb = read('data/raw/imdb-heisei3.json');
 const nameMap = read('data/curated/name-map.json').people;
 const config = read('data/curated/tier-config.json');
+const designs = read('data/curated/designs.json');
 
 const stats = (nums) => {
   if (!nums.length) return { mean: 0, sd: 0, n: 0 };
@@ -152,7 +153,16 @@ for (const s of SERIES) {
     images: {
       cover: imgOrNull(`img/${s.id}/cover.webp`),
       square: imgOrNull(`img/${s.id}/square.webp`),
-      // 均匀取 6 张分集剧照铺首页照片墙（首话 → 最终话）
+      // 设计稿：人工策展（data/curated/designs.json），用于首页封面旁的 2×2
+      designs: (designs[s.id] ?? [])
+        .map((d) => ({
+          src: imgOrNull(`img/${s.id}/design/${d.file}`),
+          label: d.label,
+          note: d.note ?? null,
+          bvid: d.bvid ?? null,
+        }))
+        .filter((d) => d.src),
+      // 分集剧照：均匀取 6 张（首话 → 最终话），设计稿缺失时用它填格子
       photos:
         episodes.length > 0
           ? Array.from({ length: 6 }, (_, i) => episodes[Math.round((i * (episodes.length - 1)) / 5)])

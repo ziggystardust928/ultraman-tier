@@ -1,0 +1,29 @@
+{
+  "_note": "首页官方封面旁的设计稿素材（2×2）。文件在 public/img/<series>/design/<file>，统一 480x480 方形。没有配置的剧集会退回用分集剧照填满同样的 4 格。",
+  "_source": "Bilibili 设定稿/设计画集/皮套制作类视频的封面图，中心方形裁切。流程：tools/fetch-design.mjs 采集候选 → tools/contact-sheet.py 出总览图 → 人工挑选。",
+  "_caveat": "这些是视频封面，不是原始设定画扫描件；部分带少量标题文字。作为 App 内的资料展示够用，若要印刷级设定稿需另找官方画集授权图源。",
+  "_pickedAt": "2026-10",
+  "tiga": [
+    {
+      "file": "1.webp",
+      "label": "皮套变体",
+      "note": "1996 / TV版 / 2000剧场版 造型差异",
+      "bvid": "BV1GAu163Edp"
+    },
+    { "file": "2.webp", "label": "头部设定", "note": "TYPE A 手绘设定", "bvid": "BV1CYKdzfEK1" },
+    { "file": "3.webp", "label": "全身线稿", "note": "设定线稿与头部细部", "bvid": "BV16L3MzeEzi" },
+    { "file": "4.webp", "label": "计时器细部", "note": "胸口彩色计时器设计", "bvid": "BV15y4y1a758" }
+  ],
+  "dyna": [
+    { "file": "1.webp", "label": "皮套展示", "note": "最终形态皮套实体", "bvid": "BV1f5tE6XEmg" },
+    { "file": "2.webp", "label": "头部设定", "note": "头部造型设计画", "bvid": "BV164411c71y" },
+    { "file": "3.webp", "label": "设定资料", "note": "闪亮型 设定书页", "bvid": "BV1dz4y1J7Ei" },
+    { "file": "4.webp", "label": "原型雕塑", "note": "怪兽皮套原型", "bvid": "BV1Lu4y1A7nL" }
+  ],
+  "gaia": [
+    { "file": "1.webp", "label": "版本对比", "note": "TV版 / 剧场版 造型差异", "bvid": null },
+    { "file": "2.webp", "label": "双人线稿", "note": "盖亚・阿古茹 设计图合集", "bvid": "BV1hQ4y147sL" },
+    { "file": "3.webp", "label": "设定画集", "note": "丸山浩 Version up 设定画", "bvid": "BV1ACQSYEE2U" },
+    { "file": "4.webp", "label": "细节渲染", "note": "身体细部设计", "bvid": null }
+  ]
+}

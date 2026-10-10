@@ -228,11 +228,11 @@ input {
 /* ============================================================
    首页 Hero —— 左封面 / 右照片墙
    ============================================================ */
-/* 左：3:4 海报（真实尺寸，不裁切）；右：2×3 剧照拼贴，方形裁切 */
+/* 左：3:4 官方海报；右：2×2 设计稿，方形裁切。两栏等高 */
 .hero {
   position: relative;
   display: grid;
-  grid-template-columns: 52% 48%;
+  grid-template-columns: 43% 57%;
   border-bottom: 1px solid var(--line-soft);
 }
 
@@ -246,7 +246,7 @@ input {
 .hero-mosaic {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
   gap: 1px;
   background: var(--line-soft);
 }
@@ -663,7 +663,7 @@ input {
 .detail-hero {
   position: relative;
   display: grid;
-  grid-template-columns: 52% 48%;
+  grid-template-columns: 43% 57%;
   border-bottom: 1px solid var(--line-soft);
 }
 

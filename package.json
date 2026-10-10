@@ -18,7 +18,8 @@
     "data:meta": "node --max-old-space-size=768 tools/build-episode-meta.mjs",
     "images": "node --max-old-space-size=768 tools/fetch-images.mjs",
     "stills": "node --max-old-space-size=1024 tools/fetch-videoshot.mjs && python tools/crop-stills.py",
-    "icons": "python tools/gen-icons.py"
+    "icons": "python tools/gen-icons.py",
+    "deploy:gh": "node --max-old-space-size=1024 tools/gh-push.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",

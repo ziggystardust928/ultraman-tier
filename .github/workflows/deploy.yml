@@ -1,0 +1,56 @@
+name: 构建并部署到 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 构建（tsc + vite + 生成 service worker）
+        run: npm run build
+
+      - name: 检查产物
+        run: |
+          test -f dist/index.html   || { echo "缺少 index.html"; exit 1; }
+          test -f dist/sw.js        || { echo "缺少 sw.js"; exit 1; }
+          test -f dist/manifest.webmanifest || { echo "缺少 manifest"; exit 1; }
+          echo "dist 文件数：$(find dist -type f | wc -l)"
+          echo "dist 体积：$(du -sh dist | cut -f1)"
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

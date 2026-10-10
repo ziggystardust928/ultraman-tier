@@ -6,8 +6,12 @@ node_modules/
 npm-debug.log*
 
 # build output
-dist/
-dist-ssr/
+# 注意：必须写成 /dist/ 而不是 dist/
+# gitignore 里不带前导斜杠的模式是「任意层级匹配」，写 dist/ 会把
+# data/dist/dataset.json（App 的唯一数据源）也一起忽略掉 —— 踩过，
+# 结果 CI 拉下来根本构建不了。
+/dist/
+/dist-ssr/
 dist.zip
 *.local
 

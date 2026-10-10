@@ -1,0 +1,4624 @@
+{
+  "episodeCount": 154,
+  "resolvedPeople": 39,
+  "episodes": [
+    {
+      "tconst": "tt0999547",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 1,
+      "averageRating": 8,
+      "numVotes": 29,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Hikari wo tsukame",
+      "originalTitle": "Hikari wo tsukame",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt1186610",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 1,
+      "averageRating": 7.4,
+      "numVotes": 54,
+      "directorIds": [
+        "nm1224394"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Hikari o tsugu mono",
+      "originalTitle": "Hikari o tsugu mono",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shingo Matsubara"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt2447036",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 1,
+      "averageRating": 8.3,
+      "numVotes": 16,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Aratanaru Hikari (Zenpen)",
+      "originalTitle": "Aratanaru Hikari (Zenpen)",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt0738098",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 2,
+      "averageRating": 6.7,
+      "numVotes": 45,
+      "directorIds": [
+        "nm1224394"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Ishi no shinwa",
+      "originalTitle": "Ishi no shinwa",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shingo Matsubara"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt2087577",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 2,
+      "averageRating": 7.9,
+      "numVotes": 22,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Yuusha tatsu",
+      "originalTitle": "Yuusha tatsu",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt4933798",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 2,
+      "averageRating": 8.4,
+      "numVotes": 11,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Aratanaru Hikari (Kôhen)",
+      "originalTitle": "Aratanaru Hikari (Kôhen)",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt12895288",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 3,
+      "averageRating": 7.1,
+      "numVotes": 40,
+      "directorIds": [],
+      "writerIds": [],
+      "primaryTitle": "Akuma no Yogen",
+      "originalTitle": "Akuma no Yogen",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [],
+      "writers": []
+    },
+    {
+      "tconst": "tt14082722",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 3,
+      "averageRating": 8.7,
+      "numVotes": 11,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "Awaken Asuka",
+      "originalTitle": "Awaken Asuka",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt2087575",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 3,
+      "averageRating": 8,
+      "numVotes": 21,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Sonona wa Gaia",
+      "originalTitle": "Sonona wa Gaia",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt12895290",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 4,
+      "averageRating": 7.5,
+      "numVotes": 40,
+      "directorIds": [],
+      "writerIds": [
+        "nm0594527"
+      ],
+      "primaryTitle": "Sa.Yo.Na.Ra Chikyuu",
+      "originalTitle": "Sa.Yo.Na.Ra Chikyuu",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [],
+      "writers": [
+        "Hidenori Miyazawa"
+      ]
+    },
+    {
+      "tconst": "tt14083316",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 4,
+      "averageRating": 7.9,
+      "numVotes": 9,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "Battle! Underground City",
+      "originalTitle": "Battle! Underground City",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt2087576",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 4,
+      "averageRating": 7.6,
+      "numVotes": 18,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Tenkuu no Gamu",
+      "originalTitle": "Tenkuu no Gamu",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt12895296",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 5,
+      "averageRating": 7.3,
+      "numVotes": 38,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm1257535",
+        "nm0464810"
+      ],
+      "primaryTitle": "Kaijuu ga Detekita Hi",
+      "originalTitle": "Kaijuu ga Detekita Hi",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Kyôta Kawasaki",
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14084204",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 5,
+      "averageRating": 8.3,
+      "numVotes": 10,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "Winning Shot",
+      "originalTitle": "Winning Shot",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt2087574",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 5,
+      "averageRating": 7.3,
+      "numVotes": 21,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Mouhitotsu no kyojin",
+      "originalTitle": "Mouhitotsu no kyojin",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt0738097",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 6,
+      "averageRating": 7.2,
+      "numVotes": 36,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm1257535",
+        "nm0464810"
+      ],
+      "primaryTitle": "Sekando kontakuto",
+      "originalTitle": "Sekando kontakuto",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Kyôta Kawasaki",
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14084390",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 6,
+      "averageRating": 8,
+      "numVotes": 10,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "The Land's Ultimate Monster",
+      "originalTitle": "The Land's Ultimate Monster",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt2087572",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 6,
+      "averageRating": 8,
+      "numVotes": 21,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Azawarau me",
+      "originalTitle": "Azawarau me",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt0738095",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 7,
+      "averageRating": 7.2,
+      "numVotes": 36,
+      "directorIds": [
+        "nm1258071"
+      ],
+      "writerIds": [
+        "nm0594527"
+      ],
+      "primaryTitle": "Chikyuu ni orite kita otoko",
+      "originalTitle": "Chikyuu ni orite kita otoko",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Yasushi Okada"
+      ],
+      "writers": [
+        "Hidenori Miyazawa"
+      ]
+    },
+    {
+      "tconst": "tt14089154",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 7,
+      "averageRating": 8.4,
+      "numVotes": 10,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Friend Inside the Box",
+      "originalTitle": "Friend Inside the Box",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt2087573",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 7,
+      "averageRating": 7.9,
+      "numVotes": 19,
+      "directorIds": [
+        "nm0464810",
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Chikyuu no sentaku",
+      "originalTitle": "Chikyuu no sentaku",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Chiaki Konaka",
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt12895298",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 8,
+      "averageRating": 7.3,
+      "numVotes": 33,
+      "directorIds": [
+        "nm1258071"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Harowin no Yoru ni",
+      "originalTitle": "Harowin no Yoru ni",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Yasushi Okada"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt14089214",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 8,
+      "averageRating": 8.1,
+      "numVotes": 9,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Bao-on from Afar",
+      "originalTitle": "Bao-on from Afar",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt9036050",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 8,
+      "averageRating": 7.6,
+      "numVotes": 17,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "Yonjûrokuokunen no Bôrei",
+      "originalTitle": "Yonjûrokuokunen no Bôrei",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt12895318",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 9,
+      "averageRating": 7.3,
+      "numVotes": 31,
+      "directorIds": [
+        "nm1224394"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Kaijuu o Matsu Shojo",
+      "originalTitle": "Kaijuu o Matsu Shojo",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shingo Matsubara"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt14089246",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 9,
+      "averageRating": 8.9,
+      "numVotes": 9,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "2000 Attacks",
+      "originalTitle": "2000 Attacks",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14156144",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 9,
+      "averageRating": 7.7,
+      "numVotes": 18,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Seagull Takes Off",
+      "originalTitle": "Seagull Takes Off",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt12895322",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 10,
+      "averageRating": 7.3,
+      "numVotes": 31,
+      "directorIds": [
+        "nm1224394"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Tozasareta Yuuenchi",
+      "originalTitle": "Tozasareta Yuuenchi",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shingo Matsubara"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt14089276",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 10,
+      "averageRating": 8,
+      "numVotes": 9,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "Forbidden Picture on the Ground",
+      "originalTitle": "Forbidden Picture on the Ground",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14161194",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 10,
+      "averageRating": 7.3,
+      "numVotes": 18,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Rock Fight",
+      "originalTitle": "Rock Fight",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt12895380",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 11,
+      "averageRating": 7.5,
+      "numVotes": 31,
+      "directorIds": [
+        "nm1257505"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Yami e no Rekuiemu",
+      "originalTitle": "Yami e no Rekuiemu",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shin'ichi Kamizawa"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt14089292",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 11,
+      "averageRating": 9.1,
+      "numVotes": 10,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "The Phantom Shooting Star",
+      "originalTitle": "The Phantom Shooting Star",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14161368",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 11,
+      "averageRating": 8,
+      "numVotes": 21,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "The Dragon's Capital",
+      "originalTitle": "The Dragon's Capital",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt12895394",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 12,
+      "averageRating": 7.2,
+      "numVotes": 32,
+      "directorIds": [
+        "nm1257505"
+      ],
+      "writerIds": [],
+      "primaryTitle": "Shinkai kara no SOS",
+      "originalTitle": "Shinkai kara no SOS",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shin'ichi Kamizawa"
+      ],
+      "writers": []
+    },
+    {
+      "tconst": "tt14090226",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 12,
+      "averageRating": 8.9,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Mysterious Thief Himala",
+      "originalTitle": "Mysterious Thief Himala",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14161520",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 12,
+      "averageRating": 6.8,
+      "numVotes": 22,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Monster Encircling Net",
+      "originalTitle": "Monster Encircling Net",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt12895396",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 13,
+      "averageRating": 7.3,
+      "numVotes": 32,
+      "directorIds": [],
+      "writerIds": [],
+      "primaryTitle": "Ningen Saishuu",
+      "originalTitle": "Ningen Saishuu",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [],
+      "writers": []
+    },
+    {
+      "tconst": "tt14090290",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 13,
+      "averageRating": 8.4,
+      "numVotes": 8,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Monster Factory",
+      "originalTitle": "Monster Factory",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14161674",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 13,
+      "averageRating": 7.8,
+      "numVotes": 20,
+      "directorIds": [
+        "nm1031610"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Night of the Marionettes",
+      "originalTitle": "The Night of the Marionettes",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Miki Nemoto"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt0738096",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 14,
+      "averageRating": 7.2,
+      "numVotes": 31,
+      "directorIds": [],
+      "writerIds": [],
+      "primaryTitle": "Hanatareta hyouteki",
+      "originalTitle": "Hanatareta hyouteki",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [],
+      "writers": []
+    },
+    {
+      "tconst": "tt14091286",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 14,
+      "averageRating": 8.9,
+      "numVotes": 8,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "The Supreme Ruler Who Sleeps on the Moon",
+      "originalTitle": "The Supreme Ruler Who Sleeps on the Moon",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt14161902",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 14,
+      "averageRating": 7.7,
+      "numVotes": 23,
+      "directorIds": [
+        "nm1031610"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "The Challenge from the Anti-Space",
+      "originalTitle": "The Challenge from the Anti-Space",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Miki Nemoto"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14037530",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 15,
+      "averageRating": 7.2,
+      "numVotes": 30,
+      "directorIds": [
+        "nm1257535",
+        "nm0847503"
+      ],
+      "writerIds": [
+        "nm1204473"
+      ],
+      "primaryTitle": "The Phantom Dash",
+      "originalTitle": "The Phantom Dash",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki",
+        "Junki Takegami"
+      ],
+      "writers": [
+        "Kazuo Tsuburaya"
+      ]
+    },
+    {
+      "tconst": "tt14091302",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 15,
+      "averageRating": 8.9,
+      "numVotes": 8,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Kind-Hearted Target",
+      "originalTitle": "The Kind-Hearted Target",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14161960",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 15,
+      "averageRating": 8,
+      "numVotes": 20,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "When the Rain Stops",
+      "originalTitle": "When the Rain Stops",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14037596",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 16,
+      "averageRating": 7.4,
+      "numVotes": 31,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Resurrected Friend",
+      "originalTitle": "Resurrected Friend",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14095866",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 16,
+      "averageRating": 9.1,
+      "numVotes": 10,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Battle! Monster Island",
+      "originalTitle": "Battle! Monster Island",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14162430",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 16,
+      "averageRating": 8.2,
+      "numVotes": 27,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "The Birth of Agul",
+      "originalTitle": "The Birth of Agul",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14037640",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 17,
+      "averageRating": 7.3,
+      "numVotes": 28,
+      "directorIds": [
+        "nm12313224"
+      ],
+      "writerIds": [
+        "nm1257505",
+        "nm0594527"
+      ],
+      "primaryTitle": "Red and Blue's Battle",
+      "originalTitle": "Red and Blue's Battle",
+      "isAdult": false,
+      "startYear": "1996",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Fuyuki Dan"
+      ],
+      "writers": [
+        "Shin'ichi Kamizawa",
+        "Hidenori Miyazawa"
+      ]
+    },
+    {
+      "tconst": "tt14095910",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 17,
+      "averageRating": 8.2,
+      "numVotes": 10,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "The Ghost Space Ship",
+      "originalTitle": "The Ghost Space Ship",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14162910",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 17,
+      "averageRating": 7.9,
+      "numVotes": 25,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "Shadow of Space, Light of Earth",
+      "originalTitle": "Shadow of Space, Light of Earth",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt14037692",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 18,
+      "averageRating": 7.3,
+      "numVotes": 30,
+      "directorIds": [
+        "nm12313224"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "Golza's Counterattack",
+      "originalTitle": "Golza's Counterattack",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Fuyuki Dan"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14095964",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 18,
+      "averageRating": 9,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Girls Who Calls Up the Darkness",
+      "originalTitle": "The Girls Who Calls Up the Darkness",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14168222",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 18,
+      "averageRating": 8.1,
+      "numVotes": 26,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Agul vs. Gaia",
+      "originalTitle": "Agul vs. Gaia",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14037764",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 19,
+      "averageRating": 7.3,
+      "numVotes": 27,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "GUTS to the Sky: Part 1",
+      "originalTitle": "GUTS to the Sky: Part 1",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14096008",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 19,
+      "averageRating": 8.9,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "Bird of the Phantom Dream",
+      "originalTitle": "Bird of the Phantom Dream",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14168870",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 19,
+      "averageRating": 7.8,
+      "numVotes": 16,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Lilia's Maze",
+      "originalTitle": "Lilia's Maze",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14037792",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 20,
+      "averageRating": 7.4,
+      "numVotes": 27,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "GUTS to the Sky: Part 2",
+      "originalTitle": "GUTS to the Sky: Part 2",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14096098",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 20,
+      "averageRating": 8.5,
+      "numVotes": 10,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Alien Boy",
+      "originalTitle": "Alien Boy",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14169706",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 20,
+      "averageRating": 7.7,
+      "numVotes": 18,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Fossil of Ruin",
+      "originalTitle": "The Fossil of Ruin",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14037816",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 21,
+      "averageRating": 7.1,
+      "numVotes": 28,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Deban's Turn",
+      "originalTitle": "Deban's Turn",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14096534",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 21,
+      "averageRating": 8.6,
+      "numVotes": 9,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "The 3000 Degree Heat Radiating Monster",
+      "originalTitle": "The 3000 Degree Heat Radiating Monster",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt14175588",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 21,
+      "averageRating": 6.9,
+      "numVotes": 16,
+      "directorIds": [
+        "nm1031610"
+      ],
+      "writerIds": [
+        "nm2869991"
+      ],
+      "primaryTitle": "The Sea of a Mysterious Light",
+      "originalTitle": "The Sea of a Mysterious Light",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Miki Nemoto"
+      ],
+      "writers": [
+        "Shinsuke Ônishi"
+      ]
+    },
+    {
+      "tconst": "tt14037858",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 22,
+      "averageRating": 7.5,
+      "numVotes": 30,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "A Fog's Coming",
+      "originalTitle": "A Fog's Coming",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14097294",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 22,
+      "averageRating": 8.4,
+      "numVotes": 10,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Soldier of Tsukuyo",
+      "originalTitle": "Soldier of Tsukuyo",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14175994",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 22,
+      "averageRating": 7.6,
+      "numVotes": 16,
+      "directorIds": [
+        "nm1031610"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "The Wings of a Stone",
+      "originalTitle": "The Wings of a Stone",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Miki Nemoto"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14038088",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 23,
+      "averageRating": 6.9,
+      "numVotes": 30,
+      "directorIds": [
+        "nm1258071"
+      ],
+      "writerIds": [
+        "nm1257925",
+        "nm0847503"
+      ],
+      "primaryTitle": "Dinosaurs' Star",
+      "originalTitle": "Dinosaurs' Star",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Yasushi Okada"
+      ],
+      "writers": [
+        "Masakazu Migita",
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14097310",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 23,
+      "averageRating": 8.8,
+      "numVotes": 8,
+      "directorIds": [
+        "nm4356367"
+      ],
+      "writerIds": [
+        "nm2869991"
+      ],
+      "primaryTitle": "Dream Fortress",
+      "originalTitle": "Dream Fortress",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Yoshiaki Kobayashi"
+      ],
+      "writers": [
+        "Shinsuke Ônishi"
+      ]
+    },
+    {
+      "tconst": "tt14176548",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 23,
+      "averageRating": 7.8,
+      "numVotes": 17,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "Gamu Expelled!",
+      "originalTitle": "Gamu Expelled!",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14038106",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 24,
+      "averageRating": 6.9,
+      "numVotes": 29,
+      "directorIds": [
+        "nm1258071"
+      ],
+      "writerIds": [
+        "nm0386259",
+        "nm0847503"
+      ],
+      "primaryTitle": "Go! Monster Expedition Team",
+      "originalTitle": "Go! Monster Expedition Team",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Yasushi Okada"
+      ],
+      "writers": [
+        "Yasushi Hirano",
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14097340",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 24,
+      "averageRating": 8.1,
+      "numVotes": 9,
+      "directorIds": [
+        "nm4356367"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Vampire of the Lake",
+      "originalTitle": "Vampire of the Lake",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Yoshiaki Kobayashi"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14176572",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 24,
+      "averageRating": 7.7,
+      "numVotes": 24,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Determination of Agul",
+      "originalTitle": "The Determination of Agul",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14038118",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 25,
+      "averageRating": 7.7,
+      "numVotes": 38,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "The Devil's Judgement",
+      "originalTitle": "The Devil's Judgement",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14111168",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 25,
+      "averageRating": 8.9,
+      "numVotes": 14,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Clarkov Won't Surface! - Part 1",
+      "originalTitle": "The Clarkov Won't Surface! - Part 1",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14176646",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 25,
+      "averageRating": 8.1,
+      "numVotes": 27,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "The Showdown for Tomorrow",
+      "originalTitle": "The Showdown for Tomorrow",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14038878",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 26,
+      "averageRating": 7.2,
+      "numVotes": 28,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "Evil Monster Realm of the Rainbow",
+      "originalTitle": "Evil Monster Realm of the Rainbow",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14111234",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 26,
+      "averageRating": 9.2,
+      "numVotes": 16,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Clarkov Won't Surface! - Part 2",
+      "originalTitle": "The Clarkov Won't Surface! - Part 2",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt9029344",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 26,
+      "averageRating": 8,
+      "numVotes": 26,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Ketchaku no Hi",
+      "originalTitle": "Ketchaku no Hi",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14038908",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 27,
+      "averageRating": 7.3,
+      "numVotes": 30,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "I Saw Obiko!",
+      "originalTitle": "I Saw Obiko!",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14111284",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 27,
+      "averageRating": 8.2,
+      "numVotes": 9,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "Monster Game",
+      "originalTitle": "Monster Game",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14176756",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 27,
+      "averageRating": 7.7,
+      "numVotes": 25,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "A New Battle ~Version-up Fight!~",
+      "originalTitle": "A New Battle ~Version-up Fight!~",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt14038920",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 28,
+      "averageRating": 7.5,
+      "numVotes": 27,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm1257535"
+      ],
+      "primaryTitle": "One Vanishing Moment",
+      "originalTitle": "One Vanishing Moment",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Kyôta Kawasaki"
+      ]
+    },
+    {
+      "tconst": "tt14116958",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 28,
+      "averageRating": 8.1,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "Simian Forest",
+      "originalTitle": "Simian Forest",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14182642",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 28,
+      "averageRating": 8.1,
+      "numVotes": 20,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "The Advent of the Heatwave",
+      "originalTitle": "The Advent of the Heatwave",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14039002",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 29,
+      "averageRating": 7.2,
+      "numVotes": 28,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Blue Night's Memory",
+      "originalTitle": "Blue Night's Memory",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14117304",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 29,
+      "averageRating": 8.7,
+      "numVotes": 10,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "In the Light of Destiny",
+      "originalTitle": "In the Light of Destiny",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14182658",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 29,
+      "averageRating": 7.7,
+      "numVotes": 22,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "The Distant City: Uqbar",
+      "originalTitle": "The Distant City: Uqbar",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14039018",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 30,
+      "averageRating": 6.9,
+      "numVotes": 28,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1259719"
+      ],
+      "primaryTitle": "Monster Zoo",
+      "originalTitle": "Monster Zoo",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Kazunori Saitô"
+      ]
+    },
+    {
+      "tconst": "tt14117378",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 30,
+      "averageRating": 8.1,
+      "numVotes": 7,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Scenario of Invasion",
+      "originalTitle": "Scenario of Invasion",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14182678",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 30,
+      "averageRating": 7.4,
+      "numVotes": 16,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm3396093"
+      ],
+      "primaryTitle": "The Demon's Cocoon",
+      "originalTitle": "The Demon's Cocoon",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Takahiko Masuda"
+      ]
+    },
+    {
+      "tconst": "tt14039064",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 31,
+      "averageRating": 7.3,
+      "numVotes": 30,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm3069406",
+        "nm1259719"
+      ],
+      "primaryTitle": "The Attacked GUTS Base",
+      "originalTitle": "The Attacked GUTS Base",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Hideyuki Kawakami",
+        "Kazunori Saitô"
+      ]
+    },
+    {
+      "tconst": "tt14117450",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 31,
+      "averageRating": 9.2,
+      "numVotes": 13,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm3396093"
+      ],
+      "primaryTitle": "Fight! Dyna vs. Dyna",
+      "originalTitle": "Fight! Dyna vs. Dyna",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Takahiko Masuda"
+      ]
+    },
+    {
+      "tconst": "tt14188448",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 31,
+      "averageRating": 7.7,
+      "numVotes": 19,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "The Accursed Eye",
+      "originalTitle": "The Accursed Eye",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14039090",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 32,
+      "averageRating": 7.5,
+      "numVotes": 34,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Zelda Point's Defenses",
+      "originalTitle": "Zelda Point's Defenses",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14117472",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 32,
+      "averageRating": 7.9,
+      "numVotes": 7,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "The Singing Investigation Robot",
+      "originalTitle": "The Singing Investigation Robot",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14188460",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 32,
+      "averageRating": 7.8,
+      "numVotes": 19,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "The Future Seen Before",
+      "originalTitle": "The Future Seen Before",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14039104",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 33,
+      "averageRating": 7.1,
+      "numVotes": 27,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Vampire City",
+      "originalTitle": "Vampire City",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14123834",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 33,
+      "averageRating": 8.9,
+      "numVotes": 7,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Star of Peace",
+      "originalTitle": "Star of Peace",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14188538",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 33,
+      "averageRating": 7.2,
+      "numVotes": 18,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Battling the Legend",
+      "originalTitle": "Battling the Legend",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14042012",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 34,
+      "averageRating": 7.1,
+      "numVotes": 28,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "To the Southern Limit",
+      "originalTitle": "To the Southern Limit",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14124024",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 34,
+      "averageRating": 8,
+      "numVotes": 7,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "The Time of Resolution",
+      "originalTitle": "The Time of Resolution",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14193648",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 34,
+      "averageRating": 6.8,
+      "numVotes": 17,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Crash of Souls!",
+      "originalTitle": "Crash of Souls!",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14042044",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 35,
+      "averageRating": 7.3,
+      "numVotes": 32,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "The Sleeping Maiden",
+      "originalTitle": "The Sleeping Maiden",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14136632",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 35,
+      "averageRating": 9.1,
+      "numVotes": 10,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Smile of Destruction - Part 1",
+      "originalTitle": "The Smile of Destruction - Part 1",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14193684",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 35,
+      "averageRating": 7.3,
+      "numVotes": 17,
+      "directorIds": [
+        "nm3962464"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Ransom for a Monster",
+      "originalTitle": "Ransom for a Monster",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Ryûichi Ichino"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14042100",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 36,
+      "averageRating": 7.2,
+      "numVotes": 28,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm0367929",
+        "nm1257925"
+      ],
+      "primaryTitle": "The Time-Transcending Smile",
+      "originalTitle": "The Time-Transcending Smile",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Keiichi Hasegawa",
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14136638",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 36,
+      "averageRating": 8.8,
+      "numVotes": 12,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Smile of Destruction - Part 2",
+      "originalTitle": "The Smile of Destruction - Part 2",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14193706",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 36,
+      "averageRating": 7.7,
+      "numVotes": 20,
+      "directorIds": [
+        "nm3962464"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "The Sky of Reunion",
+      "originalTitle": "The Sky of Reunion",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Ryûichi Ichino"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14136658",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 37,
+      "averageRating": 7.3,
+      "numVotes": 7,
+      "directorIds": [
+        "nm0369073"
+      ],
+      "writerIds": [
+        "nm0613444"
+      ],
+      "primaryTitle": "Yumenokatamari",
+      "originalTitle": "Yumenokatamari",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Mitsunori Hattori"
+      ],
+      "writers": [
+        "Sadayuki Murai"
+      ]
+    },
+    {
+      "tconst": "tt14193766",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 37,
+      "averageRating": 7.6,
+      "numVotes": 22,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Fourth Symphony of a Nightmare",
+      "originalTitle": "The Fourth Symphony of a Nightmare",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt1680664",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 37,
+      "averageRating": 7.4,
+      "numVotes": 32,
+      "directorIds": [
+        "nm0423228",
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm0423228",
+        "nm1257535",
+        "nm0766364"
+      ],
+      "primaryTitle": "Hana",
+      "originalTitle": "Hana",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Akio Jissōji",
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Akio Jissōji",
+        "Kyôta Kawasaki",
+        "Akio Satsukawa"
+      ]
+    },
+    {
+      "tconst": "tt14042306",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 38,
+      "averageRating": 7.1,
+      "numVotes": 28,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm2869991"
+      ],
+      "primaryTitle": "The Mirage Monster",
+      "originalTitle": "The Mirage Monster",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Shinsuke Ônishi"
+      ]
+    },
+    {
+      "tconst": "tt14143038",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 38,
+      "averageRating": 8.8,
+      "numVotes": 9,
+      "directorIds": [
+        "nm0423228"
+      ],
+      "writerIds": [
+        "nm0613444"
+      ],
+      "primaryTitle": "Monster Drama",
+      "originalTitle": "Monster Drama",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Akio Jissōji"
+      ],
+      "writers": [
+        "Sadayuki Murai"
+      ]
+    },
+    {
+      "tconst": "tt14194032",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 38,
+      "averageRating": 7.4,
+      "numVotes": 16,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "Ground-Breaking Tusks",
+      "originalTitle": "Ground-Breaking Tusks",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt14042666",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 39,
+      "averageRating": 7.8,
+      "numVotes": 33,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Dear Mr. Ultraman",
+      "originalTitle": "Dear Mr. Ultraman",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14143058",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 39,
+      "averageRating": 8.2,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "The Light and Shadow of the Youthful",
+      "originalTitle": "The Light and Shadow of the Youthful",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14194092",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 39,
+      "averageRating": 8.1,
+      "numVotes": 29,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "The Swamp of Sadness",
+      "originalTitle": "The Swamp of Sadness",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14042908",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 40,
+      "averageRating": 7.1,
+      "numVotes": 28,
+      "directorIds": [
+        "nm0423228"
+      ],
+      "writerIds": [
+        "nm0423228",
+        "nm0766364"
+      ],
+      "primaryTitle": "Dream",
+      "originalTitle": "Dream",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Akio Jissōji"
+      ],
+      "writers": [
+        "Akio Jissōji",
+        "Akio Satsukawa"
+      ]
+    },
+    {
+      "tconst": "tt14143100",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 40,
+      "averageRating": 8.7,
+      "numVotes": 7,
+      "directorIds": [
+        "nm0462642"
+      ],
+      "writerIds": [
+        "nm12361122"
+      ],
+      "primaryTitle": "The Tree of Jagira",
+      "originalTitle": "The Tree of Jagira",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Takashi Kodama"
+      ],
+      "writers": [
+        "Manabu Roppongi"
+      ]
+    },
+    {
+      "tconst": "tt14194534",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 40,
+      "averageRating": 7.3,
+      "numVotes": 18,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "I Want to See Gaia!",
+      "originalTitle": "I Want to See Gaia!",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14043094",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 41,
+      "averageRating": 7.3,
+      "numVotes": 25,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "Friend from Space",
+      "originalTitle": "Friend from Space",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14143148",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 41,
+      "averageRating": 8.9,
+      "numVotes": 8,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "I Want to See Our Earth",
+      "originalTitle": "I Want to See Our Earth",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14194540",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 41,
+      "averageRating": 7.9,
+      "numVotes": 24,
+      "directorIds": [
+        "nm0411056",
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "The Resurrection of Agul",
+      "originalTitle": "The Resurrection of Agul",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hitoshi Ishikawa",
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14043294",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 42,
+      "averageRating": 7.1,
+      "numVotes": 24,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Town Where the Girl Disappeared",
+      "originalTitle": "Town Where the Girl Disappeared",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14143156",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 42,
+      "averageRating": 8.6,
+      "numVotes": 7,
+      "directorIds": [
+        "nm1257535"
+      ],
+      "writerIds": [
+        "nm1257535"
+      ],
+      "primaryTitle": "Ephemeral Dream",
+      "originalTitle": "Ephemeral Dream",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kyôta Kawasaki"
+      ],
+      "writers": [
+        "Kyôta Kawasaki"
+      ]
+    },
+    {
+      "tconst": "tt14194792",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 42,
+      "averageRating": 7.8,
+      "numVotes": 17,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Gamu vs. Gamu",
+      "originalTitle": "Gamu vs. Gamu",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14043684",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 43,
+      "averageRating": 7.2,
+      "numVotes": 26,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Land Shark",
+      "originalTitle": "Land Shark",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14146880",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 43,
+      "averageRating": 8,
+      "numVotes": 8,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm1257925",
+        "nm4131352"
+      ],
+      "primaryTitle": "Captain Long-Legs",
+      "originalTitle": "Captain Long-Legs",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Masakazu Migita",
+        "Hiromasa Mitsudome"
+      ]
+    },
+    {
+      "tconst": "tt14202822",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 43,
+      "averageRating": 7.6,
+      "numVotes": 19,
+      "directorIds": [
+        "nm1031610"
+      ],
+      "writerIds": [
+        "nm1646538"
+      ],
+      "primaryTitle": "The Silver Eyes of Izac",
+      "originalTitle": "The Silver Eyes of Izac",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Miki Nemoto"
+      ],
+      "writers": [
+        "Ai Ôta"
+      ]
+    },
+    {
+      "tconst": "tt14043722",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 44,
+      "averageRating": 7.2,
+      "numVotes": 29,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "The One Who Inherits the Shadows",
+      "originalTitle": "The One Who Inherits the Shadows",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt14146910",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 44,
+      "averageRating": 8.2,
+      "numVotes": 8,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Snow of Venus",
+      "originalTitle": "The Snow of Venus",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14203020",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 44,
+      "averageRating": 8.7,
+      "numVotes": 31,
+      "directorIds": [
+        "nm1031610"
+      ],
+      "writerIds": [
+        "nm0847503"
+      ],
+      "primaryTitle": "The Attack of the Space Monsters",
+      "originalTitle": "The Attack of the Space Monsters",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Miki Nemoto"
+      ],
+      "writers": [
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt14043820",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 45,
+      "averageRating": 7.2,
+      "numVotes": 26,
+      "directorIds": [
+        "nm1224394"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "Eternal Life",
+      "originalTitle": "Eternal Life",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shingo Matsubara"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14146922",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 45,
+      "averageRating": 7.4,
+      "numVotes": 8,
+      "directorIds": [
+        "nm3546399"
+      ],
+      "writerIds": [
+        "nm1063074"
+      ],
+      "primaryTitle": "Tear of Churasa",
+      "originalTitle": "Tear of Churasa",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Toshiyuki Takano"
+      ],
+      "writers": [
+        "Shozo Uehara"
+      ]
+    },
+    {
+      "tconst": "tt14209784",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 45,
+      "averageRating": 8.4,
+      "numVotes": 26,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1402606"
+      ],
+      "primaryTitle": "The Living Planet",
+      "originalTitle": "The Living Planet",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Kenji Konuta"
+      ]
+    },
+    {
+      "tconst": "tt14043848",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 46,
+      "averageRating": 7,
+      "numVotes": 24,
+      "directorIds": [
+        "nm1224394"
+      ],
+      "writerIds": [
+        "nm1257925",
+        "nm1204473"
+      ],
+      "primaryTitle": "Let's Go to Kamakura!",
+      "originalTitle": "Let's Go to Kamakura!",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Shingo Matsubara"
+      ],
+      "writers": [
+        "Masakazu Migita",
+        "Kazuo Tsuburaya"
+      ]
+    },
+    {
+      "tconst": "tt14147654",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 46,
+      "averageRating": 7.6,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm1257925",
+        "nm1204473"
+      ],
+      "primaryTitle": "The Power of Thinking of You",
+      "originalTitle": "The Power of Thinking of You",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Masakazu Migita",
+        "Kazuo Tsuburaya"
+      ]
+    },
+    {
+      "tconst": "tt14209912",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 46,
+      "averageRating": 7.2,
+      "numVotes": 17,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "The Attack of the Forest",
+      "originalTitle": "The Attack of the Forest",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14043892",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 47,
+      "averageRating": 7.1,
+      "numVotes": 26,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Goodbye to Darkness",
+      "originalTitle": "Goodbye to Darkness",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14148238",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 47,
+      "averageRating": 8.2,
+      "numVotes": 8,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Farewell Hanejiro",
+      "originalTitle": "Farewell Hanejiro",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt14209984",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 47,
+      "averageRating": 7.9,
+      "numVotes": 22,
+      "directorIds": [],
+      "writerIds": [],
+      "primaryTitle": "XIG Destroyed!?",
+      "originalTitle": "XIG Destroyed!?",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [],
+      "writers": []
+    },
+    {
+      "tconst": "tt0738092",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 48,
+      "averageRating": 7.2,
+      "numVotes": 26,
+      "directorIds": [
+        "nm0411031"
+      ],
+      "writerIds": [
+        "nm1257925"
+      ],
+      "primaryTitle": "Tsuki kara no toubousha",
+      "originalTitle": "Tsuki kara no toubousha",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Teruyoshi Ishii"
+      ],
+      "writers": [
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14148276",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 48,
+      "averageRating": 8,
+      "numVotes": 7,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm1257925",
+        "nm0847503"
+      ],
+      "primaryTitle": "Ndamoshite X",
+      "originalTitle": "Ndamoshite X",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Masakazu Migita",
+        "Junki Takegami"
+      ]
+    },
+    {
+      "tconst": "tt9035870",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 48,
+      "averageRating": 8.2,
+      "numVotes": 26,
+      "directorIds": [
+        "nm1257564"
+      ],
+      "writerIds": [
+        "nm3069406"
+      ],
+      "primaryTitle": "Shinigami no Gyakushû",
+      "originalTitle": "Shinigami no Gyakushû",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Tsugumi Kitaura"
+      ],
+      "writers": [
+        "Hideyuki Kawakami"
+      ]
+    },
+    {
+      "tconst": "tt0738099",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 49,
+      "averageRating": 7.7,
+      "numVotes": 35,
+      "directorIds": [
+        "nm0361733",
+        "nm1066065"
+      ],
+      "writerIds": [
+        "nm1063074"
+      ],
+      "primaryTitle": "Urutora no hoshi",
+      "originalTitle": "Urutora no hoshi",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada",
+        "Kazuho Mitsuta"
+      ],
+      "writers": [
+        "Shozo Uehara"
+      ]
+    },
+    {
+      "tconst": "tt14148638",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 49,
+      "averageRating": 8.7,
+      "numVotes": 18,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Final Chapter I: A New Shadow",
+      "originalTitle": "Final Chapter I: A New Shadow",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14215618",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 49,
+      "averageRating": 7.8,
+      "numVotes": 24,
+      "directorIds": [
+        "nm5317175",
+        "nm2171208"
+      ],
+      "writerIds": [
+        "nm0948928"
+      ],
+      "primaryTitle": "An Angel Descends",
+      "originalTitle": "An Angel Descends",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi",
+        "Takeshi Yagi"
+      ],
+      "writers": [
+        "Shin Yoshida"
+      ]
+    },
+    {
+      "tconst": "tt14148656",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 50,
+      "averageRating": 9,
+      "numVotes": 19,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Final Chapter II: Solar System Annihilation",
+      "originalTitle": "Final Chapter II: Solar System Annihilation",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt14215786",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 50,
+      "averageRating": 8.1,
+      "numVotes": 25,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929",
+        "nm0464810"
+      ],
+      "primaryTitle": "The Cry of the Earth",
+      "originalTitle": "The Cry of the Earth",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa",
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt1866051",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 50,
+      "averageRating": 7.8,
+      "numVotes": 37,
+      "directorIds": [
+        "nm0361733"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Motto takaku!",
+      "originalTitle": "Motto takaku!",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Masaki Harada"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt0738093",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 51,
+      "averageRating": 7.6,
+      "numVotes": 33,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929",
+        "nm0464810",
+        "nm1257925"
+      ],
+      "primaryTitle": "Ankoku no shihaisha",
+      "originalTitle": "Ankoku no shihaisha",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa",
+        "Chiaki Konaka",
+        "Masakazu Migita"
+      ]
+    },
+    {
+      "tconst": "tt14148664",
+      "parentTconst": "tt0184167",
+      "season": "1",
+      "episode": 51,
+      "averageRating": 9.1,
+      "numVotes": 23,
+      "directorIds": [
+        "nm0464815"
+      ],
+      "writerIds": [
+        "nm0367929"
+      ],
+      "primaryTitle": "Final Chapter III: Toward Tomorrow...",
+      "originalTitle": "Final Chapter III: Toward Tomorrow...",
+      "isAdult": false,
+      "startYear": "1998",
+      "runtimeMinutes": 24,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Kazuya Konaka"
+      ],
+      "writers": [
+        "Keiichi Hasegawa"
+      ]
+    },
+    {
+      "tconst": "tt9031822",
+      "parentTconst": "tt0184168",
+      "season": "1",
+      "episode": 51,
+      "averageRating": 7.7,
+      "numVotes": 24,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0464810"
+      ],
+      "primaryTitle": "Chikyû wa Urutoraman no Hoshi",
+      "originalTitle": "Chikyû wa Urutoraman no Hoshi",
+      "isAdult": false,
+      "startYear": "1999",
+      "runtimeMinutes": null,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Chiaki Konaka"
+      ]
+    },
+    {
+      "tconst": "tt0738094",
+      "parentTconst": "tt0182647",
+      "season": "1",
+      "episode": 52,
+      "averageRating": 7.9,
+      "numVotes": 42,
+      "directorIds": [
+        "nm5317175"
+      ],
+      "writerIds": [
+        "nm0367929",
+        "nm0464810",
+        "nm1257925"
+      ],
+      "primaryTitle": "Kagayakeru mono tachi e",
+      "originalTitle": "Kagayakeru mono tachi e",
+      "isAdult": false,
+      "startYear": "1997",
+      "runtimeMinutes": 30,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Comedy"
+      ],
+      "directors": [
+        "Hirochika Muraishi"
+      ],
+      "writers": [
+        "Keiichi Hasegawa",
+        "Chiaki Konaka",
+        "Masakazu Migita"
+      ]
+    }
+  ]
+}

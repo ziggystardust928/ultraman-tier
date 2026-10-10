@@ -1,0 +1,39 @@
+{
+  "_note": "评级口径配置。整套 App 的分档全部由这个文件驱动，改这里就能改全站分档。UI 里的「评级口径」页会把这些数值原样展示给用户。",
+  "version": "0.1.0",
+  "tiers": [
+    { "id": "kamikai", "label": "神回", "min": 68, "color": "#c026d3", "desc": "全系列公认的巅峰集数" },
+    { "id": "kakai", "label": "佳回", "min": 61.5, "color": "#2563eb", "desc": "素质突出、值得反复重看" },
+    { "id": "ryokai", "label": "良回", "min": 51, "color": "#0891b2", "desc": "完成度高、观感稳定的好集" },
+    { "id": "heikai", "label": "平回", "min": 37, "color": "#64748b", "desc": "中规中矩、过渡性质" },
+    { "id": "rankai", "label": "烂回", "min": null, "color": "#b91c1c", "desc": "明显失手、可跳过（兜底档，无下限）" }
+  ],
+  "kamikaiGrades": [
+    { "id": "kamikai-top", "label": "神回顶", "min": 79, "desc": "殿堂级，整个特摄史都排得上号" },
+    { "id": "kamikai-good", "label": "神回佳", "min": 73, "desc": "毫无疑问的杰作" },
+    { "id": "kamikai-guard", "label": "神回守", "min": 68, "desc": "神回门槛，够格但争议稍多" }
+  ],
+  "model": {
+    "name": "IMDb 绝对分 + 系列内相对位次 混合模型",
+    "weights": {
+      "imdb": 0.7,
+      "tieba": 0.3,
+      "imdbAbsShare": 0.3,
+      "imdbRelShare": 0.7,
+      "communityAbsShare": 0.5,
+      "communityRelShare": 0.5
+    },
+    "bayesPriorCount": 25,
+    "centerScore": 55,
+    "scorePerSigma": 12,
+    "eraKey": "heisei",
+    "_thresholdNote": "阈值按标准正态分位点换算：score = 55 + 12z。神回顶 z≥2.0、神回佳 z≥1.5、神回守 z≥1.1、佳回 z≥0.55、良回 z≥-0.35、平回 z≥-1.5、烂回为兜底。",
+    "_explain": [
+      "1. 票数收缩：shrunk = (票数 × IMDb 原始分 + 25 × 该剧均分) / (票数 + 25)。票数少的集数向剧均分收缩，避免十几人打分就封神。",
+      "2. 两个 z 分数：zAbs 用整个时代板块（旧平成 / 新生代）的均值和标准差；zRel 只用本剧的均值和标准差。",
+      "3. 混合：z = 0.3 × zAbs + 0.7 × zRel。zRel 权重明显更高，是为了抵消 IMDb 各部投票人群不同造成的系统性偏差——实测三部剧 IMDb 均分差达 1.2 分（迪迦 7.28 / 戴拿 8.48 / 盖亚 7.74），纯按绝对分会把神回几乎全判给戴拿。",
+      "4. 折算：score = 55 + 12 × z，截断到 0~100。",
+      "5. 贴吧社区分到位后，按 0.7 / 0.3 加权进最终分；社区分缺失时按 IMDb 归一化，App 会标注「社区评分待补」。"
+    ]
+  }
+}

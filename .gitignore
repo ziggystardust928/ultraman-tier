@@ -1,0 +1,19 @@
+# IMDb bulk datasets (hundreds of MB, re-downloadable)
+.cache/
+
+# node
+node_modules/
+npm-debug.log*
+
+# build output
+dist/
+dist-ssr/
+*.local
+
+# editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp

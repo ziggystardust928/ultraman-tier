@@ -1,7 +1,34 @@
 # 部署：让手机真正用上
 
-> 当前状态：本机已起服务，监听 `0.0.0.0:5181`。
-> 局域网地址 **http://192.168.1.4:5181/**
+> ## ✅ 已完成：GitHub Pages
+>
+> **https://ziggystardust928.github.io/ultraman-tier/**
+>
+> 手机打开 → 「添加到主屏幕」。HTTPS，Service Worker 正常注册，**离线可用**。
+> 以后 push 到 `main` 会自动重新构建并部署。
+>
+> 线上验收（都是对着线上地址实测的，不是本地）：PWA 10/10 通过、11 条路由无横向溢出。
+>
+> ### 排错记录
+>
+> 1. **`.gitignore` 的 `dist/` 把 `data/dist/dataset.json` 一起忽略了。**
+>    gitignore 里不带前导斜杠的模式是任意层级匹配，所以 App 的唯一数据源
+>    （278KB）从没进过版本库 —— 克隆下来根本构建不了。已锚定成 `/dist/`。
+>    教训：部署前一定做一次**干净克隆 + npm ci + build** 演练。
+> 2. **Pages API 首次开启必须用 `POST`，用 `PUT` 会返回 404。**
+>    `PUT` 只能改已存在站点的配置。我一开始一直用 PUT，一直 404，
+>    误以为是 token 权限不足，白查了半天。
+> 3. **`actions/configure-pages` 在 Pages 未启用时会直接失败**，
+>    即使构建和产物检查都通过了。首次部署要么先 `POST` 建站点，
+>    要么在工作流里加 `enablement: true`。
+> 4. **别在 push 之外再手动 `workflow_dispatch` 一次** ——
+>    `concurrency: cancel-in-progress` 会让两次运行互相取消，
+>    而且轮询容易取到被取消的那次，误报成构建失败。
+
+---
+
+> 局域网状态：本机服务监听 `0.0.0.0:5181`，地址 **http://192.168.1.4:5181/**
+> （但局域网 HTTP 装不了 PWA，见下）
 
 ## ⚠️ 先看这条：HTTP 和 HTTPS 的区别
 

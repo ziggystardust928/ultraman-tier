@@ -3,6 +3,15 @@
 > 特摄剧《奥特曼》系列的单集评级 App。移动端 Web App（PWA），简约扁平设计。
 > **当前阶段：平成三杰的完整可交互模型已跑通。**
 
+## 🔗 线上地址
+
+**https://ziggystardust928.github.io/ultraman-tier/**
+
+手机浏览器打开 → 菜单里选「添加到主屏幕」。装好后是独立窗口的 App，**离线也能用**。
+
+- 仓库：https://github.com/ziggystardust928/ultraman-tier
+- push 到 `main` 会自动触发 GitHub Actions 构建并部署（`.github/workflows/deploy.yml`）
+
 ## 现在能做什么
 
 | 功能 | 状态 |

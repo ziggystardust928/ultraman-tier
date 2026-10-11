@@ -141,15 +141,31 @@ git(['remote', 'remove', 'origin'], { allowFail: true });
 git(['remote', 'add', 'origin', `https://github.com/${login}/${REPO}.git`]);
 console.log(`  ✓ origin 已设为 ${htmlUrl}（不含 token）`);
 
-// ------------------------------------------------------------------ 5. 开 Pages（尽力而为）
-// 注意：Pages API 在新仓库上经常返回 404。真正的开启动作交给工作流里的
-// actions/configure-pages（带 enablement: true），这里只是先试一下。
-console.log('[5/6] 尝试开启 GitHub Pages…');
-const pages = await api('PUT', `/repos/${login}/${REPO}/pages`, { build_type: 'workflow' });
-if (pages.ok || pages.status === 409) {
-  console.log('  ✓ 已启用，源为 GitHub Actions');
-} else {
-  console.log(`  跳过（HTTP ${pages.status}）。工作流里的 configure-pages 会自动开启，无需手动处理`);
+// ------------------------------------------------------------------ 5. 开 Pages
+// 坑：首次开启必须用 POST，PUT 会返回 404。
+// PUT 只能改「已存在站点」的配置。踩过：一直用 PUT，一直 404，
+// 误以为是 token 权限问题，查了半天。
+console.log('[5/6] 开启 GitHub Pages…');
+let pagesState = await api('GET', `/repos/${login}/${REPO}/pages`);
+
+if (pagesState.status === 404) {
+  const created = await api('POST', `/repos/${login}/${REPO}/pages`, {
+    source: { branch: 'main', path: '/' },
+  });
+  if (created.ok) {
+    console.log('  ✓ 已创建 Pages 站点');
+    pagesState = await api('GET', `/repos/${login}/${REPO}/pages`);
+  } else {
+    console.log(`  ⚠ 创建 Pages 失败 HTTP ${created.status}: ${created.json?.message ?? ''}`);
+  }
+}
+
+if (pagesState.ok && pagesState.json?.build_type !== 'workflow') {
+  const put = await api('PUT', `/repos/${login}/${REPO}/pages`, { build_type: 'workflow' });
+  if (put.ok) console.log('  ✓ 构建方式已切为 GitHub Actions');
+  else console.log(`  ⚠ 切换失败 HTTP ${put.status}，可到 ${htmlUrl}/settings/pages 手动选 GitHub Actions`);
+} else if (pagesState.ok) {
+  console.log('  ✓ 已是 GitHub Actions 构建方式');
 }
 
 // ------------------------------------------------------------------ 6. 等构建

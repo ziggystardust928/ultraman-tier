@@ -122,19 +122,117 @@ console.log(`  当前分支：${branch}`);
 
 // ------------------------------------------------------------------ 4. 推送
 console.log('[4/6] 推送到 GitHub…');
+
+/**
+ * 用 Git 数据 API 推送（git push 的兜底）。
+ *
+ * 为什么需要：国内直连 github.com 的 443 很不稳定（SNI 层时通时断），
+ * 但 api.github.com 通常畅通。Git 数据 API 能在纯 HTTP 下完成一次提交，
+ * 不依赖 git 协议。
+ *
+ * 做法：把本地索引里每个文件的 blob SHA 和远端树对比，
+ * 只上传变动的文件（git 的 SHA 是内容寻址的，两边一致，可以直接比）。
+ */
+async function apiPush() {
+  // 远端当前状态
+  const refRes = await api('GET', `/repos/${login}/${REPO}/git/ref/heads/main`);
+  const parentSha = refRes.json?.object?.sha ?? null;
+
+  let remoteFiles = new Map();
+  if (parentSha) {
+    const commitRes = await api('GET', `/repos/${login}/${REPO}/git/commits/${parentSha}`);
+    const treeSha = commitRes.json.tree.sha;
+    const treeRes = await api('GET', `/repos/${login}/${REPO}/git/trees/${treeSha}?recursive=1`);
+    remoteFiles = new Map((treeRes.json?.tree ?? []).filter((t) => t.type === 'blob').map((t) => [t.path, t.sha]));
+  }
+
+  // 本地索引（git ls-files -s 给的是 <mode> <sha> <stage>\t<path>）
+  const lsOut = spawnSync('git', ['ls-files', '-s'], { cwd: ROOT, encoding: 'utf8' }).stdout;
+  const local = [];
+  for (const line of lsOut.split('\n')) {
+    const m = line.match(/^(\d{6}) ([0-9a-f]{40}) \d\t(.+)$/);
+    if (m) local.push({ mode: m[1], sha: m[2], path: m[3] });
+  }
+
+  // 需要上传的：远端没有这个 SHA 的
+  const toUpload = local.filter((f) => remoteFiles.get(f.path) !== f.sha);
+  const toDelete = [...remoteFiles.keys()].filter((p) => !local.some((f) => f.path === p));
+
+  console.log(
+    `  远端 ${remoteFiles.size} 个文件，本地 ${local.length} 个，` +
+      `需上传 ${toUpload.length} 个${toDelete.length ? `、删除 ${toDelete.length} 个` : ''}`,
+  );
+
+  // 并发上传 blob
+  let done = 0;
+  const BATCH = 6;
+  for (let i = 0; i < toUpload.length; i += BATCH) {
+    await Promise.all(
+      toUpload.slice(i, i + BATCH).map(async (f) => {
+        const content = fs.readFileSync(path.join(ROOT, f.path));
+        const r = await api('POST', `/repos/${login}/${REPO}/git/blobs`, {
+          content: content.toString('base64'),
+          encoding: 'base64',
+        });
+        if (!r.ok) throw new Error(`上传 ${f.path} 失败: ${r.json?.message ?? r.status}`);
+        f.newSha = r.json.sha;
+        done++;
+      }),
+    );
+    process.stdout.write(`\r  上传中 ${done}/${toUpload.length}   `);
+  }
+  if (toUpload.length) console.log('');
+
+  // 组装树
+  const tree = [
+    ...local.map((f) => ({
+      path: f.path,
+      mode: f.mode === '100755' ? '100755' : '100644',
+      type: 'blob',
+      sha: f.newSha ?? f.sha,
+    })),
+    ...toDelete.map((p) => ({ path: p, mode: '100644', type: 'blob', sha: null })),
+  ];
+
+  const treeRes = await api('POST', `/repos/${login}/${REPO}/git/trees`, { tree });
+  if (!treeRes.ok) throw new Error(`建树失败: ${treeRes.json?.message ?? treeRes.status}`);
+
+  const msg =
+    git(['log', '-1', '--pretty=%B']).stdout.trim() ||
+    'chore: 通过 API 更新';
+  const commitRes = await api('POST', `/repos/${login}/${REPO}/git/commits`, {
+    message: msg,
+    tree: treeRes.json.sha,
+    parents: parentSha ? [parentSha] : [],
+  });
+  if (!commitRes.ok) throw new Error(`建提交失败: ${commitRes.json?.message ?? commitRes.status}`);
+
+  const upd = parentSha
+    ? await api('PATCH', `/repos/${login}/${REPO}/git/refs/heads/main`, { sha: commitRes.json.sha })
+    : await api('POST', `/repos/${login}/${REPO}/git/refs`, {
+        ref: 'refs/heads/main',
+        sha: commitRes.json.sha,
+      });
+  if (!upd.ok) throw new Error(`更新 ref 失败: ${upd.json?.message ?? upd.status}`);
+
+  console.log(`  ✓ 已通过 API 推送（commit ${commitRes.json.sha.slice(0, 8)}）`);
+}
+
 const pushUrl = `https://x-access-token:${TOKEN}@github.com/${login}/${REPO}.git`;
 const push = spawnSync('git', ['push', pushUrl, `${branch}:main`, '--force'], {
   cwd: ROOT,
   encoding: 'utf8',
-  // 别让 token 出现在错误信息里
   env: { ...process.env, GIT_TERMINAL_PROMPT: '0' },
 });
-if (push.status !== 0) {
-  const msg = (push.stderr || push.stdout || '').replaceAll(TOKEN, '***');
-  console.error(`  ✗ 推送失败:\n${msg}`);
-  process.exit(1);
+
+if (push.status === 0) {
+  console.log('  ✓ 已推送到 main（token 未写入 .git/config）');
+} else {
+  const msg = (push.stderr || push.stdout || '').replaceAll(TOKEN, '***').trim();
+  console.log(`  git push 失败：${msg.split('\n').pop()}`);
+  console.log('  github.com 直连不稳，改用 Git 数据 API 推送…');
+  await apiPush();
 }
-console.log('  ✓ 已推送到 main（token 未写入 .git/config）');
 
 // 设一个干净的 origin，方便以后手动推
 git(['remote', 'remove', 'origin'], { allowFail: true });

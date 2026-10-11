@@ -137,6 +137,30 @@ export default function Methodology() {
           <code>npm run data</code>，App 立刻按新口径重算。
         </p>
 
+        <h3>版权与致谢</h3>
+        <p>
+          这是一个<strong>非商业的粉丝作品</strong>，用来整理和讨论奥特曼系列的单集。没有任何广告、付费或商业用途。
+        </p>
+        <ul>
+          <li>
+            《奥特曼》系列全部影视作品的著作权归 <strong>圆谷制作株式会社（Tsuburaya Productions）</strong> 所有。
+            App 内的剧集海报、分集剧照、设计稿均为版权方作品的截图或影像资料，
+            仅用于介绍、评论与资料索引，<strong>版权归原权利方所有</strong>。
+          </li>
+          <li>
+            剧照取自 B 站正片视频帧，海报与设计稿取自版权方公开发布的宣传物料与设计讲解内容。
+            若权利方认为本页面使用方式不妥，请联系删除。
+          </li>
+          <li>
+            评分数据来自 <strong>IMDb 官方数据集</strong>（仅供个人非商业使用）与
+            <strong>哔哩哔哩番剧</strong>公开资料；登场怪兽、首播日期、收视率来自公开的粉丝整理资料。
+          </li>
+          <li>
+            本 App <strong>不提供任何影片的在线播放或下载</strong>，也不存储影片本体，
+            相关内容请通过正版渠道观看。
+          </li>
+        </ul>
+
         <p style={{ marginTop: 24, fontSize: 11.5, color: 'var(--fg-4)' }}>
           数据集生成于 {new Date(dataset.generatedAt).toLocaleString('zh-CN')} · 口径版本 {config.version}
         </p>

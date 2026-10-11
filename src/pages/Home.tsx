@@ -137,8 +137,16 @@ export default function Home() {
 
       <div className="section">
         <div className="section-note" style={{ lineHeight: 1.7 }}>
-          数据来源：IMDb 官方数据集（评分 / 票数 / 编剧 / 导演）与哔哩哔哩番剧（中文分集标题 / 时长）。
+          数据来源：IMDb 官方数据集（评分 / 票数 / 编剧 / 导演）与哔哩哔哩番剧（中文分集标题 / 时长 / 剧照）。
           贴吧社区评分尚未接入，当前为 IMDb 单一来源预评。
+        </div>
+        <div className="section-note" style={{ lineHeight: 1.7, marginTop: 10, color: 'var(--fg-4)' }}>
+          非商业粉丝作品。《奥特曼》系列著作权归圆谷制作株式会社所有，本站图片均为版权方作品的影像资料，
+          仅作介绍与资料索引之用。详见{' '}
+          <Link to="/methodology" style={{ borderBottom: '1px solid var(--line)' }}>
+            评级口径
+          </Link>
+          页。
         </div>
       </div>
     </div>

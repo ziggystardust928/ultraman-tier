@@ -2,6 +2,20 @@
 
 > 长线项目。**每次开始工作前先读这个文件**，它记录当前进度和下一步。
 
+## 🔗 线上地址（已部署）
+
+**https://ziggystardust928.github.io/ultraman-tier/**
+
+- 仓库：https://github.com/ziggystardust928/ultraman-tier
+- 部署方式：push 到 `main` → GitHub Actions 构建 → 部署到 Pages
+- 线上实测：PWA 10/10 通过、11 条路由无横向溢出、单集元数据全部正确渲染
+
+**重新部署**（改了代码之后）：
+
+```bash
+npm run deploy:gh -- --token ghp_xxx     # 需要 repo + workflow 权限的 PAT
+```
+
 ## 一句话
 
 奥特曼单集评级 App。移动端 Web App（PWA），简约扁平，先做交互模型，功能逐个加。
@@ -40,11 +54,26 @@
 - [x] **单集元数据：首播日期 / 登场怪兽 / 收视率**
 - [x] **PWA（离线可用、可加到主屏）**
 - [x] **局域网部署**（`npm run serve`，防火墙需手动放行）
+- [x] **GitHub Pages 上线（HTTPS，PWA 完整可用）**
 
 - [ ] 接入贴吧社区分（30% 权重）← 卡在 Edge v20 应用绑定加密，需用户授权启动无头 Edge
 - [ ] 新生代剧集数据（银河 → 奥美迦，约 13 部 / 325 集）
 - [ ] 用户自己的评分/收藏（需要后端或本地存储）
 - [ ] 盖亚的首播日期（现有源都取不到，见下方说明）
+
+## 网络环境坑（重要）
+
+国内直连 **`github.com` 的 443 很不稳定**（SNI 层时通时断），但 **`api.github.com` 通常畅通**。
+
+首次部署 `git push` 成功过，第二次就 `Connection was reset` / `Could not connect`。
+所以 `tools/gh-push.mjs` 里做了兜底：**git push 失败就走 Git 数据 API 推送**。
+
+做法：`git ls-files -s` 拿到本地每个文件的 blob SHA，和远端树比对，
+只上传变动的文件（git 的 SHA 是内容寻址的，跨机器一致，可以直接比）。
+实测一次改动 3 个文件，只上传 3 个 blob，6 次 API 调用完成一次提交。
+
+**注意**：无凭证的 `git push origin main` 会失败（远端 URL 是干净的，不含 token）。
+要推送就走 `npm run deploy:gh -- --token ...`。
 
 ## 数据完整度（154 集）
 

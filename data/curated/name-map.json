@@ -45,6 +45,24 @@
     "Takahiko Masuda": { "zh": "增田贵彦", "ja": "増田貴彦", "confidence": "high", "roles": ["writer"] },
     "Sadayuki Murai": { "zh": "村井さだゆき", "ja": "村井さだゆき", "confidence": "high", "roles": ["writer"] },
     "Kazuo Tsuburaya": { "zh": "圆谷一夫", "ja": "円谷一夫", "confidence": "low", "roles": ["writer"], "note": "圆谷一夫在中文名单里是「制作」（制片人）；IMDb 将其记为编剧，职能可疑，中文名本身正确" },
-    "Hiromasa Mitsudome": { "zh": "三留弹", "ja": "三留弾", "confidence": "low", "roles": ["writer"], "note": "未出现在 Bilibili 中文编剧名单中，中文还原不确定，建议后续用日文维基核对" }
+    "Hiromasa Mitsudome": { "zh": "三留弹", "ja": "三留弾", "confidence": "low", "roles": ["writer"], "note": "未出现在 Bilibili 中文编剧名单中，中文还原不确定，建议后续用日文维基核对" },
+
+    "Yûichi Abe": { "zh": "阿部雄一", "ja": "阿部雄一", "confidence": "high", "roles": ["director"], "note": "B 站奈克瑟斯导演名单直接确认" },
+    "Sôtarô Hayashi": { "zh": "林壮太郎", "ja": "林壮太郎", "confidence": "high", "roles": ["writer"], "note": "B 站高斯编剧名单直接确认" },
+    "Kengo Kaji": { "zh": "梶研吾", "ja": "梶研吾", "confidence": "high", "roles": ["writer", "director"], "note": "B 站高斯/麦克斯编剧名单直接确认" },
+    "Tomoki Sano": { "zh": "佐野智树", "ja": "佐野智樹", "confidence": "high", "roles": ["director"], "note": "B 站梦比优斯导演名单直接确认" },
+    "Naoki Ohara": { "zh": "小原直树", "ja": "小原直樹", "confidence": "high", "roles": ["director"], "note": "B 站奈克瑟斯导演名单直接确认" },
+    "Kenichi Araki": { "zh": "荒木宪一", "ja": "荒木憲一", "confidence": "high", "roles": ["writer"], "note": "B 站高斯/奈克瑟斯编剧名单直接确认" },
+    "Masanao Akahoshi": { "zh": "赤星政尚", "ja": "赤星政尚", "confidence": "high", "roles": ["writer"], "note": "B 站奈克瑟斯编剧名单直接确认" },
+    "Takuro Fukuda": { "zh": "福田卓郎", "ja": "福田卓郎", "confidence": "high", "roles": ["writer"], "note": "B 站麦克斯编剧名单直接确认" },
+    "Atsushi Maekawa": { "zh": "前川淳", "ja": "前川淳", "confidence": "high", "roles": ["writer"], "note": "B 站高斯编剧名单直接确认" },
+    "Takashi Miike": { "zh": "三池崇史", "ja": "三池崇史", "confidence": "high", "roles": ["director"], "note": "B 站麦克斯导演名单直接确认；日本知名电影导演" },
+    "Satoru Nishizono": { "zh": "西园悟", "ja": "西園悟", "confidence": "high", "roles": ["writer"], "note": "B 站高斯编剧名单直接确认" },
+    "Yû Yamamoto": { "zh": "山本优", "ja": "山本優", "confidence": "high", "roles": ["writer"], "note": "B 站高斯编剧名单直接确认" },
+    "Satoshi Suzuki": { "zh": "铃木智", "ja": "鈴木智", "confidence": "high", "roles": ["writer"], "note": "B 站高斯编剧名单直接确认" },
+    "Tomoo Haraguchi": { "zh": "原口智生", "ja": "原口智生", "confidence": "medium", "roles": ["director"], "note": "圆谷特摄的造型/特技监督，罗马字还原较可靠，但 B 站梦比优斯名单未列出（该名单仅列 3 位导演，明显不全）" },
+    "Kenji Suzuki": { "zh": "铃木健二", "ja": "鈴木健二", "confidence": "medium", "roles": ["director"], "note": "B 站梦比优斯名单未列全，罗马字还原可靠但未获官方名单交叉确认" },
+    "Taku Miyamoto": { "zh": "宫本拓", "ja": "宮本拓", "confidence": "medium", "roles": ["director"], "note": "奈欧斯无 B 站中文演职员名单可交叉验证" },
+    "Naoki Kobara": { "zh": "小原直树", "ja": "小原直樹", "confidence": "low", "roles": ["director"], "note": "与 Naoki Ohara 疑似同一人（小原 可读作 Ohara/Kobara），IMDb 罗马字不一致导致拆成两条；暂按同一中文名处理" }
   }
 }

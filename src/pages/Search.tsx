@@ -102,7 +102,7 @@ export default function SearchPage() {
               <div className="hit-top">
                 <TierBadge ep={h.episode!} />
                 <span className="hit-title">{h.title}</span>
-                <span className="ep-score">{h.episode!.score.toFixed(1)}</span>
+                <span className="ep-score">{h.episode!.score?.toFixed(1) ?? '—'}</span>
               </div>
               <div className="hit-sub">{h.subtitle}</div>
             </Link>

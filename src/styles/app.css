@@ -429,6 +429,12 @@ input {
   background: var(--tier-rankai);
 }
 
+/* 无 IMDb 评分、未参与分档 */
+.tier-chip-muted {
+  background: var(--surface-3);
+  color: var(--fg-3);
+}
+
 .tier-chip-lg {
   font-size: 13px;
   padding: 6px 11px;

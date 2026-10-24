@@ -35,6 +35,8 @@
   padding: 2px 6px;
   border-radius: 3px;
   font-variant-numeric: tabular-nums;
+  /* 不加 nowrap 会把「1996 · 52 话」折成两行，在 72px 的小海报上很难看 */
+  white-space: nowrap;
 }
 .cover-badge-sep {
   opacity: 0.45;

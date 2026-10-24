@@ -23,7 +23,14 @@ ROOT = Path(__file__).resolve().parent.parent
 argv = sys.argv[1:]
 only = argv[argv.index("--only") + 1] if "--only" in argv else None
 
-SERIES = [s for s in ("tiga", "dyna", "gaia") if not only or s == only]
+SERIES = [
+    s
+    for s in (
+        "tiga", "dyna", "gaia",
+        "neos", "cosmos", "nexus", "max", "mebius", "sevenx", "ugmmb", "ugmmb2",
+    )
+    if not only or s == only
+]
 
 OUT_W, OUT_H = 480, 360  # 4:3 出图（原片就是 4:3）
 

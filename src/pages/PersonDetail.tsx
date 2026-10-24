@@ -19,8 +19,10 @@ export default function PersonDetail() {
   const asDirector = personCredits(person, 'director');
   const asWriter = personCredits(person, 'writer');
 
-  const avg = (list: FlatEpisode[]) =>
-    list.length ? list.reduce((n, e) => n + e.score, 0) / list.length : null;
+  const avg = (list: FlatEpisode[]) => {
+    const scored = list.filter((e) => e.score !== null);
+    return scored.length ? scored.reduce((n, e) => n + (e.score ?? 0), 0) / scored.length : null;
+  };
 
   const kamikaiCount = [...asDirector, ...asWriter].filter((e) => e.tier === 'kamikai').length;
 
@@ -90,7 +92,7 @@ export default function PersonDetail() {
       {[...groups.entries()].map(([seriesId, list]) => {
         const s = dataset.series.find((x) => x.id === seriesId)!;
         const sorted = [...list].sort((a, b) => a.ep.no - b.ep.no);
-        const best = sorted.reduce((m, x) => Math.max(m, x.ep.score), 0);
+        const best = sorted.reduce((m, x) => Math.max(m, x.ep.score ?? -1), -1);
         return (
           <div key={seriesId}>
             <div className="section">
@@ -113,7 +115,7 @@ export default function PersonDetail() {
                     {role} · {ep.durationMin} 分钟
                   </span>
                 </span>
-                <span className="ep-score">{ep.score.toFixed(1)}</span>
+                <span className="ep-score">{ep.score?.toFixed(1) ?? '—'}</span>
               </Link>
             ))}
           </div>

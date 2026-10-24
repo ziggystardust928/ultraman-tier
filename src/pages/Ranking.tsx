@@ -11,7 +11,7 @@ export default function Ranking() {
 
   const counts = useMemo(() => {
     const c: Record<string, number> = {};
-    for (const e of eraEpisodes) c[e.tier] = (c[e.tier] ?? 0) + 1;
+    for (const e of eraEpisodes) if (e.tier) c[e.tier] = (c[e.tier] ?? 0) + 1;
     return c;
   }, [eraEpisodes]);
 
@@ -28,7 +28,7 @@ export default function Ranking() {
       eraEpisodes
         .filter((e) => e.tier === tier)
         .filter((e) => tier !== 'kamikai' || grade === 'all' || e.kamikaiGrade?.id === grade)
-        .sort((a, b) => b.score - a.score),
+        .sort((a, b) => (b.score ?? -1) - (a.score ?? -1)),
     [eraEpisodes, tier, grade],
   );
 

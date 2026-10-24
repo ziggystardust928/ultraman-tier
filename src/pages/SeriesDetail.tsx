@@ -13,7 +13,9 @@ export default function SeriesDetail() {
 
   const episodes = useMemo(() => {
     if (!series) return [];
-    return [...series.episodes].sort((a, b) => (sort === 'no' ? a.no - b.no : b.score - a.score));
+    return [...series.episodes].sort((a, b) =>
+      sort === 'no' ? a.no - b.no : (b.score ?? -1) - (a.score ?? -1),
+    );
   }, [series, sort]);
 
   if (!series) {
@@ -26,7 +28,7 @@ export default function SeriesDetail() {
   }
 
   const counts: Record<string, number> = {};
-  for (const e of series.episodes) counts[e.tier] = (counts[e.tier] ?? 0) + 1;
+  for (const e of series.episodes) if (e.tier) counts[e.tier] = (counts[e.tier] ?? 0) + 1;
   const kamikai = counts.kamikai ?? 0;
 
   const personOf = (name: string) => dataset.people.find((p) => p.name === name);
@@ -52,9 +54,11 @@ export default function SeriesDetail() {
         <div className="scorecard">
           <div className="scorecard-cell">
             <div className="scorecard-label">IMDb</div>
-            <div className="scorecard-value">{series.ratings.imdb?.toFixed(2)}</div>
+            <div className="scorecard-value">{series.ratings.imdb?.toFixed(2) ?? '—'}</div>
             <div className="scorecard-note">
-              区间 {series.ratingRange[0]}–{series.ratingRange[1]}
+              {series.ratingRange
+                ? `区间 ${series.ratingRange[0]}–${series.ratingRange[1]}`
+                : `覆盖 ${Math.round(series.ratingCoverage * 100)}%`}
             </div>
           </div>
           <div className="scorecard-cell">

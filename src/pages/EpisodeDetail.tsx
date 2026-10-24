@@ -63,7 +63,8 @@ export default function EpisodeDetail() {
   }
 
   const s = ep.series;
-  const tier = tierOf(ep.tier);
+  const scored = ep.score !== null && ep.tier !== null;
+  const tier = scored ? tierOf(ep.tier as string) : null;
   const cfg = dataset.config;
 
   // 相邻集导航
@@ -82,11 +83,17 @@ export default function EpisodeDetail() {
         <div className="ep-hero-grad" />
         <div className="ep-hero-body">
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 8 }}>
-            <TierChip tier={ep.tier} label={ep.tierLabel} large />
-            {ep.kamikaiGrade && (
-              <span className="tier-chip tier-chip-lg" data-tier="kamikai" style={{ opacity: 0.82 }}>
-                {ep.kamikaiGrade.label}
-              </span>
+            {scored ? (
+              <>
+                <TierChip tier={ep.tier as string} label={ep.tierLabel as string} large />
+                {ep.kamikaiGrade && (
+                  <span className="tier-chip tier-chip-lg" data-tier="kamikai" style={{ opacity: 0.82 }}>
+                    {ep.kamikaiGrade.label}
+                  </span>
+                )}
+              </>
+            ) : (
+              <span className="tier-chip tier-chip-lg tier-chip-muted">未参与分档</span>
             )}
           </div>
           <div style={{ fontSize: 22, fontWeight: 800, lineHeight: 1.15, letterSpacing: '-0.02em' }}>
@@ -172,13 +179,13 @@ export default function EpisodeDetail() {
         <div className="scorecard">
           <div className="scorecard-cell">
             <div className="scorecard-label">站内评分</div>
-            <div className="scorecard-value">{ep.score.toFixed(1)}</div>
-            <div className="scorecard-note">{tier.label}</div>
+            <div className="scorecard-value">{scored ? ep.score!.toFixed(1) : '—'}</div>
+            <div className="scorecard-note">{tier ? tier.label : '未参与分档'}</div>
           </div>
           <div className="scorecard-cell">
             <div className="scorecard-label">IMDb</div>
-            <div className="scorecard-value">{ep.imdb.rating?.toFixed(1)}</div>
-            <div className="scorecard-note">{ep.imdb.votes} 票</div>
+            <div className="scorecard-value">{ep.imdb.rating?.toFixed(1) ?? '—'}</div>
+            <div className="scorecard-note">{ep.imdb.votes ? `${ep.imdb.votes} 票` : '暂无评分'}</div>
           </div>
           <div className="scorecard-cell">
             <div className="scorecard-label">贴吧</div>
@@ -187,68 +194,98 @@ export default function EpisodeDetail() {
           </div>
         </div>
 
-        {/* 排名 */}
-        <div className="section" style={{ padding: '18px 0 0' }}>
-          <div className="section-head">
-            <h2 className="section-title">排位</h2>
+        {/* 排名 / 未参与分档的说明 */}
+        {scored ? (
+          <>
+            <div className="section" style={{ padding: '18px 0 0' }}>
+              <div className="section-head">
+                <h2 className="section-title">排位</h2>
+              </div>
+            </div>
+            <div className="kv">
+              <div className="kv-key">{ERA_LABEL[s.era]}</div>
+              <div className="kv-val">
+                第 <strong style={{ color: 'var(--fg)' }}>{ep.rankInEra}</strong> / {ep.eraTotal} 名
+              </div>
+            </div>
+            <div className="kv">
+              <div className="kv-key">剧内</div>
+              <div className="kv-val">
+                第 <strong style={{ color: 'var(--fg)' }}>{ep.rankInSeries}</strong> / {s.episodeCount} 名
+              </div>
+            </div>
+            <div className="kv">
+              <div className="kv-key">分档依据</div>
+              <div className="kv-val">
+                剧内百分位 {(ep.tierPercentile! * 100).toFixed(1)}% → 需 &lt; {tier!.cumShare * 100}% 才是{tier!.label}
+                {ep.kamikaiGated && (
+                  <span className="dim" style={{ fontSize: 11 }}>
+                    {' '}
+                    （本可入神回，但该剧 IMDb 绝对分过低，已被绝对下限拦下）
+                  </span>
+                )}
+              </div>
+            </div>
+          </>
+        ) : (
+          <div
+            style={{
+              marginTop: 18,
+              padding: '12px 14px',
+              border: '1px solid var(--line)',
+              borderRadius: 'var(--radius-sm)',
+              fontSize: 12,
+              lineHeight: 1.7,
+              color: 'var(--fg-3)',
+            }}
+          >
+            <strong style={{ color: 'var(--fg-2)' }}>本集未参与分档</strong>
+            <br />
+            {s.ratingsIncomplete
+              ? `${s.titleZh} 的 IMDb 评分只覆盖 ${Math.round(s.ratingCoverage * 100)}% 的集数，数据不足以做相对分档。为避免「从少数几集里硬凑神回」造成误导，整部剧暂不评档。分集标题、主创、登场怪兽等资料仍然完整。`
+              : '本集在 IMDb 上没有足够的评分票数，无法计算分数。'}
           </div>
-        </div>
-        <div className="kv">
-          <div className="kv-key">{ERA_LABEL[s.era]}</div>
-          <div className="kv-val">
-            第 <strong style={{ color: 'var(--fg)' }}>{ep.rankInEra}</strong> / {ep.eraTotal} 名
-          </div>
-        </div>
-        <div className="kv">
-          <div className="kv-key">剧内</div>
-          <div className="kv-val">
-            第 <strong style={{ color: 'var(--fg)' }}>{ep.rankInSeries}</strong> / {s.episodeCount} 名
-          </div>
-        </div>
-        <div className="kv">
-          <div className="kv-key">分档依据</div>
-          <div className="kv-val">
-            剧内百分位 {(ep.tierPercentile * 100).toFixed(1)}% → 需 &lt; {tier.cumShare * 100}% 才是{tier.label}
-          </div>
-        </div>
+        )}
       </div>
 
-      {/* 计算明细 */}
-      <div className="section">
-        <div className="section-head">
-          <h2 className="section-title">分数怎么来的</h2>
-          <Link className="section-note" to="/methodology">
-            完整口径 →
-          </Link>
-        </div>
-        <div className="kv">
-          <div className="kv-key">票数收缩</div>
-          <div className="kv-val">
-            {(ep.imdb.rating ?? 0).toFixed(1)} × {ep.imdb.votes} 票，向剧均分收缩后 = {ep.breakdown.shrunk.toFixed(2)}
+      {/* 计算明细（只在有分数时显示） */}
+      {scored && ep.breakdown && (
+        <div className="section">
+          <div className="section-head">
+            <h2 className="section-title">分数怎么来的</h2>
+            <Link className="section-note" to="/methodology">
+              完整口径 →
+            </Link>
+          </div>
+          <div className="kv">
+            <div className="kv-key">票数收缩</div>
+            <div className="kv-val">
+              {(ep.imdb.rating ?? 0).toFixed(1)} × {ep.imdb.votes} 票，向剧均分收缩后 = {ep.breakdown.shrunk.toFixed(2)}
+            </div>
+          </div>
+          <div className="kv">
+            <div className="kv-key">z 绝对</div>
+            <div className="kv-val">{ep.breakdown.zAbs.toFixed(2)}（对比整个{ERA_LABEL[s.era]}）</div>
+          </div>
+          <div className="kv">
+            <div className="kv-key">z 相对</div>
+            <div className="kv-val">{ep.breakdown.zRel.toFixed(2)}（只对比本剧）</div>
+          </div>
+          <div className="kv">
+            <div className="kv-key">合成</div>
+            <div className="kv-val">
+              {cfg.model.weights.imdbAbsShare} × {ep.breakdown.zAbs.toFixed(2)} + {cfg.model.weights.imdbRelShare} ×{' '}
+              {ep.breakdown.zRel.toFixed(2)} = {ep.breakdown.z.toFixed(2)}
+            </div>
+          </div>
+          <div className="kv">
+            <div className="kv-key">折算</div>
+            <div className="kv-val">
+              {cfg.model.centerScore} + {cfg.model.scorePerSigma} × {ep.breakdown.z.toFixed(2)} = {ep.score!.toFixed(1)}
+            </div>
           </div>
         </div>
-        <div className="kv">
-          <div className="kv-key">z 绝对</div>
-          <div className="kv-val">{ep.breakdown.zAbs.toFixed(2)}（对比整个{ERA_LABEL[s.era]}）</div>
-        </div>
-        <div className="kv">
-          <div className="kv-key">z 相对</div>
-          <div className="kv-val">{ep.breakdown.zRel.toFixed(2)}（只对比本剧）</div>
-        </div>
-        <div className="kv">
-          <div className="kv-key">合成</div>
-          <div className="kv-val">
-            {cfg.model.weights.imdbAbsShare} × {ep.breakdown.zAbs.toFixed(2)} + {cfg.model.weights.imdbRelShare} ×{' '}
-            {ep.breakdown.zRel.toFixed(2)} = {ep.breakdown.z.toFixed(2)}
-          </div>
-        </div>
-        <div className="kv">
-          <div className="kv-key">折算</div>
-          <div className="kv-val">
-            {cfg.model.centerScore} + {cfg.model.scorePerSigma} × {ep.breakdown.z.toFixed(2)} = {ep.score.toFixed(1)}
-          </div>
-        </div>
-      </div>
+      )}
 
       {/* 上下集 */}
       <div style={{ display: 'flex', gap: 1, background: 'var(--line-soft)', marginTop: 22 }}>

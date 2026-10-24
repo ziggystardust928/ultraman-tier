@@ -1,0 +1,193 @@
+{
+  "search_hit": {
+    "media_id": 27366597,
+    "season_id": 109360,
+    "title": "奥特银河 大怪兽之战 无尽的圣战",
+    "org_title": "ウルトラギャラクシー大怪獣バトル NEVER ENDING ODYSSEY",
+    "index_show": "全13话",
+    "score": 9.9,
+    "score_users": 3265,
+    "staff": "制作·监修：大冈新一\n系列构成·剧本：荒木宪一等\n导演：菊地雄一等\n",
+    "cv": "雷：南翔太\n"
+  },
+  "season_id": 109360,
+  "media_id": 27366597,
+  "title": "奥特银河 大怪兽之战 无尽的圣战",
+  "org_title": "奥特银河 大怪兽之战 无尽的圣战",
+  "evaluate": "《奥特银河 大怪兽之战》的续作！多名怪兽召唤者“雷奥尼克斯”现身，投身于不可回避的宿命对决。他们的真正目的无人知晓，却已将整个宇宙拖入深渊的边缘。而在光影交错之地，神秘的“雷奥尼克斯猎人”也随之登场，步步紧逼。一场关于雷奥尼克斯和怪兽，决定全宇宙命运的战斗，就此拉开惊心动魄的帷幕……",
+  "rating": {
+    "count": 3265,
+    "score": 9.9
+  },
+  "publish": {
+    "is_finish": 1,
+    "is_started": 1,
+    "pub_time": "2025-08-24 11:00:00",
+    "pub_time_show": "2025年08月24日11:00",
+    "unknow_pub_date": 0,
+    "weekday": 0
+  },
+  "total": 13,
+  "cover": "https://i0.hdslb.com/bfs/bangumi/image/60a1806c76d5816ddabf80ab5641c1a2bb112117.png",
+  "square_cover": "https://i0.hdslb.com/bfs/bangumi/image/6ca904669847a55dda771ff91042b4a1c5e9c458.png",
+  "season_cover": null,
+  "episodes": [
+    {
+      "ep_id": 2081361,
+      "title": "1",
+      "long_title": "雷奥尼克斯猎人",
+      "show_title": "第1话 雷奥尼克斯猎人",
+      "duration_ms": 1486000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV16te4zmE2D",
+      "cover": "http://i0.hdslb.com/bfs/archive/18ead60d3895843e4476bc8459a8cada1e55fba1.png"
+    },
+    {
+      "ep_id": 2081362,
+      "title": "2",
+      "long_title": "雷奥尼克斯格斗",
+      "show_title": "第2话 雷奥尼克斯格斗",
+      "duration_ms": 1487000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1rte4zmEbM",
+      "cover": "http://i0.hdslb.com/bfs/archive/74d893242ffef27e7191d8fc51b46dc933c9cf41.png"
+    },
+    {
+      "ep_id": 2081363,
+      "title": "3",
+      "long_title": "雷奥尼克斯暴走",
+      "show_title": "第3话 雷奥尼克斯暴走",
+      "duration_ms": 1485000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1rte4zmEmK",
+      "cover": "http://i0.hdslb.com/bfs/archive/95b9b272632d5ee8fd1cb5904035d4640bca7ce0.png"
+    },
+    {
+      "ep_id": 2081364,
+      "title": "4",
+      "long_title": "困惑的再会",
+      "show_title": "第4话 困惑的再会",
+      "duration_ms": 1484000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1Hte4zUEyS",
+      "cover": "http://i0.hdslb.com/bfs/archive/89ed91d9a7801d4c647a0079ea5c7b264172199a.png"
+    },
+    {
+      "ep_id": 2081365,
+      "title": "5",
+      "long_title": "在失控的尽头",
+      "show_title": "第5话 在失控的尽头",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1rte4zmELA",
+      "cover": "http://i0.hdslb.com/bfs/archive/eadbaaaf0ce1129064c382f5a70f9af25b30b054.png"
+    },
+    {
+      "ep_id": 2081366,
+      "title": "6",
+      "long_title": "史上最强的雷奥尼克斯",
+      "show_title": "第6话 史上最强的雷奥尼克斯",
+      "duration_ms": 1486000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1rte4zmE48",
+      "cover": "http://i0.hdslb.com/bfs/archive/248632ea8d14ce7bcc6150759bfe5a4af0bf9e54.png"
+    },
+    {
+      "ep_id": 2081367,
+      "title": "7",
+      "long_title": "第二次觉醒",
+      "show_title": "第7话 第二次觉醒",
+      "duration_ms": 1482000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1fYe4z5EDP",
+      "cover": "http://i0.hdslb.com/bfs/archive/6f3d637300b8fc48762c01f9d2c2facb67959cf2.png"
+    },
+    {
+      "ep_id": 2081368,
+      "title": "8",
+      "long_title": "攻击入侵者！",
+      "show_title": "第8话 攻击入侵者！",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1rte4zmEFE",
+      "cover": "http://i0.hdslb.com/bfs/archive/9f95dc8d97beb8d490bcfd6cc6dd7d2bbe095685.png"
+    },
+    {
+      "ep_id": 2081369,
+      "title": "9",
+      "long_title": "暗黑盔甲",
+      "show_title": "第9话 暗黑盔甲",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV16te4zmEmr",
+      "cover": "http://i0.hdslb.com/bfs/archive/12ca678b241458a7f22f19c8bc85b9351b863024.png"
+    },
+    {
+      "ep_id": 2081370,
+      "title": "10",
+      "long_title": "新战斗的地平",
+      "show_title": "第10话 新战斗的地平",
+      "duration_ms": 1485000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1zYe4z5Exs",
+      "cover": "http://i0.hdslb.com/bfs/archive/327a070766466d78cacbd49dc3a96bcea2059b17.png"
+    },
+    {
+      "ep_id": 2081371,
+      "title": "11",
+      "long_title": "某位战士的墓碑",
+      "show_title": "第11话 某位战士的墓碑",
+      "duration_ms": 1478000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1rte4zmEcP",
+      "cover": "http://i0.hdslb.com/bfs/archive/206a477561a625826655546a32654f8bfb35b3b0.png"
+    },
+    {
+      "ep_id": 2081372,
+      "title": "12",
+      "long_title": "格朗迪的挑战",
+      "show_title": "第12话 格朗迪的挑战",
+      "duration_ms": 1482000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1cte4zUEs4",
+      "cover": "http://i0.hdslb.com/bfs/archive/a52e6d1ebf971503535a184a8da2b19277b48d87.png"
+    },
+    {
+      "ep_id": 2081373,
+      "title": "13",
+      "long_title": "行星的毁灭",
+      "show_title": "第13话 行星的毁灭",
+      "duration_ms": 1455000,
+      "duration_min": 24,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1fYe4z5E9V",
+      "cover": "http://i0.hdslb.com/bfs/archive/bd3f307603ad42d84437bac93458e71b19915af1.png"
+    }
+  ],
+  "section_titles": []
+}

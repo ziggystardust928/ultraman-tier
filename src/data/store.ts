@@ -25,15 +25,20 @@ export const tierOf = (id: string): TierDef =>
 export const seriesEpisodes = (seriesId: string): FlatEpisode[] =>
   allEpisodes.filter((e) => e.seriesId === seriesId);
 
+/** 无评分的集数排在最后 */
+export const scoreOf = (e: FlatEpisode): number => e.score ?? -1;
+/** 无排名的集数排在最后 */
+export const rankOf = (e: FlatEpisode): number => e.rankInEra ?? Number.MAX_SAFE_INTEGER;
+
+export const isScored = (e: FlatEpisode): boolean => e.score !== null;
+
 export const episodesByEra = (era: string): FlatEpisode[] =>
-  allEpisodes
-    .filter((e) => e.series.era === era)
-    .sort((a, b) => a.rankInEra - b.rankInEra);
+  allEpisodes.filter((e) => e.series.era === era).sort((a, b) => rankOf(a) - rankOf(b));
 
 export const episodesInTier = (tier: string, era?: string): FlatEpisode[] =>
   allEpisodes
     .filter((e) => e.tier === tier && (!era || e.series.era === era))
-    .sort((a, b) => b.score - a.score);
+    .sort((a, b) => scoreOf(b) - scoreOf(a));
 
 export const formatDuration = (min: number | null): string => (min ? `${min} 分钟` : '—');
 

@@ -29,6 +29,14 @@ const SERIES = [
   { id: 'tiga', file: 'bili-tiga.json' },
   { id: 'dyna', file: 'bili-dyna.json' },
   { id: 'gaia', file: 'bili-gaia.json' },
+  { id: 'neos', file: 'bili-neos.json' },
+  { id: 'cosmos', file: 'bili-cosmos.json' },
+  { id: 'nexus', file: 'bili-nexus.json' },
+  { id: 'max', file: 'bili-max.json' },
+  { id: 'mebius', file: 'bili-mebius.json' },
+  { id: 'sevenx', file: 'bili-sevenx.json' },
+  { id: 'ugmmb', file: 'bili-ugmmb.json' },
+  { id: 'ugmmb2', file: 'bili-ugmmb2.json' },
 ].filter((s) => !only || s.id === only);
 
 /** B 站图床尺寸后缀 */

@@ -28,6 +28,14 @@ const SERIES = [
   { id: 'tiga', file: 'bili-tiga.json' },
   { id: 'dyna', file: 'bili-dyna.json' },
   { id: 'gaia', file: 'bili-gaia.json' },
+  { id: 'neos', file: 'bili-neos.json' },
+  { id: 'cosmos', file: 'bili-cosmos.json' },
+  { id: 'nexus', file: 'bili-nexus.json' },
+  { id: 'max', file: 'bili-max.json' },
+  { id: 'mebius', file: 'bili-mebius.json' },
+  { id: 'sevenx', file: 'bili-sevenx.json' },
+  { id: 'ugmmb', file: 'bili-ugmmb.json' },
+  { id: 'ugmmb2', file: 'bili-ugmmb2.json' },
 ].filter((s) => !only || s.id === only);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -72,8 +80,9 @@ for (const s of SERIES) {
   let failed = 0;
   await pool(eps, 3, async (e, idx) => {
     const no = idx + 1;
-    const view = await jget(`https://api.bilibili.com/x/web-interface/view?bvid=${e.bvid}`);
-    const cid = view?.cid;
+    // 视频区合集（奈欧斯/赛文X）里所有集共用一个 bvid，必须用逐集 cid；
+    // 番剧（PGC）没有逐集 cid，用 view 接口查。
+    const cid = e.cid ?? (await jget(`https://api.bilibili.com/x/web-interface/view?bvid=${e.bvid}`))?.cid;
     if (!cid) {
       failed++;
       return;

@@ -37,7 +37,7 @@ export default function SeriesList() {
 
       {list.map((s) => {
         const counts: Record<string, number> = {};
-        for (const e of s.episodes) counts[e.tier] = (counts[e.tier] ?? 0) + 1;
+        for (const e of s.episodes) if (e.tier) counts[e.tier] = (counts[e.tier] ?? 0) + 1;
         const kamikai = counts.kamikai ?? 0;
         return (
           <Link className="series-card" key={s.id} to={`/series/${s.id}`}>
@@ -52,16 +52,26 @@ export default function SeriesList() {
                   <span className="dim">·</span>
                   <span>全 {s.episodeCount} 话</span>
                   <span className="dim">·</span>
-                  <span>IMDb {s.ratings.imdb?.toFixed(2)}</span>
+                  {s.ratings.imdb !== null ? (
+                    <span>IMDb {s.ratings.imdb.toFixed(2)}</span>
+                  ) : (
+                    <span className="dim">IMDb 评分不足</span>
+                  )}
                   <span className="dim">·</span>
-                  <span style={{ color: 'var(--tier-kamikai)' }}>神回 {kamikai}</span>
+                  {s.ratingsIncomplete ? (
+                    <span className="dim">不参与分档</span>
+                  ) : (
+                    <span style={{ color: 'var(--tier-kamikai)' }}>神回 {kamikai}</span>
+                  )}
                 </div>
                 {s.synopsis && <div className="series-card-syn">{s.synopsis}</div>}
               </div>
             </div>
-            <div className="series-card-bar">
-              <TierBar counts={counts} total={s.episodeCount} />
-            </div>
+            {!s.ratingsIncomplete && (
+              <div className="series-card-bar">
+                <TierBar counts={counts} total={s.episodeCount} />
+              </div>
+            )}
           </Link>
         );
       })}

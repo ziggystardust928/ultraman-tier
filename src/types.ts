@@ -21,7 +21,7 @@ export interface Episode {
   titleRomaji: string | null;
   durationMin: number | null;
   durationSource: string | null;
-  imdb: { rating: number | null; votes: number | null; tconst: string };
+  imdb: { rating: number | null; votes: number | null; tconst: string | null };
   bili: { epId: number | null; bvid: string | null; durationMs: number | null };
   still: string | null;
   /** 首播日期（ISO）。盖亚暂无可靠来源，为 null */
@@ -37,18 +37,21 @@ export interface Episode {
   tieba: { score: number | null; votes: number | null; url: string | null } | null;
   directors: PersonRef[];
   writers: PersonRef[];
-  score: number;
-  breakdown: { zAbs: number; zRel: number; z: number; shrunk: number };
-  tier: TierId;
-  tierLabel: string;
+  // ---- 以下字段在「无 IMDb 评分」或「整剧评分覆盖率不足」时为 null ----
+  score: number | null;
+  breakdown: { zAbs: number; zRel: number; z: number; shrunk: number } | null;
+  tier: TierId | null;
+  tierLabel: string | null;
   kamikaiGrade: { id: string; label: string } | null;
-  rankInEra: number;
-  eraTotal: number;
-  rankInSeries: number;
-  rankInScope: number;
-  tierScopeTotal: number;
-  tierPercentile: number;
-  tierScopeKey: string;
+  /** 被「神回绝对下限」拦下时记录原因 */
+  kamikaiGated: { reason: string; zAbs: number } | null;
+  rankInEra: number | null;
+  eraTotal: number | null;
+  rankInSeries: number | null;
+  rankInScope: number | null;
+  tierScopeTotal: number | null;
+  tierPercentile: number | null;
+  tierScopeKey: string | null;
 }
 
 export interface Series {
@@ -82,7 +85,11 @@ export interface Series {
     photos: { src: string | null; no: number; label: string; title: string | null }[];
   };
   episodes: Episode[];
-  ratingRange: [number, number];
+  ratingRange: [number, number] | null;
+  /** IMDb 评分覆盖率 0~1 */
+  ratingCoverage: number;
+  /** 覆盖率不足，整剧不参与分档（仍保留分集/主创/怪兽数据） */
+  ratingsIncomplete: boolean;
 }
 
 export interface Person extends PersonRef {
@@ -129,9 +136,14 @@ export interface Dataset {
   stats: {
     totalEpisodes: number;
     totalPeople: number;
+    /** 有 IMDb 评分、参与分档的集数 */
+    scoredEpisodes: number;
+    unscoredEpisodes: number;
     tierCounts: Record<TierId, number>;
     gradeCounts: Record<string, number>;
-    scoreRange: [number, number];
+    scoreRange: [number, number] | [null, null];
+    /** 评分覆盖率不足、整剧不参与分档的剧集 */
+    ratingsIncompleteSeries: { id: string; titleZh: string; coverage: number }[];
     withWriter: number;
     withDirector: number;
     withAirDate: number;

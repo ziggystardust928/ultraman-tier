@@ -16,18 +16,25 @@ export default function Methodology() {
         </p>
 
         <h3>为什么不能直接按 IMDb 分数划线</h3>
-        <p>实测三部剧的 IMDb 均分差了 1.2 分：</p>
+        <p>
+          各剧的 IMDb 均分差得很远（下面的区间是每部剧自己的最低分~最高分），
+          同一部剧内部的相对位次才是「神回」的真实含义：
+        </p>
         <div className="tier-legend">
           {dataset.series.map((s) => (
             <div className="tier-legend-row" key={s.id}>
               <span style={{ flex: 1 }}>
                 <div style={{ fontSize: 13, fontWeight: 600 }}>{s.titleZh}</div>
                 <div className="tier-legend-desc">
-                  区间 {s.ratingRange[0]} – {s.ratingRange[1]}
+                  {s.ratingsIncomplete
+                    ? `评分覆盖仅 ${Math.round(s.ratingCoverage * 100)}%，不参与分档`
+                    : s.ratingRange
+                      ? `区间 ${s.ratingRange[0]} – ${s.ratingRange[1]}`
+                      : '无评分'}
                 </div>
               </span>
               <span className="stat">
-                <span className="stat-num">{s.ratings.imdb?.toFixed(2)}</span>
+                <span className="stat-num">{s.ratings.imdb?.toFixed(2) ?? '—'}</span>
                 <span className="stat-unit">均分</span>
               </span>
             </div>

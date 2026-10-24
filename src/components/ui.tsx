@@ -76,8 +76,15 @@ export function KamikaiGradeChip({ grade }: { grade: { id: string; label: string
   );
 }
 
-/** 一集的分档徽标：神回额外显示 顶/佳/守 */
+/** 一集的分档徽标：神回额外显示 顶/佳/守；无评分的集显示「未评」 */
 export function TierBadge({ ep, large }: { ep: Pick<FlatEpisode, 'tier' | 'tierLabel' | 'kamikaiGrade'>; large?: boolean }) {
+  if (!ep.tier || !ep.tierLabel) {
+    return (
+      <span className="tier-chip tier-chip-muted" title="IMDb 无评分，未参与分档">
+        未评
+      </span>
+    );
+  }
   if (ep.tier === 'kamikai' && ep.kamikaiGrade) {
     return (
       <span className={large ? 'tier-chip tier-chip-lg' : 'tier-chip'} data-tier="kamikai">
@@ -133,7 +140,7 @@ export function EpisodeRow({ ep, showSeries }: { ep: FlatEpisode; showSeries?: b
         <span className="ep-title">{ep.titleZh ?? ep.titleRomaji ?? `第${ep.no}话`}</span>
         <span className="ep-sub">{parts.join(' · ')}</span>
       </span>
-      <span className="ep-score">{ep.score.toFixed(1)}</span>
+      <span className="ep-score">{ep.score !== null ? ep.score.toFixed(1) : '—'}</span>
     </Link>
   );
 }

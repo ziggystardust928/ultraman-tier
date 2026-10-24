@@ -1,0 +1,193 @@
+{
+  "search_hit": {
+    "media_id": 27362342,
+    "season_id": 109321,
+    "title": "奥特银河 大怪兽之战",
+    "org_title": "ウルトラギャラクシー 大怪獣バトル",
+    "index_show": "全13话",
+    "score": 9.9,
+    "score_users": 2899,
+    "staff": "监修：圆谷一夫\n系列构成·剧本：荒木宪一等\n导演：菊地雄一等\n",
+    "cv": "雷：南翔太\n"
+  },
+  "season_id": 109321,
+  "media_id": 27362342,
+  "title": "奥特银河 大怪兽之战",
+  "org_title": "奥特银河 大怪兽之战",
+  "evaluate": "在遥远的未来，人类已将文明扩展至宇宙中诸多行星。某日，宇宙盘龙号运输船奉命前往调查突然通讯断绝的行星波利斯，却在接近时遭遇神秘能量冲击，不幸坠毁于该星球。然而船员们发现波利斯行星上的基地已然毁灭，早已灭绝的怪兽随处可见，整个行星沦为怪兽横行的法外之地。正当众人惊愕失措之际，一位能够召唤怪兽作战的神秘青年“雷”悄然现身……",
+  "rating": {
+    "count": 2899,
+    "score": 9.9
+  },
+  "publish": {
+    "is_finish": 1,
+    "is_started": 1,
+    "pub_time": "2025-08-24 11:00:00",
+    "pub_time_show": "2025年08月24日11:00",
+    "unknow_pub_date": 0,
+    "weekday": 0
+  },
+  "total": 13,
+  "cover": "https://i0.hdslb.com/bfs/bangumi/image/8eb3d284a1109218ab6c61768d18942011b4a101.png",
+  "square_cover": "https://i0.hdslb.com/bfs/bangumi/image/29bac69afbf883c5a804948ea9d1231c7e85a573.png",
+  "season_cover": null,
+  "episodes": [
+    {
+      "ep_id": 2081328,
+      "title": "1",
+      "long_title": "怪兽横行的行星",
+      "show_title": "第1话 怪兽横行的行星",
+      "duration_ms": 1480000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1oqe4zrEsW",
+      "cover": "http://i0.hdslb.com/bfs/archive/6912de2f07dd6223b1d321b3fabfc7ce031f8ba1.png"
+    },
+    {
+      "ep_id": 2081329,
+      "title": "2",
+      "long_title": "第五名队员",
+      "show_title": "第2话 第五名队员",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1oqe4zrEoy",
+      "cover": "http://i0.hdslb.com/bfs/archive/cb56ef1c67de1bd2f57195459d5462ecd1685b87.png"
+    },
+    {
+      "ep_id": 2081330,
+      "title": "3",
+      "long_title": "透明怪兽的袭击！",
+      "show_title": "第3话 透明怪兽的袭击！",
+      "duration_ms": 1482000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1iqe4zrEdt",
+      "cover": "http://i0.hdslb.com/bfs/archive/f01e752b913f2b429bdd9e71c59af0585a814628.png"
+    },
+    {
+      "ep_id": 2081331,
+      "title": "4",
+      "long_title": "贝姆斯塔现身！",
+      "show_title": "第4话 贝姆斯塔现身！",
+      "duration_ms": 1487000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV17qe4zkEEc",
+      "cover": "http://i0.hdslb.com/bfs/archive/6fc43efd7d817e9f13d7f9fa7750719b7e18bb26.png"
+    },
+    {
+      "ep_id": 2081332,
+      "title": "5",
+      "long_title": "贝拉尔古城的圈套",
+      "show_title": "第5话 贝拉尔古城的圈套",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1iqe4zrEkS",
+      "cover": "http://i0.hdslb.com/bfs/archive/d4f2d6375a852c7d952b4c7e21a1fa5f3c0a11a8.png"
+    },
+    {
+      "ep_id": 2081333,
+      "title": "6",
+      "long_title": "另一位怪兽召唤者",
+      "show_title": "第6话 另一位怪兽召唤者",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1qqe4zrEum",
+      "cover": "http://i0.hdslb.com/bfs/archive/0f3f93b67f66e4c280b3d265b1f964b2ed7a4b41.png"
+    },
+    {
+      "ep_id": 2081334,
+      "title": "7",
+      "long_title": "召唤怪兽的怪石",
+      "show_title": "第7话 召唤怪兽的怪石",
+      "duration_ms": 1484000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1qqe4zrEgx",
+      "cover": "http://i0.hdslb.com/bfs/archive/e17ac24ce1c966f3ce881fa9e355a1463d9cf188.png"
+    },
+    {
+      "ep_id": 2081335,
+      "title": "8",
+      "long_title": "水中的王者",
+      "show_title": "第8话 水中的王者",
+      "duration_ms": 1484000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1qqe4zrEEB",
+      "cover": "http://i0.hdslb.com/bfs/archive/50fa26f026fd57928b2a2fefeb486632f2a574f3.png"
+    },
+    {
+      "ep_id": 2081336,
+      "title": "9",
+      "long_title": "无法上浮的盘龙号！",
+      "show_title": "第9话 无法上浮的盘龙号！",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1iqe4zrEdC",
+      "cover": "http://i0.hdslb.com/bfs/archive/c41a7c87dcb2b8aa0bea4cb866f30230d12e3de2.png"
+    },
+    {
+      "ep_id": 2081337,
+      "title": "10",
+      "long_title": "预料之外的再会",
+      "show_title": "第10话 预料之外的再会",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1jqe4zkEzV",
+      "cover": "http://i0.hdslb.com/bfs/archive/901c9b4502291be3cc674114785bc508aa93def4.png"
+    },
+    {
+      "ep_id": 2081338,
+      "title": "11",
+      "long_title": "奥特战士",
+      "show_title": "第11话 奥特战士",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1iqe4zrEk8",
+      "cover": "http://i0.hdslb.com/bfs/archive/312c3d8ec4a1cdcdd0ce7cbfbedf048d0476cd6f.png"
+    },
+    {
+      "ep_id": 2081339,
+      "title": "12",
+      "long_title": "雷布郎多",
+      "show_title": "第12话 雷布郎多",
+      "duration_ms": 1483000,
+      "duration_min": 25,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1qqe4zrEgC",
+      "cover": "http://i0.hdslb.com/bfs/archive/9356d2809b5ea9bc5564fc440c8f769619ac79a8.png"
+    },
+    {
+      "ep_id": 2081340,
+      "title": "13",
+      "long_title": "行星脱逃",
+      "show_title": "第13话 行星脱逃",
+      "duration_ms": 1447000,
+      "duration_min": 24,
+      "pub_time": 1756004400,
+      "pub_index": null,
+      "bvid": "BV1iqe4zrEBs",
+      "cover": "http://i0.hdslb.com/bfs/archive/d2643962a0a7106249576da808e0422d7371b300.png"
+    }
+  ],
+  "section_titles": []
+}

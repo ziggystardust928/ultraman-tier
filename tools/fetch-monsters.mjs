@@ -24,11 +24,19 @@ const SRC = path.join(ROOT, 'data', '_src');
 const UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36';
 
-// 迪迦的专栏文本子代理已经抓在本地了，直接用；另外两部现抓
+// 迪迦的专栏文本子代理已经抓在本地了，直接用；其余现抓
 const PLAN = [
   { id: 'tiga', series: '迪迦', local: path.join(SRC, 'bili_mon_toc.txt'), expect: 52 },
   { id: 'dyna', series: '戴拿', query: '戴拿奥特曼 怪兽 宇宙人 大全', expect: 51 },
   { id: 'gaia', series: '盖亚', query: '盖亚奥特曼 怪兽 宇宙人 大全', expect: 51 },
+  { id: 'neos', series: '奈欧斯', query: '奈欧斯奥特曼 怪兽 宇宙人 大全', expect: 12 },
+  { id: 'cosmos', series: '高斯', query: '高斯奥特曼 怪兽 宇宙人 大全', expect: 65 },
+  { id: 'nexus', series: '奈克瑟斯', query: '奈克赛斯奥特曼 怪兽 宇宙人 大全', expect: 37 },
+  { id: 'max', series: '麦克斯', query: '麦克斯奥特曼 怪兽 宇宙人 大全', expect: 39 },
+  { id: 'mebius', series: '梦比优斯', query: '梦比优斯奥特曼 怪兽 宇宙人 大全', expect: 50 },
+  { id: 'sevenx', series: '赛文X', query: '赛文X 怪兽 宇宙人 大全', expect: 12 },
+  { id: 'ugmmb', series: '大怪兽格斗', query: '大怪兽格斗 怪兽 大全', expect: 13 },
+  { id: 'ugmmb2', series: '大怪兽格斗2', query: '大怪兽格斗 无尽的圣战 怪兽 大全', expect: 13 },
 ];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

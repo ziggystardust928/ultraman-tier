@@ -27,7 +27,7 @@ export default function Home() {
   const topKamikai = dataset.series
     .flatMap((s) => s.episodes.map((e) => ({ e, s })))
     .filter(({ e }) => e.kamikaiGrade?.id === 'kamikai-top')
-    .sort((a, b) => b.e.score - a.e.score)
+    .sort((a, b) => (b.e.score ?? -1) - (a.e.score ?? -1))
     .slice(0, 6);
 
   return (
@@ -130,7 +130,7 @@ export default function Home() {
                 {s.titleZh} 第 {e.no} 话 · IMDb {e.imdb.rating}
               </span>
             </span>
-            <span className="ep-score">{e.score.toFixed(1)}</span>
+            <span className="ep-score">{e.score?.toFixed(1) ?? '—'}</span>
           </Link>
         ))}
       </div>

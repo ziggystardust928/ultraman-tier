@@ -205,6 +205,9 @@ for (const s of SERIES) {
               .map((e) => ({ src: e.still, no: e.no, label: `第 ${e.no} 话`, title: e.titleZh }))
               .filter((p) => p.src)
           : [],
+      // 从官方海报裁出的头部特写 / 胸口彩色计时器特写（tools/gen-details.py 产出）
+      headDetail: imgOrNull(`img/${s.id}/detail/head.webp`),
+      chestDetail: imgOrNull(`img/${s.id}/detail/chest.webp`),
     },
     episodes,
   });

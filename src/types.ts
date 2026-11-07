@@ -83,6 +83,10 @@ export interface Series {
     /** 设计稿（首页封面旁 2×2）。为空时回退用 photos。 */
     designs: { src: string | null; label: string; note: string | null; bvid: string | null }[];
     photos: { src: string | null; no: number; label: string; title: string | null }[];
+    /** 从官方海报裁出的头部特写 */
+    headDetail: string | null;
+    /** 从官方海报裁出的胸口彩色计时器特写 */
+    chestDetail: string | null;
   };
   episodes: Episode[];
   ratingRange: [number, number] | null;

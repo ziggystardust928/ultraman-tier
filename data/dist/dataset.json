@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T13:38:53.259Z",
+ "generatedAt": "2026-11-07T02:58:25.144Z",
  "config": {
   "_note": "评级口径配置。整套 App 的分档全部由这个文件驱动，改这里就能改全站分档。UI 的「评级口径」页会把这些数值原样展示给用户。",
   "version": "0.2.0",
@@ -258,7 +258,9 @@
       "label": "第 52 话",
       "title": "致以辉煌的人"
      }
-    ]
+    ],
+    "headDetail": "img/tiga/detail/head.webp",
+    "chestDetail": "img/tiga/detail/chest.webp"
    },
    "episodes": [
     {
@@ -3954,7 +3956,9 @@
       "label": "第 51 话",
       "title": "迎向明天"
      }
-    ]
+    ],
+    "headDetail": "img/dyna/detail/head.webp",
+    "chestDetail": "img/dyna/detail/chest.webp"
    },
    "episodes": [
     {
@@ -7592,7 +7596,9 @@
       "label": "第 51 话",
       "title": "奥特曼之星——地球"
      }
-    ]
+    ],
+    "headDetail": "img/gaia/detail/head.webp",
+    "chestDetail": "img/gaia/detail/chest.webp"
    },
    "episodes": [
     {
@@ -11206,7 +11212,9 @@
       "label": "第 12 话",
       "title": "永远的光之战士啊"
      }
-    ]
+    ],
+    "headDetail": "img/neos/detail/head.webp",
+    "chestDetail": "img/neos/detail/chest.webp"
    },
    "episodes": [
     {
@@ -11892,7 +11900,9 @@
       "label": "第 65 话",
       "title": "真的勇者"
      }
-    ]
+    ],
+    "headDetail": "img/cosmos/detail/head.webp",
+    "chestDetail": "img/cosmos/detail/chest.webp"
    },
    "episodes": [
     {
@@ -15663,7 +15673,9 @@
       "label": "第 37 话",
       "title": "羁绊"
      }
-    ]
+    ],
+    "headDetail": "img/nexus/detail/head.webp",
+    "chestDetail": "img/nexus/detail/chest.webp"
    },
    "episodes": [
     {
@@ -18202,7 +18214,9 @@
       "label": "第 39 话",
       "title": "把握未来"
      }
-    ]
+    ],
+    "headDetail": "img/max/detail/head.webp",
+    "chestDetail": "img/max/detail/chest.webp"
    },
    "episodes": [
     {
@@ -20321,7 +20335,9 @@
       "label": "第 50 话",
       "title": "衷心的话语"
      }
-    ]
+    ],
+    "headDetail": "img/mebius/detail/head.webp",
+    "chestDetail": "img/mebius/detail/chest.webp"
    },
    "episodes": [
     {
@@ -23235,7 +23251,9 @@
       "label": "第 12 话",
       "title": "新的世界"
      }
-    ]
+    ],
+    "headDetail": "img/sevenx/detail/head.webp",
+    "chestDetail": "img/sevenx/detail/chest.webp"
    },
    "episodes": [
     {
@@ -23948,7 +23966,9 @@
       "label": "第 13 话",
       "title": "行星脱逃"
      }
-    ]
+    ],
+    "headDetail": "img/ugmmb/detail/head.webp",
+    "chestDetail": "img/ugmmb/detail/chest.webp"
    },
    "episodes": [
     {
@@ -24516,7 +24536,9 @@
       "label": "第 13 话",
       "title": "行星的毁灭"
      }
-    ]
+    ],
+    "headDetail": "img/ugmmb2/detail/head.webp",
+    "chestDetail": "img/ugmmb2/detail/chest.webp"
    },
    "episodes": [
     {

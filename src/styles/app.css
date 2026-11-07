@@ -1002,11 +1002,13 @@ input {
   white-space: nowrap;
 }
 
-/* 主题色块选择器（对应 Radiohead Library 顶部那排纯色方块） */
+/* 主题色块选择器（对应 Radiohead Library 顶部那排纯色方块）
+   Radiohead 那排是小尺寸的竖长方形，不是大方块 —— 这里按同样比例收小 */
 .lib-swatches {
   display: flex;
-  gap: 6px;
-  padding: 8px var(--pad);
+  align-items: center;
+  gap: 5px;
+  padding: 7px var(--pad);
   overflow-x: auto;
   scrollbar-width: none;
   border-bottom: 1px solid var(--line);
@@ -1018,13 +1020,13 @@ input {
 
 .lib-swatch {
   flex: none;
-  width: 44px;
-  height: 44px;
+  width: 24px;
+  height: 34px;
   padding: 0;
   border-radius: 0;
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-  opacity: 0.72;
+  outline: 1.5px solid transparent;
+  outline-offset: 1.5px;
+  opacity: 0.7;
   transition:
     opacity 0.15s,
     outline-color 0.15s;

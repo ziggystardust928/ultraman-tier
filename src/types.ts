@@ -61,6 +61,9 @@ export interface Series {
   titleEn: string | null;
   year: number;
   era: EraId;
+  /** 主题色：首页色块选择器 + 区块背景 */
+  themeColor: string;
+  themeName: string | null;
   episodeCount: number;
   synopsis: string | null;
   mediaId: number;
@@ -87,6 +90,12 @@ export interface Series {
     headDetail: string | null;
     /** 从官方海报裁出的胸口彩色计时器特写 */
     chestDetail: string | null;
+    /** 首页拼贴墙用的 4 张氛围感帧 */
+    heroStills: string[];
+    /** 网络搜来的设计稿（设定画） */
+    webDesign: string | null;
+    /** 网络搜来的皮套展示照 */
+    webSuit: string | null;
   };
   episodes: Episode[];
   ratingRange: [number, number] | null;

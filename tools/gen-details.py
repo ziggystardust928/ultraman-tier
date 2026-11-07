@@ -58,11 +58,13 @@ for sid in SERIES:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # 头部：上半部居中区域
-    head = square_crop(im, 0.5, 0.38, 0.52).resize((OUT_SIZE, OUT_SIZE), Image.LANCZOS)
+    head = square_crop(im, 0.5, 0.34, 0.52).resize((OUT_SIZE, OUT_SIZE), Image.LANCZOS)
     head.save(out_dir / "head.webp", "WEBP", quality=84, method=5)
 
-    # 胸口/计时器：中下部居中区域
-    chest = square_crop(im, 0.5, 0.60, 0.46).resize((OUT_SIZE, OUT_SIZE), Image.LANCZOS)
+    # 胸口/彩色计时器：中段居中区域。
+    # 之前用 cy=0.60 太高，海报里的主体大多是站立全身像，
+    # 0.60 处已经到了腰部甚至下摆，裁出来常常还是头/肩 —— 改成 0.46。
+    chest = square_crop(im, 0.5, 0.46, 0.40).resize((OUT_SIZE, OUT_SIZE), Image.LANCZOS)
     chest.save(out_dir / "chest.webp", "WEBP", quality=84, method=5)
 
     total += 1

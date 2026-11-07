@@ -1,108 +1,94 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { dataset } from '../data/store';
-import { seriesColor } from '../components/art';
 
-/** 把剧集主色混成深色底上的淡色块（对应 Radiohead Library 每个专辑的专属背景色） */
-function tint(hex: string, alpha: number): string {
+/** hex → "r, g, b" */
+function rgb(hex: string): [number, number, number] {
   const n = parseInt(hex.replace('#', ''), 16);
-  return `rgba(${(n >> 16) & 255}, ${(n >> 8) & 255}, ${n & 255}, ${alpha})`;
+  return [(n >> 16) & 255, (n >> 8) & 255, n & 255];
 }
 
-const ENTRIES = [
-  { to: '/series', cn: '剧集库', en: 'Series' },
-  { to: '/ranking', cn: '分级榜', en: 'Ranking' },
-  { to: '/people', cn: '编剧导演', en: 'Credits' },
-  { to: '/methodology', cn: '评级口径', en: 'Method' },
-];
+/** 主题色按 alpha 混出来的深色区块背景（保持深色底的可读性，同时能一眼看出是哪种颜色） */
+function tint(hex: string, alpha: number): string {
+  const [r, g, b] = rgb(hex);
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
 
 export default function Home() {
   const [active, setActive] = useState(0);
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
-  const avatarRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const swatchRefs = useRef<(HTMLButtonElement | null)[]>([]);
 
-  // 滚动监听：哪个剧集区块在视口里，就把对应头像点亮
+  // 滚动时点亮顶部对应的色块。
+  // 一开始用 IntersectionObserver，但它的 rootMargin 边界判定在吸顶头下面不可靠
+  // （在第 1 个区块时点亮了第 2 个色块），改成直接比对各区块的绝对位置。
   useEffect(() => {
-    const obs = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          if (e.isIntersecting) {
-            const idx = Number((e.target as HTMLElement).dataset.index);
-            if (!Number.isNaN(idx)) setActive(idx);
-          }
-        }
-      },
-      { rootMargin: '-45% 0px -45% 0px', threshold: 0 },
-    );
-    for (const el of sectionRefs.current) if (el) obs.observe(el);
-    return () => obs.disconnect();
+    const onScroll = () => {
+      const line = window.scrollY + 140; // 判定线：吸顶头下方一点
+      let idx = 0;
+      sectionRefs.current.forEach((el, i) => {
+        if (!el) return;
+        const top = el.getBoundingClientRect().top + window.scrollY;
+        if (top <= line) idx = i;
+      });
+      setActive(idx);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  // 头像点亮时把它滚进可视区
+  // 色块点亮时把它滚进可视区
   useEffect(() => {
-    avatarRefs.current[active]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    swatchRefs.current[active]?.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   }, [active]);
 
+  // 点顶部色块 → 跳到对应剧集的展示区块
   const jumpTo = (i: number) => {
     sectionRefs.current[i]?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
-  const totalEpisodes = dataset.stats.totalEpisodes;
-
   return (
     <div className="library">
-      {/* ---------- 吸顶：标题 + 头像条 ---------- */}
+      {/* ---------- 吸顶：标题 + 主题色块选择器 ---------- */}
       <div className="lib-sticky">
         <header className="lib-header">
           <h1 className="lib-title">奥特曼公共资料馆</h1>
           <span className="lib-count">
-            {dataset.series.length} 部 · {totalEpisodes} 集
+            {dataset.series.length} 部 · {dataset.stats.totalEpisodes} 集
           </span>
         </header>
 
-        <nav className="lib-avatars" aria-label="剧集选择">
+        <nav className="lib-swatches" aria-label="剧集选择">
           {dataset.series.map((s, i) => (
             <button
               key={s.id}
               ref={(el) => {
-                avatarRefs.current[i] = el;
+                swatchRefs.current[i] = el;
               }}
-              className="lib-avatar"
+              className="lib-swatch"
               data-active={i === active}
+              style={{ background: s.themeColor }}
               onClick={() => jumpTo(i)}
               title={`${s.titleZh} ${s.year}`}
-              aria-label={s.titleZh}
-            >
-              {s.images.square ? (
-                <img src={s.images.square} alt="" loading={i < 4 ? 'eager' : 'lazy'} decoding="async" />
-              ) : (
-                <span style={{ background: seriesColor(s.id) }} />
-              )}
-            </button>
+              aria-label={`跳到 ${s.titleZh}`}
+            />
           ))}
         </nav>
       </div>
 
-      {/* ---------- 每部剧一个拼贴区块 ---------- */}
+      {/* ---------- 每部剧一块：背景就是它的主题色 ---------- */}
       {dataset.series.map((s, i) => {
-        const color = seriesColor(s.id);
-        const kamikai = s.episodes.filter((e) => e.tier === 'kamikai').length;
-        const still = s.images.photos[Math.floor(s.images.photos.length / 2)];
-        const design = s.images.designs[0];
-
-        // 右栏 2×2：剧照 / 头部细节 / 计时器细节 / 设计稿（没有设计稿就再用一张剧照）
-        const tiles = [
-          still && { src: still.src, label: still.label, to: `/ep/${s.id}-${still.no}` },
-          s.images.headDetail && { src: s.images.headDetail, label: '头部细节', to: `/series/${s.id}` },
-          s.images.chestDetail && { src: s.images.chestDetail, label: '计时器', to: `/series/${s.id}` },
-          design
-            ? { src: design.src, label: design.label, to: `/series/${s.id}` }
-            : s.images.photos[1] && {
-                src: s.images.photos[1].src,
-                label: s.images.photos[1].label,
-                to: `/ep/${s.id}-${s.images.photos[1].no}`,
-              },
-        ].filter(Boolean) as { src: string; label: string; to: string }[];
+        // 右侧 2×2 固定四类素材：设计稿 / 头部细节 / 皮套展示 / 计时器细节
+        // 缺哪格就用一张剧照顶上，保证版面永远填满
+        const fallback = s.images.heroStills;
+        const cells: (string | null)[] = [
+          s.images.webDesign,
+          s.images.headDetail,
+          s.images.webSuit,
+          s.images.chestDetail,
+        ];
+        const tiles = cells.map((src, k) => src ?? fallback[k] ?? fallback[0] ?? null);
 
         return (
           <section
@@ -112,72 +98,56 @@ export default function Home() {
             ref={(el) => {
               sectionRefs.current[i] = el;
             }}
-            style={{ background: tint(color, 0.1) }}
+            style={{ background: tint(s.themeColor, 0.16) }}
           >
             <div className="lib-collage">
-              <Link className="lib-cover" to={`/series/${s.id}`} title={s.titleZh}>
-                {s.images.cover ? (
-                  <img src={s.images.cover} alt={s.titleZh} loading="lazy" decoding="async" />
-                ) : (
-                  <span style={{ background: color, display: 'block', width: '100%', height: '100%' }} />
-                )}
-                <span className="lib-cover-year">{s.year}</span>
-              </Link>
+              <div className="lib-left">
+                <Link className="lib-cover" to={`/series/${s.id}`} title={s.titleZh}>
+                  {s.images.cover ? (
+                    <img src={s.images.cover} alt={s.titleZh} loading="lazy" decoding="async" />
+                  ) : (
+                    <span style={{ background: s.themeColor, display: 'block', width: '100%', height: '100%' }} />
+                  )}
+                </Link>
+                {/* 只保留封面下的年份 */}
+                <span className="lib-year">{s.year}</span>
+              </div>
 
               <div className="lib-grid">
-                {tiles.map((t, k) => (
-                  <Link className="lib-tile" key={k} to={t.to} title={t.label}>
-                    <img src={t.src} alt={t.label} loading="lazy" decoding="async" />
-                    <span className="lib-tile-label">{t.label}</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <div className="lib-meta">
-              <div className="lib-meta-main">
-                <h2 className="lib-name">{s.titleZh}</h2>
-                <div className="lib-line">
-                  <span>{s.year}</span>
-                  <span className="dim">·</span>
-                  <span>全 {s.episodeCount} 话</span>
-                  {s.ratings.imdb !== null && (
-                    <>
-                      <span className="dim">·</span>
-                      <span>IMDb {s.ratings.imdb.toFixed(2)}</span>
-                    </>
-                  )}
-                  {s.ratingsIncomplete ? (
-                    <>
-                      <span className="dim">·</span>
-                      <span className="dim">不参与分档</span>
-                    </>
+                {tiles.map((src, k) =>
+                  src ? (
+                    <Link className="lib-tile" key={k} to={`/series/${s.id}`} title={s.titleZh}>
+                      <img src={src} alt="" loading="lazy" decoding="async" />
+                    </Link>
                   ) : (
-                    <>
-                      <span className="dim">·</span>
-                      <span style={{ color: 'var(--tier-kamikai)' }}>神回 {kamikai}</span>
-                    </>
-                  )}
-                </div>
-                {s.synopsis && <p className="lib-syn">{s.synopsis}</p>}
+                    <span className="lib-tile" key={k} style={{ background: tint(s.themeColor, 0.3) }} />
+                  ),
+                )}
               </div>
-              <Link className="lib-go" to={`/series/${s.id}`}>
-                查看分集 →
-              </Link>
             </div>
           </section>
         );
       })}
 
-      {/* ---------- 底部入口 ---------- */}
+      {/* ---------- 底部：入口 + 版权 ---------- */}
       <footer className="lib-footer">
         <div className="entries">
-          {ENTRIES.map((e) => (
-            <Link className="entry" key={e.to} to={e.to}>
-              <span className="entry-cn">{e.cn}</span>
-              <span className="entry-en">{e.en}</span>
-            </Link>
-          ))}
+          <Link className="entry" to="/series">
+            <span className="entry-cn">剧集库</span>
+            <span className="entry-en">Series</span>
+          </Link>
+          <Link className="entry" to="/ranking">
+            <span className="entry-cn">分级榜</span>
+            <span className="entry-en">Ranking</span>
+          </Link>
+          <Link className="entry" to="/people">
+            <span className="entry-cn">编剧导演</span>
+            <span className="entry-en">Credits</span>
+          </Link>
+          <Link className="entry" to="/methodology">
+            <span className="entry-cn">评级口径</span>
+            <span className="entry-en">Method</span>
+          </Link>
         </div>
         <p className="lib-disclaimer">
           非商业粉丝作品。《奥特曼》系列著作权归圆谷制作株式会社所有，站内图片均为版权方作品的影像资料，

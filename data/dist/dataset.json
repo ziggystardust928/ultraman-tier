@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-07T02:58:25.144Z",
+ "generatedAt": "2026-11-07T03:37:53.873Z",
  "config": {
   "_note": "评级口径配置。整套 App 的分档全部由这个文件驱动，改这里就能改全站分档。UI 的「评级口径」页会把这些数值原样展示给用户。",
   "version": "0.2.0",
@@ -138,6 +138,8 @@
    "titleEn": "Ultraman Tiga",
    "year": 1996,
    "era": "heisei",
+   "themeColor": "#8b5cf6",
+   "themeName": "紫罗兰",
    "episodeCount": 52,
    "synopsis": "“迪迦”一词意为印度尼西亚语中神圣的数字\"3\"。\n约在三千万年前，人类处于超古代文明时期，守护人类的巨人们发生内战，原是地球最强的黑暗战士迪迦在受幽怜的感动后选择成为光之战士，使自己的黑暗力量长眠。奇杰拉花朵盛开，人们全部都陷入了因奇杰拉的花粉而产生的幻觉，认为已不再需要巨人。光之巨人不能干涉人类的选择，于是巨人把自己战斗的躯体隐藏在金字塔后，化作光离开了地球，回到了自己的故乡。邪神加坦杰厄带着毁灭的黑暗降临，超古代文明毁灭。\n21世纪初期，地球不再有侵略和战争，人类期盼已久的和平终于到来了。地球防卫军也因此完成了历史使命，TPC（地球和平联合组织）成立，人类迎来了新的时代。但是，如超古代警卫团团长幽怜所预言：\"哥尔赞\"及\"美尔巴\"出现了。在怪兽攻击的目标——金字塔内，发现了3座巨大的石像。2座巨石像被怪兽摧毁。在这紧要关头，因为继承了超古代战士的基因，因此可以和金字塔的迪迦石像结合在一起",
    "mediaId": 28234068,
@@ -260,7 +262,15 @@
      }
     ],
     "headDetail": "img/tiga/detail/head.webp",
-    "chestDetail": "img/tiga/detail/chest.webp"
+    "chestDetail": "img/tiga/detail/chest.webp",
+    "heroStills": [
+     "img/tiga/hero/1.webp",
+     "img/tiga/hero/2.webp",
+     "img/tiga/hero/3.webp",
+     "img/tiga/hero/4.webp"
+    ],
+    "webDesign": "img/tiga/web/design.webp",
+    "webSuit": "img/tiga/web/suit.webp"
    },
    "episodes": [
     {
@@ -3841,6 +3851,8 @@
    "titleEn": "Ultraman Dyna",
    "year": 1997,
    "era": "heisei",
+   "themeColor": "#3b82f6",
+   "themeName": "天蓝",
    "episodeCount": 51,
    "synopsis": "故事发生在2017年的地球，飞鸟信的父亲飞鸟一马是一名宇航员，在一次任务之中下落不明，长大后的信继承了父亲对正义的追求，成为了地球和平联合组织的一员，在学习和训练之中展现出了过人的实力，甚至打败了王牌飞行员由美村良。\n在由美的推荐下，信成为了SUPER GUTS中的一员，肩负起了对抗外星人保卫地球的重任。斯菲亚和岩石合体成为了拥有强大破坏力的怪兽，信和队友们和它展开了激烈的斗争，然而双方实力悬殊绝大，信陷入了岌岌可危的境地，在这千钧一发之际，信变身成为了光之巨人，战斗力陡增，瞬间结果了敌人。之后，信便以光之巨人的身份走上了伸张正义之路。",
    "mediaId": 28234681,
@@ -3958,7 +3970,15 @@
      }
     ],
     "headDetail": "img/dyna/detail/head.webp",
-    "chestDetail": "img/dyna/detail/chest.webp"
+    "chestDetail": "img/dyna/detail/chest.webp",
+    "heroStills": [
+     "img/dyna/hero/1.webp",
+     "img/dyna/hero/2.webp",
+     "img/dyna/hero/3.webp",
+     "img/dyna/hero/4.webp"
+    ],
+    "webDesign": null,
+    "webSuit": "img/dyna/web/suit.webp"
    },
    "episodes": [
     {
@@ -7490,6 +7510,8 @@
    "titleEn": "Ultraman Gaia",
    "year": 1998,
    "era": "heisei",
+   "themeColor": "#ef4444",
+   "themeName": "正红",
    "episodeCount": 51,
    "synopsis": "1997年，超级电脑炼金之星预测到地球将会破坏招来体所消灭。得知此事后人类用炼金之星的研究技术组成一个全球防御组织GUARD，而XIG则是GUARD的战斗力量。\n2000年，天才少年·高山我梦在一次试验中见到神秘的红色光之巨人。当破坏招来体第一次进攻的时侯，XIG起不到作用。此时，我梦坠入光之隧道，并再次看见巨人，他希望巨人能赐予力量保卫地球。于是，巨人与我梦合二为一，并与破坏招来体展开了战斗。\n在战胜破坏招来体之后，我梦加入了XIG，而巨人则被命名为“盖亚”。但此时，另一名青年·藤宫博也亦拥有着变身成巨人“阿古茹”的力量。两个巨人与破坏招来体将会展开一连串的战斗。",
    "mediaId": 28234382,
@@ -7598,7 +7620,15 @@
      }
     ],
     "headDetail": "img/gaia/detail/head.webp",
-    "chestDetail": "img/gaia/detail/chest.webp"
+    "chestDetail": "img/gaia/detail/chest.webp",
+    "heroStills": [
+     "img/gaia/hero/1.webp",
+     "img/gaia/hero/2.webp",
+     "img/gaia/hero/3.webp",
+     "img/gaia/hero/4.webp"
+    ],
+    "webDesign": "img/gaia/web/design.webp",
+    "webSuit": "img/gaia/web/suit.webp"
    },
    "episodes": [
     {
@@ -11155,6 +11185,8 @@
    "titleEn": "Ultraman Neos",
    "year": 2000,
    "era": "heisei",
+   "themeColor": "#cbd5e1",
+   "themeName": "银白",
    "episodeCount": 12,
    "synopsis": null,
    "mediaId": null,
@@ -11214,7 +11246,15 @@
      }
     ],
     "headDetail": "img/neos/detail/head.webp",
-    "chestDetail": "img/neos/detail/chest.webp"
+    "chestDetail": "img/neos/detail/chest.webp",
+    "heroStills": [
+     "img/neos/hero/1.webp",
+     "img/neos/hero/2.webp",
+     "img/neos/hero/3.webp",
+     "img/neos/hero/4.webp"
+    ],
+    "webDesign": null,
+    "webSuit": "img/neos/web/suit.webp"
    },
    "episodes": [
     {
@@ -11811,6 +11851,8 @@
    "titleEn": "Ultraman Cosmos",
    "year": 2001,
    "era": "heisei",
+   "themeColor": "#06b6d4",
+   "themeName": "青",
    "episodeCount": 65,
    "synopsis": "来自宇宙、性情温和的神秘英雄慈爱的战士高斯奥特曼在与巴尔坦星人战斗时候，首次降临地球，也因战斗时能源消耗过大被年幼的春野武藏救助，于是两人定下了“勇者的誓言”。多年之后，长大的武藏加入到青年精英队里面工作。首次与企图更改地球秩序的卡欧斯病毒所附体的怪兽的战斗中，却不幸的被击中了，千钧一发之际高斯再度与武藏相遇了！为拯救受到卡欧斯病毒以及其他邪恶的外星人威胁着的地球，和武藏合为一体后，投入了战斗。",
    "mediaId": 28234087,
@@ -11902,7 +11944,15 @@
      }
     ],
     "headDetail": "img/cosmos/detail/head.webp",
-    "chestDetail": "img/cosmos/detail/chest.webp"
+    "chestDetail": "img/cosmos/detail/chest.webp",
+    "heroStills": [
+     "img/cosmos/hero/1.webp",
+     "img/cosmos/hero/2.webp",
+     "img/cosmos/hero/3.webp",
+     "img/cosmos/hero/4.webp"
+    ],
+    "webDesign": "img/cosmos/web/design.webp",
+    "webSuit": "img/cosmos/web/suit.webp"
    },
    "episodes": [
     {
@@ -15589,6 +15639,8 @@
    "titleEn": "Ultraman Nexus",
    "year": 2004,
    "era": "heisei",
+   "themeColor": "#4f46e5",
+   "themeName": "靛",
    "episodeCount": 37,
    "synopsis": "故事发生在遥远的未来，肆虐的异生兽给人类的安全带来了巨大的困扰，为了抵挡异兽的进攻，日本政府成立了防卫组织TLT，其中，夜袭队拥有着最强大的实力和最强劲的武器，是整个组织内部的中坚力量。\n然而，面对经过了进化的新型异生兽，夜袭队亦束手无策，在这个节骨眼上，光之巨人奈克瑟斯奥特曼和它的适能者姫矢准出现了。在奈克瑟斯奥特曼创造出的美塔领域中，奥特曼和异兽之间展开了激烈的斗争。孤门一辉是TLT里的新进成员，当他目睹了奈克瑟斯奥特曼强大的力量后，开始对奥特曼的起源和姬矢准的神秘过往产生了兴趣。",
    "mediaId": 28234088,
@@ -15675,7 +15727,15 @@
      }
     ],
     "headDetail": "img/nexus/detail/head.webp",
-    "chestDetail": "img/nexus/detail/chest.webp"
+    "chestDetail": "img/nexus/detail/chest.webp",
+    "heroStills": [
+     "img/nexus/hero/1.webp",
+     "img/nexus/hero/2.webp",
+     "img/nexus/hero/3.webp",
+     "img/nexus/hero/4.webp"
+    ],
+    "webDesign": "img/nexus/web/design.webp",
+    "webSuit": "img/nexus/web/suit.webp"
    },
    "episodes": [
     {
@@ -18128,6 +18188,8 @@
    "titleEn": "Ultraman Max",
    "year": 2005,
    "era": "heisei",
+   "themeColor": "#f97316",
+   "themeName": "橙",
    "episodeCount": 39,
    "synopsis": "进入21世纪，世界各地灾难频发，更有各种空想怪物惊现世间，引出无数的灾难，而人类文明也面临覆灭的危险。在这个关键时刻，DASH小组的热血青年男女站在人类的最前端，以他们微弱的力量包围着地球。充满正义感的青年东马快斗志愿加入DASH，可是却未能通过相关测验。某天，两只怪兽现身日本，并相互缠斗。危难当前，地球人得到来自M78星云的正义使者麦克斯奥特曼的帮助。新世纪的正义与邪恶的战争由此拉开序幕……",
    "mediaId": 28234090,
@@ -18216,7 +18278,15 @@
      }
     ],
     "headDetail": "img/max/detail/head.webp",
-    "chestDetail": "img/max/detail/chest.webp"
+    "chestDetail": "img/max/detail/chest.webp",
+    "heroStills": [
+     "img/max/hero/1.webp",
+     "img/max/hero/2.webp",
+     "img/max/hero/3.webp",
+     "img/max/hero/4.webp"
+    ],
+    "webDesign": "img/max/web/design.webp",
+    "webSuit": "img/max/web/suit.webp"
    },
    "episodes": [
     {
@@ -20262,6 +20332,8 @@
    "titleEn": "Ultraman Mebius",
    "year": 2006,
    "era": "heisei",
+   "themeColor": "#eab308",
+   "themeName": "金",
    "episodeCount": 50,
    "synopsis": "《梦比优斯奥特曼》作为奥特曼系列诞生40周年纪念作，计划在片中让奥特兄弟陆续客串登场！宇宙警备队大队长派遣新战士梦比优斯参与地球防卫，与地球上的青年人一起同怪兽和外星人作战！该片描绘了被历代奥特曼保卫着的新战士的成长故事！",
    "mediaId": 28234091,
@@ -20337,7 +20409,15 @@
      }
     ],
     "headDetail": "img/mebius/detail/head.webp",
-    "chestDetail": "img/mebius/detail/chest.webp"
+    "chestDetail": "img/mebius/detail/chest.webp",
+    "heroStills": [
+     "img/mebius/hero/1.webp",
+     "img/mebius/hero/2.webp",
+     "img/mebius/hero/3.webp",
+     "img/mebius/hero/4.webp"
+    ],
+    "webDesign": "img/mebius/web/design.webp",
+    "webSuit": "img/mebius/web/suit.webp"
    },
    "episodes": [
     {
@@ -23194,6 +23274,8 @@
    "titleEn": "Ultraseven X",
    "year": 2007,
    "era": "heisei",
+   "themeColor": "#991b1b",
+   "themeName": "暗红",
    "episodeCount": 12,
    "synopsis": null,
    "mediaId": null,
@@ -23253,7 +23335,15 @@
      }
     ],
     "headDetail": "img/sevenx/detail/head.webp",
-    "chestDetail": "img/sevenx/detail/chest.webp"
+    "chestDetail": "img/sevenx/detail/chest.webp",
+    "heroStills": [
+     "img/sevenx/hero/1.webp",
+     "img/sevenx/hero/2.webp",
+     "img/sevenx/hero/3.webp",
+     "img/sevenx/hero/4.webp"
+    ],
+    "webDesign": null,
+    "webSuit": "img/sevenx/web/suit.webp"
    },
    "episodes": [
     {
@@ -23907,6 +23997,8 @@
    "titleEn": "Ultra Galaxy Mega Monster Battle",
    "year": 2007,
    "era": "heisei",
+   "themeColor": "#16a34a",
+   "themeName": "绿",
    "episodeCount": 13,
    "synopsis": "在遥远的未来，人类已将文明扩展至宇宙中诸多行星。某日，宇宙盘龙号运输船奉命前往调查突然通讯断绝的行星波利斯，却在接近时遭遇神秘能量冲击，不幸坠毁于该星球。然而船员们发现波利斯行星上的基地已然毁灭，早已灭绝的怪兽随处可见，整个行星沦为怪兽横行的法外之地。正当众人惊愕失措之际，一位能够召唤怪兽作战的神秘青年“雷”悄然现身……",
    "mediaId": 27362342,
@@ -23968,7 +24060,15 @@
      }
     ],
     "headDetail": "img/ugmmb/detail/head.webp",
-    "chestDetail": "img/ugmmb/detail/chest.webp"
+    "chestDetail": "img/ugmmb/detail/chest.webp",
+    "heroStills": [
+     "img/ugmmb/hero/1.webp",
+     "img/ugmmb/hero/2.webp",
+     "img/ugmmb/hero/3.webp",
+     "img/ugmmb/hero/4.webp"
+    ],
+    "webDesign": null,
+    "webSuit": "img/ugmmb/web/suit.webp"
    },
    "episodes": [
     {
@@ -24477,6 +24577,8 @@
    "titleEn": "Ultra Galaxy: Never Ending Odyssey",
    "year": 2008,
    "era": "heisei",
+   "themeColor": "#84cc16",
+   "themeName": "黄绿",
    "episodeCount": 13,
    "synopsis": "《奥特银河 大怪兽之战》的续作！多名怪兽召唤者“雷奥尼克斯”现身，投身于不可回避的宿命对决。他们的真正目的无人知晓，却已将整个宇宙拖入深渊的边缘。而在光影交错之地，神秘的“雷奥尼克斯猎人”也随之登场，步步紧逼。一场关于雷奥尼克斯和怪兽，决定全宇宙命运的战斗，就此拉开惊心动魄的帷幕……",
    "mediaId": 27366597,
@@ -24538,7 +24640,15 @@
      }
     ],
     "headDetail": "img/ugmmb2/detail/head.webp",
-    "chestDetail": "img/ugmmb2/detail/chest.webp"
+    "chestDetail": "img/ugmmb2/detail/chest.webp",
+    "heroStills": [
+     "img/ugmmb2/hero/1.webp",
+     "img/ugmmb2/hero/2.webp",
+     "img/ugmmb2/hero/3.webp",
+     "img/ugmmb2/hero/4.webp"
+    ],
+    "webDesign": null,
+    "webSuit": "img/ugmmb2/web/suit.webp"
    },
    "episodes": [
     {

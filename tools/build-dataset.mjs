@@ -64,6 +64,7 @@ const imdb = { episodes: imdbFiles.flatMap((p) => read(p).episodes) };
 const nameMap = read('data/curated/name-map.json').people;
 const config = read('data/curated/tier-config.json');
 const designs = read('data/curated/designs.json');
+const themeColors = read('data/curated/theme-colors.json').colors;
 
 const stats = (nums) => {
   if (!nums.length) return { mean: 0, sd: 0, n: 0 };
@@ -167,6 +168,9 @@ for (const s of SERIES) {
     titleEn: s.titleEn,
     year: s.year,
     era: s.era,
+    // 主题色：首页色块选择器 + 区块背景都用它（data/curated/theme-colors.json）
+    themeColor: themeColors[s.id]?.color ?? '#8b5cf6',
+    themeName: themeColors[s.id]?.name ?? null,
     episodeCount: episodes.length,
     synopsis: bili.evaluate ?? null,
     mediaId: bili.media_id,
@@ -208,6 +212,11 @@ for (const s of SERIES) {
       // 从官方海报裁出的头部特写 / 胸口彩色计时器特写（tools/gen-details.py 产出）
       headDetail: imgOrNull(`img/${s.id}/detail/head.webp`),
       chestDetail: imgOrNull(`img/${s.id}/detail/chest.webp`),
+      // 首页拼贴墙用的 4 张「氛围感」帧（tools/pick-hero-stills.py 产出，480x300）
+      heroStills: [1, 2, 3, 4].map((i) => imgOrNull(`img/${s.id}/hero/${i}.webp`)).filter(Boolean),
+      // 网络搜来的设计稿 / 皮套展示（tools/web-apply.py 产出）
+      webDesign: imgOrNull(`img/${s.id}/web/design.webp`),
+      webSuit: imgOrNull(`img/${s.id}/web/suit.webp`),
     },
     episodes,
   });

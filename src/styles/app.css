@@ -1002,7 +1002,8 @@ input {
   white-space: nowrap;
 }
 
-.lib-avatars {
+/* 主题色块选择器（对应 Radiohead Library 顶部那排纯色方块） */
+.lib-swatches {
   display: flex;
   gap: 6px;
   padding: 8px var(--pad);
@@ -1011,41 +1012,33 @@ input {
   border-bottom: 1px solid var(--line);
   background: var(--bg);
 }
-.lib-avatars::-webkit-scrollbar {
+.lib-swatches::-webkit-scrollbar {
   display: none;
 }
 
-.lib-avatar {
+.lib-swatch {
   flex: none;
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   padding: 0;
-  overflow: hidden;
-  border-radius: 2px;
+  border-radius: 0;
   outline: 2px solid transparent;
-  outline-offset: -2px;
-  opacity: 0.42;
-  background: var(--surface-2);
+  outline-offset: 2px;
+  opacity: 0.72;
   transition:
     opacity 0.15s,
     outline-color 0.15s;
 }
-.lib-avatar img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-.lib-avatar[data-active='true'] {
+.lib-swatch[data-active='true'] {
   opacity: 1;
   outline-color: var(--fg);
 }
 
-/* 每个剧集一块拼贴 */
+/* 每个剧集一块拼贴（背景色由组件按主题色写入） */
 .lib-section {
-  padding: 18px 0 22px;
+  padding: 14px 0 16px;
   border-bottom: 1px solid var(--line-soft);
-  scroll-margin-top: calc(var(--appbar-h) + 78px);
+  scroll-margin-top: calc(var(--appbar-h) + 76px);
 }
 
 .lib-collage {
@@ -1053,6 +1046,14 @@ input {
   grid-template-columns: 44% 56%;
   gap: 3px;
   padding: 0 3px;
+}
+
+/* 左列：封面 + 年份 */
+.lib-left {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
 }
 
 .lib-cover {
@@ -1068,17 +1069,16 @@ input {
   object-fit: cover;
   display: block;
 }
-.lib-cover-year {
-  position: absolute;
-  left: 6px;
-  bottom: 6px;
+
+/* 封面下只留年份 */
+.lib-year {
+  display: block;
+  text-align: center;
   font-family: var(--font-num);
-  font-size: 9.5px;
+  font-size: 11px;
   font-weight: 700;
-  background: rgba(10, 10, 11, 0.82);
-  color: #fff;
-  padding: 1px 5px;
-  border-radius: 3px;
+  letter-spacing: 0.08em;
+  color: var(--fg-2);
   font-variant-numeric: tabular-nums;
 }
 
@@ -1113,44 +1113,6 @@ input {
   padding: 1px 4px;
   border-radius: 2px;
   white-space: nowrap;
-}
-
-.lib-meta {
-  padding: 14px var(--pad) 0;
-}
-.lib-name {
-  font-size: 21px;
-  font-weight: 800;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-}
-.lib-line {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 5px;
-  font-size: 11.5px;
-  color: var(--fg-2);
-}
-.lib-syn {
-  margin-top: 9px;
-  font-size: 12px;
-  line-height: 1.65;
-  color: var(--fg-3);
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-.lib-go {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 11.5px;
-  letter-spacing: 0.06em;
-  font-weight: 700;
-  color: var(--fg);
-  border-bottom: 1px solid var(--line);
 }
 
 .lib-footer {

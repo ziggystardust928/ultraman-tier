@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { Series } from '../types';
+import { dataset } from '../data/store';
 
 /* ============================================================
    剧集配色 & 封面母题（仅在缺图时作为兜底使用）
@@ -9,9 +10,10 @@ type Motif = 'rings' | 'rays' | 'peak' | 'grid';
 
 const FALLBACK_COLORS = ['#8b5cf6', '#3b82f6', '#ef4444', '#14b8a6', '#f59e0b', '#ec4899'];
 
+/** 剧集主题色：以 data/curated/theme-colors.json 为准 */
 export function seriesColor(id: string): string {
-  const known: Record<string, string> = { tiga: '#8b5cf6', dyna: '#3b82f6', gaia: '#ef4444' };
-  if (known[id]) return known[id];
+  const s = dataset.series.find((x) => x.id === id);
+  if (s?.themeColor) return s.themeColor;
   let h = 0;
   for (let i = 0; i < id.length; i++) h = (h * 31 + id.charCodeAt(i)) % 997;
   return FALLBACK_COLORS[h % FALLBACK_COLORS.length];

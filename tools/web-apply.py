@@ -74,4 +74,21 @@ for sid, sel in choice.items():
         except Exception as e:
             print(f"{sid:<8} {kind}: 失败 {e}")
 
+    # 补搜批（<sid>-design2）单独指定：choice 里写 "design2": 序号
+    d2 = sel.get("design2")
+    if d2 is not None:
+        d2_dir = ROOT / ".cache" / "webimg" / f"{sid}-design2"
+        files = sorted(
+            f for f in d2_dir.glob("*") if f.suffix.lower() in (".jpg", ".jpeg", ".png", ".webp")
+        )
+        if 0 <= d2 < len(files):
+            try:
+                cover(Image.open(files[d2])).save(out_dir / "design.webp", "WEBP", quality=86, method=5)
+                print(f"{sid:<8} design2: #{d2} {files[d2].name} → public/img/{sid}/web/design.webp")
+                ok += 1
+            except Exception as e:
+                print(f"{sid:<8} design2: 失败 {e}")
+        else:
+            print(f"{sid:<8} design2: 序号越界（共 {len(files)} 张）")
+
 print(f"\n共落地 {ok} 张")

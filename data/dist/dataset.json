@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-07T03:37:53.873Z",
+ "generatedAt": "2026-11-07T03:45:59.793Z",
  "config": {
   "_note": "评级口径配置。整套 App 的分档全部由这个文件驱动，改这里就能改全站分档。UI 的「评级口径」页会把这些数值原样展示给用户。",
   "version": "0.2.0",
@@ -3977,7 +3977,7 @@
      "img/dyna/hero/3.webp",
      "img/dyna/hero/4.webp"
     ],
-    "webDesign": null,
+    "webDesign": "img/dyna/web/design.webp",
     "webSuit": "img/dyna/web/suit.webp"
    },
    "episodes": [
